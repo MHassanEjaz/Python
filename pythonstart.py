@@ -68,4 +68,28 @@
 # print(str2)
 # print(str3)
 
-str4 = "Hello how are you.\n are you ok"
+# str4 = "Hello how are you.\n are you ok" 
+# str5 = "yes iam ok"
+# finalstr = str4 + str5
+# print(finalstr)
+
+
+# Slicing = accessing parts of a string
+# a = "Apple"
+# print(a[1:4])
+# print(a[-3:-1])
+# print(a.endswith("le")) 
+# print(a.capitalize())
+# print(a.replace("A", "a"))
+# print(a.find("A"))
+# print(a.count("p"))
+
+
+# practise qs
+# # input form user and print its length
+# a=input("Enter Word: ")
+# print(len(a))
+
+# find occurrence of $ in a string
+# a="C++&&"
+# print(a.count("&"))
