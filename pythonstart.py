@@ -61,9 +61,11 @@
 # print(a>=b)
 
 # Strings
-str1 = "Hello"
-str2 = 'Hi'
-str3 = '''This is strings topic'''
-print(str1)
-print(str2)
-print(str3)
+# str1 = "Hello"
+# str2 = 'Hi'
+# str3 = '''This is strings topic'''
+# print(str1)
+# print(str2)
+# print(str3)
+
+str4 = "Hello how are you.\n are you ok"
