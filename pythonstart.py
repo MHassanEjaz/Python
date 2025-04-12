@@ -96,3 +96,22 @@
 
 
 #Conditional Statement
+# age = 21
+# if(age >= 18):
+#     print("Y'll get license")
+
+# light = "green"
+# if(light == "red"):
+#     print("stop!")
+# elif(light == "green"):
+#     print("go") 
+# else:
+#     print("Light is broken")    
+
+
+# num=5
+# if(num > 2):
+#     print("greater than 2")
+# if(num > 6):
+#     print("greater than 3")       
+    
