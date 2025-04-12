@@ -118,19 +118,28 @@
     
     
 # Grade students based on marks
-marks = int(input("Enter Student Marks: "))
-if(marks >= 90):
-    grade = "A"
-elif(marks >= 80 and marks < 90):
-    grade = "B"       
-elif(marks >= 70 and marks < 80):
-    grade = "C"
-else:
-    grade = "D"
+# marks = int(input("Enter Student Marks: "))
+# if(marks >= 90):
+#     grade = "A"
+# elif(marks >= 80 and marks < 90):
+#     grade = "B"       
+# elif(marks >= 70 and marks < 80):
+#     grade = "C"
+# else:
+#     grade = "D"
     
-print("Grade of a Student -> ", grade) 
+# print("Grade of a Student -> ", grade) 
 
 
 
-# Nesting = if within another if
+# WAP check number is even or odd
+# num = int(input("Enter Number: "))
+# if num % 2 == 0:
+#     print("Even Number")
+# else:
+#     print("Odd Number")
+
+
+# WAP check number is even or odd
+        
        
