@@ -149,17 +149,29 @@
 
 
 # WAP fint greatest of 3 numbers
+# Find the greatest of 4 numbers
+
 # num1 = 3
 # num2 = 5
 # num3 = 2
-# if(num1 >= num2 and num1 >= num3):
+# num4 = 7
+
+# if num1 >= num2 and num1 >= num3 and num1 >= num4:
 #     print(num1)
-# elif(num2 >= num3):
+# elif num2 >= num3 and num2 >= num4:
 #     print(num2)
+# elif num3 >= num4:
+#     print(num3)
 # else:
-#     print(num3)        
+#     print(num4)
+        
 
 
-
+# WAP check number is a multiple of 7 or not
+# num = int(input("Enter Number: "))
+# if(num % 7 == 0):
+#     print("Multiple of 7")
+# else: 
+#     print("Not Multiple")    
         
        
