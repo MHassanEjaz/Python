@@ -131,6 +131,14 @@
 # print("Grade of a Student -> ", grade) 
 
 
+#Nesting = if within another if
+# age = 95
+# if(age >= 18):
+#     if(age >= 80):
+#         print("Cannot Drive")
+#     else:
+#         print("Can Drive")    
+
 
 # WAP check number is even or odd
 # num = int(input("Enter Number: "))
@@ -140,6 +148,18 @@
 #     print("Odd Number")
 
 
-# WAP check number is even or odd
+# WAP fint greatest of 3 numbers
+# num1 = 3
+# num2 = 5
+# num3 = 2
+# if(num1 >= num2 and num1 >= num3):
+#     print(num1)
+# elif(num2 >= num3):
+#     print(num2)
+# else:
+#     print(num3)        
+
+
+
         
        
