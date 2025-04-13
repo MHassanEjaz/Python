@@ -175,3 +175,8 @@
 #     print("Not Multiple")    
         
        
+# Lists and Tuples
+# Lists
+marks= [32,43,56,75,54]     
+print(marks)
+print(type(marks))
