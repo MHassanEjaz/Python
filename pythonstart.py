@@ -177,6 +177,32 @@
        
 # Lists and Tuples
 # Lists
-marks= [32,43,56,75,54]     
-print(marks)
-print(type(marks))
+'''string are immutable means not to ne changed
+lists are mutable means to be changed'''
+# marks= [32,43,56,75,54]  
+# print(marks)
+# print(type(marks))
+# print(len(marks))
+# print(marks[4])
+
+# students = ["Karan", 54, "Delhi"] 
+# students[0] = "John" 
+# print(students)
+# print(students[1:2])
+
+# List Methods
+# numbers = [2,3,4,1]
+# numbers.append(4) # adds to the last
+# print(numbers) 
+# print(numbers.sort()) # Assecending
+# print(numbers)
+# print(numbers.sort(reverse=True)) # Descending
+# print(numbers)
+# numbers.reverse() # reverse list
+# print(numbers)
+# numbers.insert(1,5)  # insert index
+# print(numbers) 
+# numbers.remove(1) # remove forst ocuurence
+# print(numbers)
+# numbers.pop(3) # remove elements at particular index
+# print(numbers)
