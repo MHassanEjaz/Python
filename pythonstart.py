@@ -206,3 +206,30 @@ lists are mutable means to be changed'''
 # print(numbers)
 # numbers.pop(3) # remove elements at particular index
 # print(numbers)
+
+
+# Tuples create immutable sequences of values
+# tup = (1,2,3,4)
+# print(type(tup))
+# print(tup[2])
+# # tup[2]=4 # not allowed in tuples
+# # Tuples Methods
+# tup.index(2) # returns index of first occuerrence
+# print(tup)
+# tup.count(2) # counts total occurence
+# print(tup)
+
+
+# Practise qs
+# WAP ask the user names of 3 favorite movies and store them in list
+mov1 = input("Enter 1st Movie: ")
+mov2 = input("Enter 2nd Movie: ")
+mov3 = input("Enter 3rd Movie: ")
+movies = []
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+print(movies)
+
+
+# WAP and checks 
