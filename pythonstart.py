@@ -232,4 +232,5 @@ movies.append(mov3)
 print(movies)
 
 
-# WAP and checks 
+# WAP and checks if a list contains a palindrome of elements.
+
