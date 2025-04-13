@@ -233,4 +233,20 @@ lists are mutable means to be changed'''
 
 
 # WAP and checks if a list contains a palindrome of elements.
+# list1 = ["Ma'am"]
+# list2 = [1,2,3]
+# copylist1 = list1.copy()
+# copylist1.reverse()
+# if(copylist1==list1):
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome") 
 
+
+# WAP count the number of stds with Grade A in the following tuple and store the values in a list and sort them from A to D
+Grades = ("C", "D", "A", "A", "B", "B", "A")
+print(Grades.count("A")) 
+
+storegrades = []
+store
+  
