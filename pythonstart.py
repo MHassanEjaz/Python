@@ -244,9 +244,9 @@ lists are mutable means to be changed'''
 
 
 # WAP count the number of stds with Grade A in the following tuple and store the values in a list and sort them from A to D
-Grades = ("C", "D", "A", "A", "B", "B", "A")
-print(Grades.count("A")) 
+# Grades = ["C", "D", "A", "A", "B", "B", "A"]
+# Grades.sort()
+# print(Grades) 
 
-storegrades = []
-store
+
   
