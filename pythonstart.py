@@ -251,6 +251,14 @@ lists are mutable means to be changed'''
 
 
 # Dictionaries and Set
-
-
+# Dictionaries to store data values in key:value pairs
+info = {
+    "Key" : "Value",
+    "Name" : "John",
+    "Learning" : "Coding",
+    "Age" : 35,
+    "Subjects" : ["Python", "C++", "Java"],
+    "Topics" : ("Dict", "Set")
+}
+print(info)
   
