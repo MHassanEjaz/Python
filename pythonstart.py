@@ -265,19 +265,19 @@ lists are mutable means to be changed'''
 
 
 # Nested Dictionary
-student = {
-    "Name" : "John",
-    "Subjects" : {
-        "Maths" : 45,
-        "Physice" : 43,
-        "Chemistry" : 76
-    }
-}  
+# student = {
+#     "Name" : "John",
+#     "Subjects" : {
+#         "Maths" : 45,
+#         "Physice" : 43,
+#         "Chemistry" : 76
+#     }
+# }  
 # print(student["Subjects"]["Chemistry"])
 # print(student.keys()) # return all keys
 # print(student.values()) # return values
 # print(student.items()) # return pairs
 # print(student.get("Name"))
-newdict = {"city" : "delhi"}
-student.update(newdict) # inserts the specified items to the dictionary
-print(student)
+# newdict = {"city" : "delhi"}
+# student.update(newdict) # inserts the specified items to the dictionary
+# print(student)
