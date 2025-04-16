@@ -1,3 +1,2 @@
-um1 = 3
-# num2 = 5
-# num3
+op() # removes a random value
+# print(collec

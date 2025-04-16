@@ -283,4 +283,17 @@ lists are mutable means to be changed'''
 # print(student)
 
 
-# Set
+# Set collection of unordered items each element in set must be unique and immutable
+'''ignores duplicate and repeated values'''
+# collection = {1,2,3,4, "Hello World"}
+# print(collection)
+# print(type(collection))
+# collection.add(5) # add value
+# collection.add(5,3,4) # error
+# print(collection)
+# collection.remove(3) # remove value
+# print(collection)
+# collection.clear() # empties the set
+# print(collection)
+# collection.pop() # removes a random value
+# print(collection)
