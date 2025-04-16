@@ -338,3 +338,9 @@ lists are mutable means to be changed'''
 
 
 # figure out a way to store 9 and 9.0 as seperate values in set. you can take help of buit-in data types 
+values1 = {9, "9.0"}
+values = {
+    ("float", 9.0),
+    ("int", 9)
+}
+print(values)
