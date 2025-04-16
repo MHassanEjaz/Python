@@ -297,3 +297,44 @@ lists are mutable means to be changed'''
 # print(collection)
 # collection.pop() # removes a random value
 # print(collection)
+# Set1 = {1,2,3,4}
+# Set2 = {5,6,7,8}
+# print(Set1.union(Set2))
+# print(Set1)
+# print(Set2)
+# print(Set1.intersection(Set2))
+# print(Set1)
+# print(Set2)
+
+# Lets Practice qs
+# store following word meanings in a python dictionary
+'''Cat : a small animal'''
+'''Table : a piece of furniture, list of facts and figures'''
+# dictionary = {
+#     "Cat" : "a small animal",
+#     "Table" : ["a piece of furniture", "list of facts and figures"]    
+# }
+# print(dictionary)
+
+
+
+# you are given a list of subjects for students. assume one classroom is required for 1 subject. How many classrooms are needed by all students
+# "python", "java", "c++", "python", "javascript", "java", "python", "java", "c++", "c"
+# subjects = {
+#     "python", "java", "c++", "python", "javascript", "java", "python", "java", "c++", "c"
+# }
+# print(subjects)
+# print(len(subjects))
+
+# WAP enter marks of 3 subjects from user and store them in a dictionary. Start with and empty dictionary and add one by one. use subject name as key and marks as value
+marks = {}
+a = int(input("Enter phy marks: "))
+marks.update({"Phy" : a})
+a = int(input("Enter chem marks: "))
+marks.update({"Chem" : a})
+a = int(input("Enter math marks: "))
+marks.update({"Math" : a})
+print(marks)
+
+
+# figure out a way to store 9 and 9.0 as seperate values in set. you can take help of buit-in data types 
