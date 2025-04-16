@@ -327,14 +327,14 @@ lists are mutable means to be changed'''
 # print(len(subjects))
 
 # WAP enter marks of 3 subjects from user and store them in a dictionary. Start with and empty dictionary and add one by one. use subject name as key and marks as value
-marks = {}
-a = int(input("Enter phy marks: "))
-marks.update({"Phy" : a})
-a = int(input("Enter chem marks: "))
-marks.update({"Chem" : a})
-a = int(input("Enter math marks: "))
-marks.update({"Math" : a})
-print(marks)
+# marks = {}
+# a = int(input("Enter phy marks: "))
+# marks.update({"Phy" : a})
+# a = int(input("Enter chem marks: "))
+# marks.update({"Chem" : a})
+# a = int(input("Enter math marks: "))
+# marks.update({"Math" : a})
+# print(marks)
 
 
 # figure out a way to store 9 and 9.0 as seperate values in set. you can take help of buit-in data types 
