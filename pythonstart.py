@@ -358,7 +358,20 @@ lists are mutable means to be changed'''
 #     i =+ 1 
 
 # print numbers from 1 to 5
-i=5
-while i>=1:
-    print(i)
-    i-=1   
+# i=5
+# while i>=1:
+#     print(i)
+#     i-=1   
+
+# print numbers from 1 to 100
+# count = 1
+# while count <= 100:
+#     print(count)
+#     count += 1
+    
+# print numbers from 100 to 1
+# count = 100
+# while count >= 1:
+#     print(count)
+#     count -= 1    
+
