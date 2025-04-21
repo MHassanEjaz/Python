@@ -363,6 +363,8 @@ lists are mutable means to be changed'''
 #     print(i)
 #     i-=1   
 
+
+# Practice questions
 # print numbers from 1 to 100
 # count = 1
 # while count <= 100:
@@ -375,3 +377,8 @@ lists are mutable means to be changed'''
 #     print(count)
 #     count -= 1    
 
+num = int(input("Enter Number: "))
+i=1
+while num <= 10:
+    print(num*i)
+    i+=1
