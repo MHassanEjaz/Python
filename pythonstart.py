@@ -377,8 +377,10 @@ lists are mutable means to be changed'''
 #     print(count)
 #     count -= 1    
 
-num = int(input("Enter Number: "))
-i=1
-while num <= 10:
-    print(num*i)
+
+# Print table of a number
+n=int(input("Enter Number: "))
+i = 1
+while i <= 10:
+    print(i*n)
     i+=1
