@@ -347,7 +347,18 @@ lists are mutable means to be changed'''
 
 # Loops are uesd to repeat instructions
 # while loops
-count = 1
-while count <= 5:
-    print("Hello")
-    count += 1
+# count = 1
+# while count <= 5:
+#     print("Hello")
+#     count += 1
+    
+# i=1
+# while i<=5:
+#     print("Pyhton")
+#     i =+ 1 
+
+# print numbers from 1 to 5
+i=5
+while i>=1:
+    print(i)
+    i-=1   
