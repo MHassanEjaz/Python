@@ -344,3 +344,10 @@ lists are mutable means to be changed'''
 #     ("int", 9)
 # }
 # print(values)
+
+# Loops are uesd to repeat instructions
+# while loops
+count = 1
+while count <= 5:
+    print("Hello")
+    count += 1
