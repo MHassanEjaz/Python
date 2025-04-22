@@ -471,3 +471,30 @@ lists are mutable means to be changed'''
 # odd numbers
 # for i in range(1, 10, 2):
 #     print(i)   
+
+# print numbers from 1 to 100
+# for i in range(100):
+#     print(i)
+
+# print numbers from 100 to 1
+# for i in range(100, 0, -1):
+#     print(i)
+
+# print table of a number
+# n = int(input("Enter Number: "))
+# for i in range(1, 11):
+#     print(i*n)
+
+
+# Pass statement is a null statement that does nothing . it is used as a placeholder for future code
+# for i in range(5):
+#     pass
+
+# qs
+# WAP find sum of first n numbers(using while)
+
+
+
+
+
+# WAP find the factorial fo first n numbers(using for)git add . && git commit -m "update" && git push origin main
