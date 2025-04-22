@@ -494,11 +494,27 @@ lists are mutable means to be changed'''
 # WAP find sum of first n numbers(using while)
 # n=5
 # sum = 0
+# i=1
+# while i<= n:
 # for i in range(1, n+1):
-#     sum+=1
+    # sum+=1
+    # i+=1
 # print("Total Sum: ", sum)
 
 
 
 
 # WAP find the factorial fo first n numbers(using for)git add . && git commit -m "update" && git push origin main
+# n=5
+# fact = 1
+# i=1
+# while i<=n:
+#     fact*=i
+#     i+=1
+# print("Total Factorail: ", fact)    
+
+n=5
+fact=1
+for i in range(1, n+1):
+    fact*=i
+print("Factorial is: ", fact)    
