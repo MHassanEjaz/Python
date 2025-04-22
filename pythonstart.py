@@ -402,3 +402,26 @@ lists are mutable means to be changed'''
 #     if(num[i]==x):
 #         print("Found at Index: ", i)
 #     i+=1   
+
+
+# Break used to terminate the loop when wncountered
+# Continue terminate execution in the current iteration & continues execution of the loop with the next iteration
+# i=1
+# while i<= 5:
+#     print(i)
+#     if 1==3:
+#         break
+    
+# i=1
+# while i<= 5:
+#     if i%2==0:
+#         i+=1
+#         continue
+#     print(i)
+#     i+=1
+
+
+# For loop used for sequential traversal list, string, tuples etc
+list = [1,2,3,4,5]
+for val in list:
+    print(val)
