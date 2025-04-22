@@ -422,6 +422,21 @@ lists are mutable means to be changed'''
 
 
 # For loop used for sequential traversal list, string, tuples etc
-list = [1,2,3,4,5]
-for val in list:
-    print(val)
+# list = [1,2,3,4,5]
+# for val in list:
+#     print(val)
+# tup = (1,2,3,4,5)
+# for num in tup:
+#     print(num)
+# str = "Python"
+# for char in str:
+#     if char == "o":
+#         print("O found")
+#         break
+#     print(char)
+
+# Practice qs
+# Print the elements of the following list using a loop
+list = [1,4,9,16,25,36,49,64,81,100]
+for num in list:
+    print(num)
