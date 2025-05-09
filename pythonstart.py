@@ -595,4 +595,17 @@ lists are mutable means to be changed'''
 
 
 # Recursion = when a function calls iteslf repeatedly
+# def show(n):
+#     if(n==3):
+#         return
+#     print(n)
+#     show(n-1)
+# show(5)
 
+# factorial
+def fact(n):
+    if(n==0 or n==1):
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(5))    
