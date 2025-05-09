@@ -537,3 +537,31 @@ lists are mutable means to be changed'''
 
 # Built-in function like print(), len() etc
 # user defined function
+# defined by User
+
+# default parameter
+# def product(a=2,b=3):
+#     print(a*b)
+#     return a*b
+# product()
+
+# def product(a,b=3):
+#     print(a*b)
+#     return a*b
+# product(3)
+
+# 3 lets practice question
+# WAP to print the length of a list. (list is the parameter)
+cities = ["delhi", "pune", "mumbai"]
+def printlen(list):
+    print(len(list))
+print(len(cities))    
+
+# WAP to print the elements of a list in a single line. (list is the parameter)
+
+
+# WAP to find the factorial of a n. (n is the parameter)
+# def factorial(a):
+#     fact=1
+    
+# WAP to convert usd to inr
