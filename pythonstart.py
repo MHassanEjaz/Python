@@ -603,9 +603,15 @@ lists are mutable means to be changed'''
 # show(5)
 
 # factorial
-def fact(n):
-    if(n==0 or n==1):
-        return 1
-    else:
-        return n*fact(n-1)
-print(fact(5))    
+# def fact(n):
+#     if(n==0 or n==1):
+#         return 1
+#     else:
+#         return n*fact(n-1)
+# print(fact(5))    
+
+
+# Practice question
+# Write a recursive function to calculate the sum of first n natural numbers.
+
+# write a recursive function to print all elements in a list. Hint use list and index as parameter
