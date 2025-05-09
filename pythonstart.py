@@ -525,3 +525,4 @@ def sum(a, b):
     s=a+b
     return s
 print(sum(2,3))
+print(sum(12,4))
