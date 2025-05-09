@@ -521,8 +521,19 @@ lists are mutable means to be changed'''
 
 
 # Functions
-def sum(a, b):
-    s=a+b
-    return s
-print(sum(2,3))
-print(sum(12,4))
+# function definition
+# def sum(a, b): # parameter
+#     s=a+b
+#     return s
+# print(sum(2,3)) # function call, arguments
+# print(sum(12,4))
+
+# average of 3 numbers
+# def average(a,b,c):
+#     sum=a+b+c
+#     avg=sum/3
+#     return avg
+# average(98, 97, 10)
+
+# Built-in function like print(), len() etc
+# user defined function
