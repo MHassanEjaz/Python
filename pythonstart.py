@@ -622,4 +622,11 @@ lists are mutable means to be changed'''
 
 
 # write a recursive function to print all elements in a list. Hint use list and index as parameter
-def
+# def printlist(list, index=0):
+#     if(index==len(list)):
+#         return
+#     print(list[index])
+#     printlist(list, index+1)
+# fruits=["mango", "banana", "apple"]
+# printlist(fruits)    
+    
