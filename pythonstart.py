@@ -613,5 +613,13 @@ lists are mutable means to be changed'''
 
 # Practice question
 # Write a recursive function to calculate the sum of first n natural numbers.
+# def sum(n):
+#     if(n==0):
+#         return 0
+#     return sum(n-1)+n
+# print(sum(3))    
+
+
 
 # write a recursive function to print all elements in a list. Hint use list and index as parameter
+def
