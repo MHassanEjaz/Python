@@ -552,16 +552,28 @@ lists are mutable means to be changed'''
 
 # 3 lets practice question
 # WAP to print the length of a list. (list is the parameter)
-cities = ["delhi", "pune", "mumbai"]
-def printlen(list):
-    print(len(list))
-print(len(cities))    
+# cities = ["delhi", "pune", "mumbai"]
+# def printlen(list):
+#     print(len(list))
+# print(len(cities))    
+
+
 
 # WAP to print the elements of a list in a single line. (list is the parameter)
-
+# cities = ["delhi", "pune", "mumbai"]
+# def printelement(list):
+#     for item in list:
+#         print(item, end=" ")
+# printelement(cities)
 
 # WAP to find the factorial of a n. (n is the parameter)
-# def factorial(a):
+# def factorial(n):
 #     fact=1
+#     for i in range(1, n+1):
+#         fact*=1
+#         print(fact)
+# factorial(5)
+
+        
     
 # WAP to convert usd to inr
