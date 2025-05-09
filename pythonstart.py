@@ -577,3 +577,22 @@ lists are mutable means to be changed'''
         
     
 # WAP to convert usd to inr
+# def converter(usd_val):
+#     inr_val=usd_val*83
+#     print(usd_val, "USD =", inr_val, "INR")
+# converter(2)   
+
+
+# WAP to find even and odd
+# def evnodd(n):
+#     if(n%2==0):
+#         print("Even Number ")
+#     else:
+#         print("Odd Number ") 
+# n=int(input("Enter Any Number: "))
+# evnodd(n)            
+
+
+
+# Recursion = when a function calls iteslf repeatedly
+
