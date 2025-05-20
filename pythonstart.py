@@ -645,6 +645,11 @@ lists are mutable means to be changed'''
 
 
 # write mode
-f=open("sample.txt", "a")
-f.write("Then I'll move to react js")
+# f=open("sample.txt", "a")
+# f.write("\n After that next js")
+# f.close()
+
+f=open("sample.txt", "r+")
+f.write("abc")
+print(f.read())
 f.close()
