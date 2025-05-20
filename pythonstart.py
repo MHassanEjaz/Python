@@ -657,9 +657,36 @@ lists are mutable means to be changed'''
 
 
 #with
-with open("sample.txt", "r") as f:
-    data = f.read()
-    print(data)
+# with open("sample.txt", "r") as f:
+#     data = f.read()
+#     print(data)
     
-with open("sample.txt", "w") as f:
-    f.write("New Data")
+# with open("sample.txt", "w") as f:
+#     f.write("New Data")
+
+
+# practice question
+# create a new file example.txt using python. add the following data in it:
+#     hi everyone
+#     we are learning file i\o
+#     using java
+#     i like programming in java
+# with open("sample.txt", "w")  as f:
+#     f.write("hi everyone\nwe are learning file i\o\n")
+#     f.write("using java\ni like programming in java")
+
+
+
+
+#qs2 WAP that replace all occurrence of java with python in above file
+# with open("sample.txt", "r")  as f:
+#         data=f.read()
+# newdata=data.replace("java", "python")
+# print(newdata)
+# with open("sample.txt", "w")  as f:
+#         f.write(newdata)   
+
+
+
+#qs3 search if "learning" word exist
+     

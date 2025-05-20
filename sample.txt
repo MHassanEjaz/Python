@@ -1,1 +1,4 @@
-New Data
+hi everyone
+we are learning file i\o
+using python
+i like programming in python
