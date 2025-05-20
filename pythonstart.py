@@ -634,3 +634,7 @@ lists are mutable means to be changed'''
 # File I/O  
 
 f=open("sample.txt", "r")  
+data=f.read()
+print(data)
+print(type(data))
+f.close()
