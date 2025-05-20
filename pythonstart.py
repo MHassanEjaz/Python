@@ -649,7 +649,17 @@ lists are mutable means to be changed'''
 # f.write("\n After that next js")
 # f.close()
 
-f=open("sample.txt", "r+")
-f.write("abc")
-print(f.read())
-f.close()
+#w+ mode
+# f=open("sample.txt", "r+")
+# f.write("abc")
+# print(f.read())
+# f.close()
+
+
+#with
+with open("sample.txt", "r") as f:
+    data = f.read()
+    print(data)
+    
+with open("sample.txt", "w") as f:
+    f.write("New Data")
