@@ -1,2 +1,1 @@
-I'm learning 
-python 
+I want to learn JavScript tomorrow. 123Then I'll move to react js
