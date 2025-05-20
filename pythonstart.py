@@ -689,4 +689,12 @@ lists are mutable means to be changed'''
 
 
 #qs3 search if "learning" word exist
-     
+# def checkword():
+#     word="learningx"
+#     with open("sample.txt", "r") as f:
+#         data=f.read()
+#         if(data.find(word)!=-1):
+#             print("found")
+#         else:
+#             print("not found") 
+# checkword()                   
