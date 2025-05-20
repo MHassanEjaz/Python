@@ -697,4 +697,25 @@ lists are mutable means to be changed'''
 #             print("found")
 #         else:
 #             print("not found") 
-# checkword()                   
+# checkword()  
+
+
+#qs4 WAP to find in which line of the file does the word "learning" occurs first print -1 if word not found
+def checkline():
+    word="learning"
+    data=True
+    lineno=1
+    with open("sample.txt", "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(lineno)
+            lineno+=1    
+    return -1
+checkline()
+
+
+
+
+
+#qs5 from a file containig numbers separeted by comma, print the count of even numbers                 
