@@ -631,4 +631,6 @@ lists are mutable means to be changed'''
 # printlist(fruits) 
    
     
-# File I/O    
+# File I/O  
+
+f=open("sample.txt", "r")  
