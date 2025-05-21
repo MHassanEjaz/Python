@@ -718,17 +718,17 @@ lists are mutable means to be changed'''
 
 
 
-qs5 from a file containig numbers separeted by comma, print the count of even numbers                 
-with open("sample.txt", "r") as f:
-    data = f.readline()
-    print(data)
-num=""
-for i in range(len(data)):
-    if(data[i]==","):
-        print(int(num))    
-        num=""
-    else:
-        num+=data[i]  
+# qs5 from a file containig numbers separeted by comma, print the count of even numbers                 
+# with open("sample.txt", "r") as f:
+#     data = f.readline()
+#     print(data)
+# num=""
+# for i in range(len(data)):
+#     if(data[i]==","):
+#         print(int(num))    
+#         num=""
+#     else:
+#         num+=data[i]  
 
 # alternative
 # with open("sample.txt", "r") as f:
