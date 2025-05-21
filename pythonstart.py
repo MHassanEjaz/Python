@@ -730,12 +730,12 @@ lists are mutable means to be changed'''
 #     else:
 #         num+=data[i]  
 
-alternative
-with open("sample.txt", "r") as f:
-    data = f.read()
-    count=0
-    nums=data.split(",")
-    for val in nums:
-        if(int(val)%2==0):
-            count+=1
-    print(count)  
+# alternative
+# with open("sample.txt", "r") as f:
+#     data = f.read()
+#     count=0
+#     nums=data.split(",")
+#     for val in nums:
+#         if(int(val)%2==0):
+#             count+=1
+#     print(count)  
