@@ -722,20 +722,20 @@ lists are mutable means to be changed'''
 # with open("sample.txt", "r") as f:
 #     data = f.readline()
 #     print(data)
-num=""
-for i in range(len(data)):
-    if(data[i]==","):
-        print(int(num))    
-        num=""
-    else:
-        num+=data[i]  
+# num=""
+# for i in range(len(data)):
+#     if(data[i]==","):
+#         print(int(num))    
+#         num=""
+#     else:
+#         num+=data[i]  
 
-alternative
-with open("sample.txt", "r") as f:
-    data = f.read()
-    count=0
-    nums=data.split(",")
-    for val in nums:
-        if(int(val)%2==0):
-            count+=1
-    print(count)  
+# alternative
+# with open("sample.txt", "r") as f:
+#     data = f.read()
+#     count=0
+#     nums=data.split(",")
+#     for val in nums:
+#         if(int(val)%2==0):
+#             count+=1
+#     print(count)  
