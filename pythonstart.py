@@ -711,31 +711,31 @@ lists are mutable means to be changed'''
 #             if(word in data):
 #                 print(lineno)
 #             lineno+=1    
-    return -1
-checkline()
+#     return -1
+# checkline()
 
 
 
 
 
-qs5 from a file containig numbers separeted by comma, print the count of even numbers                 
-with open("sample.txt", "r") as f:
-    data = f.readline()
-    print(data)
-num=""
-for i in range(len(data)):
-    if(data[i]==","):
-        print(int(num))    
-        num=""
-    else:
-        num+=data[i]  
+# qs5 from a file containig numbers separeted by comma, print the count of even numbers                 
+# with open("sample.txt", "r") as f:
+#     data = f.readline()
+#     print(data)
+# num=""
+# for i in range(len(data)):
+#     if(data[i]==","):
+#         print(int(num))    
+#         num=""
+#     else:
+#         num+=data[i]  
 
-alternative
-with open("sample.txt", "r") as f:
-    data = f.read()
-    count=0
-    nums=data.split(",")
-    for val in nums:
-        if(int(val)%2==0):
-            count+=1
-    print(count)  
+# alternative
+# with open("sample.txt", "r") as f:
+#     data = f.read()
+#     count=0
+#     nums=data.split(",")
+#     for val in nums:
+#         if(int(val)%2==0):
+#             count+=1
+#     print(count)  
