@@ -800,7 +800,7 @@ lists are mutable means to be changed'''
 #     print("Odd")
 
 
-
+# chained conditions
 # print("Welcome to the Mortgage Calculator ")
 # salary = int(input("What is your salary: "))
 # if salary > 2000:
@@ -818,14 +818,46 @@ lists are mutable means to be changed'''
 
 
 # Body Mass Index (BMI) Calculator
-height = float(input("Enter your height in m: "))
-weight = float(input("Enter your weight in m: "))
-bmi=round(weight/height**2,2)
-if bmi < 18.5:
-    print("you are underweight.")
-elif bmi < 25:
-    print("you weight is normal.")
-elif bmi < 30:
-    print("you are overweight.")
-else:
-    print("you are obese.")            
+# height = float(input("Enter your height in m: "))
+# weight = float(input("Enter your weight in m: "))
+# bmi=round(weight/height**2,2)
+# if bmi < 18.5:
+#     print("you are underweight.")
+# elif bmi < 25:
+#     print("you weight is normal.")
+# elif bmi < 30:
+#     print("you are overweight.")
+# else:
+#     print("you are obese.")            
+
+
+
+# Multiple IF
+# print("Welcome to the Mortgage Calculator")
+
+# salary = int(input("What is your salary: "))
+
+# if salary > 2000:
+#     print("You are eligible for a mortgage.")
+    
+#     creditscore = int(input("What is your credit score: "))
+    
+#     if creditscore > 800:
+#         rate = 4
+#         print("Interest Rate is 4%")
+#     elif creditscore > 750:
+#         rate = 6
+#         print("Interest Rate is 6%")
+#     else:
+#         rate = 8
+#         print("Interest Rate is 8%")
+    
+#     disability = input("Do you have any disability? Y or N: ")
+    
+#     if disability.upper() == "Y":
+#         rate -= 2
+#         print("You are eligible for a 2% discount due to disability.")
+    
+#     print(f"Final Interest Rate: {rate}%")
+# else:
+#     print("Sorry, you are not eligible.")
