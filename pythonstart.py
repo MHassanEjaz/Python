@@ -768,12 +768,29 @@ lists are mutable means to be changed'''
 #   print(fahrenheit)
 
 
-# project 5 Trip Cost Calculator
-   print("Welcome to the Trip Cost Calculator ")
-   days = int(input("Enter number of days: "))
-   cost = float(input("Enter cost per night: "))
-   flightcost = float(input("Enter flight cost: "))
-   carprice = float(input("If you need rental car enter 1 else 0: "))
-   otherexpense = float(input("Enter other expenses: "))
-   totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
-   print(f"Your total cost is {totalcost} ")
+# # project 5 Trip Cost Calculator
+#    print("Welcome to the Trip Cost Calculator ")
+#    days = int(input("Enter number of days: "))
+#    cost = float(input("Enter cost per night: "))
+#    flightcost = float(input("Enter flight cost: "))
+#    carprice = float(input("If you need rental car enter 1 else 0: "))
+#    otherexpense = float(input("Enter other expenses: "))
+#    totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
+#    print(f"Your total cost is {totalcost} ")
+
+print("Welcome to the Mortgage Calculator ")
+salary = int(input("What is your salary: "))
+if salary > 2000:
+    print("your are eligible for mortgage ")
+else:
+    print("You're not eligible for mortagage ")
+
+
+even odd program
+number = int(input("Enter a number: "))
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
