@@ -768,12 +768,12 @@ lists are mutable means to be changed'''
 #   print(fahrenheit)
 
 
-# # project 5 Trip Cost Calculator
-#    print("Welcome to the Trip Cost Calculator ")
-#    days = int(input("Enter number of days: "))
-#    cost = float(input("Enter cost per night: "))
-#    flightcost = float(input("Enter flight cost: "))
-#    carprice = float(input("If you need rental car enter 1 else 0: "))
-#    otherexpense = float(input("Enter other expenses: "))
-#    totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
-#    print(f"Your total cost is {totalcost} ")
+# project 5 Trip Cost Calculator
+   print("Welcome to the Trip Cost Calculator ")
+   days = int(input("Enter number of days: "))
+   cost = float(input("Enter cost per night: "))
+   flightcost = float(input("Enter flight cost: "))
+   carprice = float(input("If you need rental car enter 1 else 0: "))
+   otherexpense = float(input("Enter other expenses: "))
+   totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
+   print(f"Your total cost is {totalcost} ")
