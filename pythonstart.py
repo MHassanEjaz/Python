@@ -754,8 +754,15 @@ lists are mutable means to be changed'''
 # print(f"Your Band/Group name could be {color} {animal}. ")
 
 # project 3 Gross Pay
-hours = input("Enter Hours: ")
-rate = input("Enter Rate: ")
-newhour = float(hours)
-newrate = float(rate)
-print(newhour*newrate)
+# hours = input("Enter Hours: ")
+# rate = input("Enter Rate: ")
+# newhour = float(hours)
+# newrate = float(rate)
+# print(newhour*newrate)
+
+
+# project 4 Celsius to Fahrenheit
+#   celsius = input("Enter Temperature in Celsius: ")
+#   newcelsius = float(celsius)
+#   fahrenheit = (newcelsius * 9/5) + 32
+#   print(fahrenheit)
