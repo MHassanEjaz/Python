@@ -761,8 +761,8 @@ lists are mutable means to be changed'''
 # print(newhour*newrate)
 
 
-project 4 Celsius to Fahrenheit
-  celsius = input("Enter Temperature in Celsius: ")
-  newcelsius = float(celsius)
-  fahrenheit = (newcelsius * 9/5) + 32
-  print(fahrenheit)
+# project 4 Celsius to Fahrenheit
+#   celsius = input("Enter Temperature in Celsius: ")
+#   newcelsius = float(celsius)
+#   fahrenheit = (newcelsius * 9/5) + 32
+#   print(fahrenheit)
