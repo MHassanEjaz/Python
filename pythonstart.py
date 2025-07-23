@@ -778,19 +778,19 @@ lists are mutable means to be changed'''
 #    totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
 #    print(f"Your total cost is {totalcost} ")
 
-print("Welcome to the Mortgage Calculator ")
-salary = int(input("What is your salary: "))
-if salary > 2000:
-    print("your are eligible for mortgage ")
-else:
-    print("You're not eligible for mortagage ")
+# print("Welcome to the Mortgage Calculator ")
+# salary = int(input("What is your salary: "))
+# if salary > 2000:
+#     print("your are eligible for mortgage ")
+# else:
+#     print("You're not eligible for mortagage ")
 
 
-even odd program
-number = int(input("Enter a number: "))
+# even odd program
+# number = int(input("Enter a number: "))
 
-if number % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
+# if number % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
 
