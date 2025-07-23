@@ -801,16 +801,31 @@ lists are mutable means to be changed'''
 
 
 
-print("Welcome to the Mortgage Calculator ")
-salary = int(input("What is your salary: "))
-if salary > 2000:
-    print("your are eligible for mortgage ")
-    creditscore=int(input("What is your credit score: "))
-    if creditscore > 800:
-        print("Interest Rate is 4% ")
-    elif creditscore > 750:
-        print("Interest Rate is 8%")    
-    else:
-        print("Interest Rate is 6%")    
+# print("Welcome to the Mortgage Calculator ")
+# salary = int(input("What is your salary: "))
+# if salary > 2000:
+#     print("your are eligible for mortgage ")
+#     creditscore=int(input("What is your credit score: "))
+#     if creditscore > 800:
+#         print("Interest Rate is 4% ")
+#     elif creditscore > 750:
+#         print("Interest Rate is 8%")    
+#     else:
+#         print("Interest Rate is 6%")    
+# else:
+#     print
+
+
+
+# Body Mass Index (BMI) Calculator
+height = float(input("Enter your height in m: "))
+weight = float(input("Enter your weight in m: "))
+bmi=round(weight/height**2,2)
+if bmi < 18.5:
+    print("you are underweight.")
+elif bmi < 25:
+    print("you weight is normal.")
+elif bmi < 30:
+    print("you are overweight.")
 else:
-    print
+    print("you are obese.")            
