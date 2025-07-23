@@ -775,4 +775,5 @@ lists are mutable means to be changed'''
    flightcost = float(input("Enter flight cost: "))
    carprice = float(input("If you need rental car enter 1 else 0: "))
    otherexpense = float(input("Enter other expenses: "))
-   totalcost = days * cost + flightcost + days * carprice + otherexpense
+   totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
+   print(f"Your total cost is {totalcost} ")
