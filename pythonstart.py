@@ -778,17 +778,17 @@ lists are mutable means to be changed'''
 #    totalcost = round(days * cost + flightcost + days * carprice + otherexpense, 2)
 #    print(f"Your total cost is {totalcost} ")
 
-print("Welcome to the Mortgage Calculator ")
-salary = int(input("What is your salary: "))
-if salary > 2000:
-    print("your are eligible for mortgage ")
-    creditscore=int(input("What is your credit score: "))
-    if creditscore > 800:
-        print("Interest Rate is 4% ")
-    else:
-        print("Interest Rate is 6%")    
-else:
-    print("You're not eligible for mortagage ")
+# print("Welcome to the Mortgage Calculator ")
+# salary = int(input("What is your salary: "))
+# if salary > 2000:
+#     print("your are eligible for mortgage ")
+#     creditscore=int(input("What is your credit score: "))
+#     if creditscore > 800:
+#         print("Interest Rate is 4% ")
+#     else:
+#         print("Interest Rate is 6%")    
+# else:
+#     print("You're not eligible for mortagage ")
 
 
 # even odd program
@@ -799,3 +799,18 @@ else:
 # else:
 #     print("Odd")
 
+
+
+print("Welcome to the Mortgage Calculator ")
+salary = int(input("What is your salary: "))
+if salary > 2000:
+    print("your are eligible for mortgage ")
+    creditscore=int(input("What is your credit score: "))
+    if creditscore > 800:
+        print("Interest Rate is 4% ")
+    elif creditscore > 750:
+        print("Interest Rate is 8%")    
+    else:
+        print("Interest Rate is 6%")    
+else:
+    print
