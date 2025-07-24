@@ -1058,6 +1058,8 @@ if score  >= 0.0 and score <=1.0:
     elif score >= 0.7:
         print("C")
     elif score >= 0.6:
-        print("D")            
+        print("D")
+    else:
+        print("F")                
 else:
-    print("This is bad score. ")    
+    print("Bad Score. ")    
