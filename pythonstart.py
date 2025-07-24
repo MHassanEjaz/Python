@@ -865,3 +865,15 @@ lists are mutable means to be changed'''
 
 
 # Burger Order Program
+print("Welcome to the Burger Shop! ")
+size = input("What size burger do you want? M, N or L ")
+addmushroom = input("Do you want mushroom? Y or N ")
+extrecheese = input("Do you want extra cheese? Y or N ")
+bill=0
+if size=="M":
+    bill+=5
+elif size=="N":
+    bill+=8
+else:
+    bill+=10    
+        
