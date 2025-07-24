@@ -1028,16 +1028,20 @@ lists are mutable means to be changed'''
 
 
 # Project 9 Gross pay with Try and Exception
-hours = input("Enter Hours: ")
-try:
-    hour = float(hours)
-except:
-    print("Error, please enter numeric input for hour ")    
-    rate = input("Enter Rate: ")
-    rate = float(rate)
-    if hours < 40:
-        pay=round(hour*rate,2)
-    else:
-        overtime = hour - 40
-        pay = round(40 * rate + overtime * rate *1.5,2)    
-        print(f"Pay: {pay}")
+# hours = input("Enter Hours: ")
+# try:
+#     hour = float(hours)
+# except ValueError:
+#     print("Error, please enter numeric input for hour ")    
+#     quit()
+#     rate = input("Enter Rate: ")
+# try:    
+#     rate = float(rate)
+# except ValueError:
+#      print("Error, please enter numeric input for rate ")   
+#      if hours < 40:
+#             pay=round(hour*rate,2)
+#      else:
+#         overtime = hour - 40
+#         pay = round(40 * rate + overtime * rate *1.5,2)    
+#         print(f"Pay: {pay}")
