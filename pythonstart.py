@@ -889,35 +889,84 @@ lists are mutable means to be changed'''
 # print(f"Your final bill is {bill}")         
                 
         
-   # with logical operator     
+# # with logical operator     
+# # print("Welcome to the Mortgage Calculator")
+# salary = int(input("What is your salary: "))
+# if salary > 2000:
+#     print("You are eligible for a mortgage.")
+#     creditscore = int(input("What is your credit score: "))
+#     if creditscore >= 900 and creditscore <= 1000:
+#         rate = 3
+#         print("Interest Rate is 3%")
+#     elif creditscore > 800:
+#         rate = 4
+#         print("Interest Rate is 4%")
+#     elif creditscore > 875000:
+#         rate = 6
+#         print("Interest Rate is 6%")    
+#     else:
+#         rate = 8
+#         print("Interest Rate is 8%")
+    
+#     disability = input("Do you have any disability? Y or N: ")
+    
+#     if disability.upper() == "Y":
+#         rate -= 2
+#         print("You are eligible for a 2% discount due to disability.")
+    
+#     print(f"Final Interest Rate: {rate}%")
+# else:
+#     print("Sorry, you are not eligible.")        
+
+
+
+# with try and except      
 # print("Welcome to the Mortgage Calculator")
+# try:
+#     salary = int(input("What is your salary: "))
+# except:
+#     print("There was an error ")
+# else:
+#     if salary > 2000:
+#         print("You are eligible ")
+#     else:
+#         print("You are not eligible ")
+# finally:
+#     print("Thanks for using our calculator")                    
 
-salary = int(input("What is your salary: "))
 
-if salary > 2000:
-    print("You are eligible for a mortgage.")
-    
-    creditscore = int(input("What is your credit score: "))
-    
-    if creditscore >= 900 and creditscore <= 1000:
-        rate = 3
-        print("Interest Rate is 3%")
-    elif creditscore > 800:
-        rate = 4
-        print("Interest Rate is 4%")
-    elif creditscore > 875000:
-        rate = 6
-        print("Interest Rate is 6%")    
-    else:
-        rate = 8
-        print("Interest Rate is 8%")
-    
-    disability = input("Do you have any disability? Y or N: ")
-    
-    if disability.upper() == "Y":
-        rate -= 2
-        print("You are eligible for a 2% discount due to disability.")
-    
-    print(f"Final Interest Rate: {rate}%")
+
+# # print("Welcome to the Mortgage Calculator")
+try:
+    salary = int(input("What is your salary: "))
+except:
+    print("Enter an integer number. ") 
+    salary = int(input("What is your salary: "))
 else:
-    print("Sorry, you are not eligible.")        
+    rate = 0 
+    if salary > 2000:
+        print("You are eligible for a mortgage.")
+        creditscore = int(input("What is your credit score: "))
+        if creditscore > 800:
+            rate = 4
+            print("Interest Rate is 4%")
+        elif creditscore > 750:
+            rate = 6
+            print("Interest Rate is 6%")
+        else:
+            rate = 8
+            print("Interest Rate is 8%")
+            disability = input("Do you have any disability? Y or N: ")
+            if disability.upper() == "Y":
+                rate -= 2
+                print("You are eligible for a 2% discount due to disability.")
+            
+            print(f"Final Interest Rate: {rate}%")
+    else:
+            print("Sorry, you are not eligible.")
+            
+finally:
+    print("Thanks for using our calculator ")            
+
+      
+    
