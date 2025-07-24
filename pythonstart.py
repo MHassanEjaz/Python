@@ -986,14 +986,35 @@ lists are mutable means to be changed'''
 
 
 # Project 7 Leap Year
-year = int(input("Enter Year: "))
-if year%4==0:
-    if year%100==0:
-        if year%400==0:
-            print("Leap Year. ")
-        else:
-            print("Not Leap Year. ")    
-    else:
-        print("Leap Year. ")   
-else:
-    print("Not Leap Year. ")    
+# year = int(input("Enter Year: "))
+# if year%4==0:
+#     if year%100==0:
+#         if year%400==0:
+#             print("Leap Year. ")
+#         else:
+#             print("Not Leap Year. ")    
+#     else:
+#         print("Leap Year. ")   
+# else:
+#     print("Not Leap Year. ") 
+
+
+
+# Project 7 Love Calculator   
+print("Welcome to Love Calculator ")
+name1 = input("Enter your name: ")
+name2 = input("Enter your lover name: ")
+combibedname = name1 + name2
+lowercasename = combibedname.lower()
+t = lowercasename.count("t")
+r = lowercasename.count("r")
+u = lowercasename.count("u")
+e = lowercasename.count("e")
+true = t + r + u + e
+l = lowercasename.count("l")
+o = lowercasename.count("o")
+v = lowercasename.count("v")
+e = lowercasename.count("e")
+love = l + o + v + e
+lovescore =  str(true) + str(love)
+print(lovescore)
