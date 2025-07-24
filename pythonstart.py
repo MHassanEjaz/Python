@@ -1001,27 +1001,43 @@ lists are mutable means to be changed'''
 
 
 # Project 7 Love Calculator   
-print("Welcome to Love Calculator ")
-name1 = input("Enter your name: ")
-name2 = input("Enter your lover name: ")
-combibedname = name1 + name2
-lowercasename = combibedname.lower()
-t = lowercasename.count("t")
-r = lowercasename.count("r")
-u = lowercasename.count("u")
-e = lowercasename.count("e")
-true = t + r + u + e
-l = lowercasename.count("l")
-o = lowercasename.count("o")
-v = lowercasename.count("v")
-e = lowercasename.count("e")
-love = l + o + v + e
-lovescore =  int(str(true) + str(love))
-print(lovescore)
+# print("Welcome to Love Calculator ")
+# name1 = input("Enter your name: ")
+# name2 = input("Enter your lover name: ")
+# combibedname = name1 + name2
+# lowercasename = combibedname.lower()
+# t = lowercasename.count("t")
+# r = lowercasename.count("r")
+# u = lowercasename.count("u")
+# e = lowercasename.count("e")
+# true = t + r + u + e
+# l = lowercasename.count("l")
+# o = lowercasename.count("o")
+# v = lowercasename.count("v")
+# e = lowercasename.count("e")
+# love = l + o + v + e
+# lovescore =  int(str(true) + str(love))
+# print(lovescore)
 
-if lovescore <10 or lovescore>85:
-    print(f"Your score is {lovescore}, you go together like coke and mentos. ")
-elif lovescore >= 40 and lovescore <= 70:
-    print(f"Your score is {lovescore}, you are alright together ")    
-else:
-    print(f"Your score is {lovescore}. ")    
+# if lovescore <10 or lovescore>85:
+#     print(f"Your score is {lovescore}, you go together like coke and mentos. ")
+# elif lovescore >= 40 and lovescore <= 70:
+#     print(f"Your score is {lovescore}, you are alright together ")    
+# else:
+#     print(f"Your score is {lovescore}. ")    
+
+
+# Project 9 Gross pay with Try and Exception
+hours = input("Enter Hours: ")
+try:
+    hour = float(hours)
+except:
+    print("Error, please enter numeric input for hour ")    
+    rate = input("Enter Rate: ")
+    rate = float(rate)
+    if hours < 40:
+        pay=round(hour*rate,2)
+    else:
+        overtime = hour - 40
+        pay = round(40 * rate + overtime * rate *1.5,2)    
+        print(f"Pay: {pay}")
