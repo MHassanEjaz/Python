@@ -1049,7 +1049,11 @@ lists are mutable means to be changed'''
 
 
 # Project 10 Score Checker
-score = float(input("Enter your Score: "))
+try:
+    score = float(input("Enter your Score: "))
+except ValueError:
+    print("Bad Score")
+    quit()    
 if score  >= 0.0 and score <=1.0:
     if score >= 0.9:
         print("A")
