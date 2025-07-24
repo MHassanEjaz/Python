@@ -937,36 +937,47 @@ lists are mutable means to be changed'''
 
 
 # # print("Welcome to the Mortgage Calculator")
-try:
-    salary = int(input("What is your salary: "))
-except:
-    print("Enter an integer number. ") 
-    salary = int(input("What is your salary: "))
-else:
-    rate = 0 
-    if salary > 2000:
-        print("You are eligible for a mortgage.")
-        creditscore = int(input("What is your credit score: "))
-        if creditscore > 800:
-            rate = 4
-            print("Interest Rate is 4%")
-        elif creditscore > 750:
-            rate = 6
-            print("Interest Rate is 6%")
-        else:
-            rate = 8
-            print("Interest Rate is 8%")
-            disability = input("Do you have any disability? Y or N: ")
-            if disability.upper() == "Y":
-                rate -= 2
-                print("You are eligible for a 2% discount due to disability.")
+# try:
+#     salary = int(input("What is your salary: "))
+# except:
+#     print("Enter an integer number. ") 
+#     salary = int(input("What is your salary: "))
+# else:
+#     rate = 0 
+#     if salary > 2000:
+#         print("You are eligible for a mortgage.")
+#         creditscore = int(input("What is your credit score: "))
+#         if creditscore > 800:
+#             rate = 4
+#             print("Interest Rate is 4%")
+#         elif creditscore > 750:
+#             rate = 6
+#             print("Interest Rate is 6%")
+#         else:
+#             rate = 8
+#             print("Interest Rate is 8%")
+#             disability = input("Do you have any disability? Y or N: ")
+#             if disability.upper() == "Y":
+#                 rate -= 2
+#                 print("You are eligible for a 2% discount due to disability.")
             
-            print(f"Final Interest Rate: {rate}%")
-    else:
-            print("Sorry, you are not eligible.")
+#             print(f"Final Interest Rate: {rate}%")
+#     else:
+#             print("Sorry, you are not eligible.")
             
-finally:
-    print("Thanks for using our calculator ")            
+# finally:
+#     print("Thanks for using our calculator ")            
 
       
     
+# Project 6 Gross pay with overtime
+hours = input("Enter Hours: ")
+rate = input("Enter Rate: ")
+hour = float(hours)
+rate = float(rate)
+if hours < 40:
+    pay=round(hour*rate,2)
+else:
+    overtime = hour - 40
+    pay = round(40 * rate + overtime * rate *1.5,2)    
+    print(f"Pay: {pay}")
