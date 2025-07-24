@@ -1016,5 +1016,12 @@ o = lowercasename.count("o")
 v = lowercasename.count("v")
 e = lowercasename.count("e")
 love = l + o + v + e
-lovescore =  str(true) + str(love)
+lovescore =  int(str(true) + str(love))
 print(lovescore)
+
+if lovescore <10 or lovescore>85:
+    print(f"Your score is {lovescore}, you go together like coke and mentos. ")
+elif lovescore >= 40 and lovescore <= 70:
+    print(f"Your score is {lovescore}, you are alright together ")    
+else:
+    print(f"Your score is {lovescore}. ")    
