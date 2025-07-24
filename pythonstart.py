@@ -971,13 +971,29 @@ lists are mutable means to be changed'''
       
     
 # Project 6 Gross pay with overtime
-hours = input("Enter Hours: ")
-rate = input("Enter Rate: ")
-hour = float(hours)
-rate = float(rate)
-if hours < 40:
-    pay=round(hour*rate,2)
+# hours = input("Enter Hours: ")
+# rate = input("Enter Rate: ")
+# hour = float(hours)
+# rate = float(rate)
+# if hours < 40:
+#     pay=round(hour*rate,2)
+# else:
+#     overtime = hour - 40
+#     pay = round(40 * rate + overtime * rate *1.5,2)    
+#     print(f"Pay: {pay}")
+
+
+
+
+# Project 7 Leap Year
+year = int(input("Enter Year: "))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("Leap Year. ")
+        else:
+            print("Not Leap Year. ")    
+    else:
+        print("Leap Year. ")   
 else:
-    overtime = hour - 40
-    pay = round(40 * rate + overtime * rate *1.5,2)    
-    print(f"Pay: {pay}")
+    print("Not Leap Year. ")    
