@@ -865,27 +865,59 @@ lists are mutable means to be changed'''
 
 
 # Burger Order Program
-print("Welcome to the Burger Shop! ")
-size = input("What size burger do you want? M, N or L ")
-addmushroom = input("Do you want mushroom? Y or N ")
-extrecheese = input("Do you want extra cheese? Y or N ")
-bill=0
-if size=="M":
-    bill+=5
-elif size=="N":
-    bill+=8
-else:
-    bill+=10    
+# print("Welcome to the Burger Shop! ")
+# size = input("What size burger do you want? M, N or L ")
+# addmushroom = input("Do you want mushroom? Y or N ")
+# extrecheese = input("Do you want extra cheese? Y or N ")
+# bill=0
+# if size=="M":
+#     bill+=5
+# elif size=="N":
+#     bill+=8
+# else:
+#     bill+=10    
     
-if addmushroom=="Y":
-    if size=="L":
-        bill+=2
-    else:
-        bill+=1
+# if addmushroom=="Y":
+#     if size=="L":
+#         bill+=2
+#     else:
+#         bill+=1
      
-if extrecheese == "Y":
-    bill+=1
+# if extrecheese == "Y":
+#     bill+=1
     
-print(f"Your final bill is {bill}")         
+# print(f"Your final bill is {bill}")         
                 
         
+   # with logical operator     
+# print("Welcome to the Mortgage Calculator")
+
+salary = int(input("What is your salary: "))
+
+if salary > 2000:
+    print("You are eligible for a mortgage.")
+    
+    creditscore = int(input("What is your credit score: "))
+    
+    if creditscore >= 900 and creditscore <= 1000:
+        rate = 3
+        print("Interest Rate is 3%")
+    elif creditscore > 800:
+        rate = 4
+        print("Interest Rate is 4%")
+    elif creditscore > 875000:
+        rate = 6
+        print("Interest Rate is 6%")    
+    else:
+        rate = 8
+        print("Interest Rate is 8%")
+    
+    disability = input("Do you have any disability? Y or N: ")
+    
+    if disability.upper() == "Y":
+        rate -= 2
+        print("You are eligible for a 2% discount due to disability.")
+    
+    print(f"Final Interest Rate: {rate}%")
+else:
+    print("Sorry, you are not eligible.")        
