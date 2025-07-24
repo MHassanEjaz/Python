@@ -876,4 +876,16 @@ elif size=="N":
     bill+=8
 else:
     bill+=10    
+    
+if addmushroom=="Y":
+    if size=="L":
+        bill+=2
+    else:
+        bill+=1
+     
+if extrecheese == "Y":
+    bill+=1
+    
+print(f"Your final bill is {bill}")         
+                
         
