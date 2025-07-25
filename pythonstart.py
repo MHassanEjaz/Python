@@ -1119,3 +1119,21 @@ import random
 #     print(f"Your score is {lovescore}, you are alright together ")    
 # else:
 #     print(f"Your score is {lovescore}. ")    
+
+
+# Coin Toss
+# import random
+# result = random.randint(0,1)
+# if result == 0:
+#     print("Tails")
+# else:
+#     print("Heads")  
+
+
+
+# User Defined Functions
+def firstfunction():
+    print("Hello, Iam a Function")
+    print("Bye for now")
+firstfunction()
+firstfunction()      
