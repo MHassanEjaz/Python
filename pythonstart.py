@@ -1089,7 +1089,7 @@ lists are mutable means to be changed'''
 # print(f"The factorial of {num} is: {factorial}")
 
 # Random number in python
-import random
+# import random
 # randomintegers =  random.randint(10,20)
 # print(randomintegers)
 
@@ -1160,8 +1160,24 @@ import random
 
 
 # Volume Converter
-def volume_converter(f_ounce):
-    m_liters = f_ounce * 29.57353
-    print(m_liters)
-volume_converter(5)    
-          
+# def volume_converter(f_ounce):
+#     m_liters = f_ounce * 29.57353
+#     print(m_liters)
+# volume_converter(5)   
+
+
+# def greetwithNC(name, city):
+#     print(f"Hello {name}")
+#     print(f"What is weather like in {city}")
+# greetwithNC("Elsha", "Berlin")    
+
+
+# Painting Wall
+# import math
+# def calculate_can_number(height, width, coverage):
+#     area = height * width
+#     number_of_cans = math.ceil(area / coverage)
+#     print(number_of_cans)
+# height = int(input("Enter height of wall: "))
+# width = int(input("Enter width of wall: "))
+# calculate_can_number(height,width,4)               
