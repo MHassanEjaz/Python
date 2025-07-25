@@ -1210,3 +1210,53 @@ lists are mutable means to be changed'''
 # lastname = input("Enter LName: ")
 # output = format_name(firstname, lastname)                
 # print(output)
+
+
+
+# Password Controller
+# def password_controller(password):
+#     if len(password) > 8:
+#         return True
+#     else:
+#         return False
+# result = password_controller("cust")    
+# print(result)
+
+
+# Docstrings
+"""Hello we are learning python """
+
+
+# Calculator
+# def add(n1, n2):
+#     return n1 + n2
+
+# def subtract(n1, n2):
+#     return n1 - n2
+
+# def multiply(n1, n2):
+#     return n1 * n2
+
+# def divide(n1, n2):
+#     return n1 / n2
+
+# n1 = int(input("What is the first number? "))
+# n2 = int(input("What is the second number? "))
+# operation = input("Pick operation from this list (+,-,*,/) ")
+# def calculate(n1, n2, operation):
+#     if operation == "+":
+#         return add(n1, n2)
+#     elif operation == "-":
+#         return subtract(n1, n2)
+#     elif operation == "*":
+#         return multiply(n1, n2)
+#     elif operation == "/":
+#         return divide(n1, n2)
+#     else:
+#         return "Invalid operation"
+# output = calculate(n1, n2, operation)
+# print(f"{n1} {operation} {n2} = {output}")
+# newoperation = input("Pick another operation from this list (+,-,*,/) ")
+# n3 = int(input("What is the third number? "))
+# newoutput = calculate(output, n3, newoperation)
+# print(f"{output} {newoperation} {n3} = {newoutput}")
