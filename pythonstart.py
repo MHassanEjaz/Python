@@ -1066,4 +1066,7 @@ lists are mutable means to be changed'''
 #     else:
 #         print("F")                
 # else:
-#     print("Bad Score. ")    
+#     print("Bad Score. ")  
+
+
+# Functions in python
