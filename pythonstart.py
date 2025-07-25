@@ -1132,8 +1132,14 @@ import random
 
 
 # User Defined Functions
-def firstfunction():
-    print("Hello, Iam a Function")
-    print("Bye for now")
-firstfunction()
-firstfunction()      
+# def firstfunction():
+#     print("Hello, Iam a Function")
+#     print("Bye for now")
+# firstfunction()
+# firstfunction()      
+
+
+def greet():
+    print("Hello")
+    print("How are you")
+greet()    
