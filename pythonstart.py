@@ -1076,7 +1076,16 @@ lists are mutable means to be changed'''
 
 
 # Area of a circle
-import math
-radius = input("Enter Radius: ")
-area = round(radius ** 2 * math.pi, 2)
-print(f"The area of circle is: {area}")
+# import math
+# radius = int(input("Enter Radius:"))
+# area = round(radius ** 2 * math.pi, 2)
+# print(f"The area of circle is: {area}")
+
+
+# Factorial
+# import math
+# num = int(input("Enter a number:"))
+# factorial = math.factorial(num)
+# print(f"The factorial of {num} is: {factorial}")
+
+# Random number in python
