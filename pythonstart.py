@@ -1070,6 +1070,13 @@ lists are mutable means to be changed'''
 
 
 # Functions in python
+# import math
+# result = math.sqrt(5)
+# print(result)
+
+
+# Area of a circle
 import math
-result = math.sqrt(5)
-print(result)
+radius = input("Enter Radius: ")
+area = round(radius ** 2 * math.pi, 2)
+print(f"The area of circle is: {area}")
