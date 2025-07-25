@@ -1328,18 +1328,41 @@ lists are mutable means to be changed'''
     
     
 # Project 13 Cold, Warm and Hot
-def temperature(temp):
-    if temp > 28:
-        return "Hot"
-    elif temp > 18 and temp < 28:
-        return "Warm"
-    else:
-        return "Cold"
-temp = int(input("Enter temperature: "))
-result = temperature(temp)
-print(result)  
+# def temperature(temp):
+#     if temp > 28:
+#         return "Hot"
+#     elif temp > 18 and temp < 28:
+#         return "Warm"
+#     else:
+#         return "Cold"
+# temp = int(input("Enter temperature: "))
+# result = temperature(temp)
+# print(result)  
 
 
 
 
-# Project 14 Maximum of three numbers  
+# Project 14 Maximum of three numbers
+# def max(a,b,c):
+#   if a>b and a>c:
+#       return "A"
+#   elif b>a and b>c:
+#       return "B"
+#   else:
+#       return "C"      
+# result = max(3,9,6)
+# print(result)  
+
+# def max_of_two(a, b):
+#     if a > b:
+#         return a
+#     return b
+
+# def max_of_three(a, b, c):
+#     max_two = max_of_two(a, b)
+#     max_three = max_of_two(max_two, c)
+#     return max_three
+
+# print(max_of_three(1, 2, 3))
+
+    
