@@ -1260,3 +1260,86 @@ lists are mutable means to be changed'''
 # n3 = int(input("What is the third number? "))
 # newoutput = calculate(output, n3, newoperation)
 # print(f"{output} {newoperation} {n3} = {newoutput}")
+
+
+
+# def outer_function(a, b):
+#     def inner_function(c, d):
+#         return c + d
+#     return inner_function(a, b)
+ 
+# result = outer_function(10, 20)
+# print(result)
+
+
+
+# def my_function(a):
+#     if a < 20:
+#         return
+#         print("Bad")
+#     if a < 80:
+#         return "Passed"
+#     else:
+#         return "Good"
+# print(my_function(15))
+
+
+# Project 11 Leap Year with Function
+# year = int(input("Enter Year: "))
+# def leapyear(year):
+#     if year%4==0:
+#         if year%100==0:
+#             if year%400==0:
+#                 return "Leap Year. "
+#             else:
+#                 return"Not Leap Year. "    
+#         else:
+#             return"Leap Year. "   
+#     else:
+#         return"Not Leap Year. " 
+    
+# result = leapyear(year)
+# print(result)  
+
+
+# Project 12 Gross Pay with functions
+# def computepay(hour, rate):
+#     if hours < 40:
+#         pay=round(hour*rate,2)
+#     else:
+#         overtime = hour - 40
+#         pay = (40 * rate) + (overtime * rate * 1.5)    
+#     return pay    
+
+# def checkforfloat(p_input):
+#     try:
+#         val = float(p_input)
+#         return val
+#     except ValueError:
+#         print("Erro, please enter numeric input. ")
+#         quit()
+    
+# hours = input("Enter Hours: ")
+# hours = checkforfloat(hours)
+# rate = input("Enter Rate: ")
+# rate = checkforfloat(rate)  
+# output = computepay(hours, rate)
+# print(f"Pay: {output}")   
+    
+    
+# Project 13 Cold, Warm and Hot
+def temperature(temp):
+    if temp > 28:
+        return "Hot"
+    elif temp > 18 and temp < 28:
+        return "Warm"
+    else:
+        return "Cold"
+temp = int(input("Enter temperature: "))
+result = temperature(temp)
+print(result)  
+
+
+
+
+# Project 14 Maximum of three numbers  
