@@ -1145,7 +1145,15 @@ import random
 # greet()
 
 
-def greetwithname(name):
-    print(f"Hello {name}")
-    print(f"How are you {name}")    
-greetwithname("Elshad")    
+# def greetwithname(name):
+#     print(f"Hello {name}")
+#     print(f"How are you {name}")    
+# greetwithname("Elshad")
+
+
+
+# Area of square
+def area_of_square(side):
+    area = side * side
+    print(area)
+area_of_square(6)        
