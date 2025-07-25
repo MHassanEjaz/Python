@@ -1183,9 +1183,30 @@ lists are mutable means to be changed'''
 # calculate_can_number(height,width,4) 
 
 # Functions with output
-def format_name(f_name, l_name):
-    formated_f_name = f_name.title()
-    formated_l_name = l_name.title() 
-    return f"{formated_f_name}, {formated_l_name}" 
-output = format_name("elsahd", "karimov")                
-print(output)
+# def format_name(f_name, l_name):
+#     formated_f_name = f_name.title()
+#     formated_l_name = l_name.title() 
+#     return f"{formated_f_name}, {formated_l_name}" 
+# output = format_name("elsahd", "karimov")                
+# print(output)
+
+
+# Exercise = Concatenate
+# def concatenate(p1, p2):
+#     con = p1 + p2
+#     return con
+# result = concatenate("face", "book")
+# print(result)
+
+
+
+# def format_name(f_name, l_name):
+#     if f_name == "" or l_name == "":
+#         return "Name or LastName cannot be empty"
+#     formated_f_name = f_name.title()
+#     formated_l_name = l_name.title() 
+#     return f"{formated_f_name}, {formated_l_name}" 
+# firstname = input("Enter Name: ")
+# lastname = input("Enter LName: ")
+# output = format_name(firstname, lastname)                
+# print(output)
