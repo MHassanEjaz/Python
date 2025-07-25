@@ -1139,7 +1139,13 @@ import random
 # firstfunction()      
 
 
-def greet():
-    print("Hello")
-    print("How are you")
-greet()    
+# def greet():
+#     print("Hello")
+#     print("How are you")
+# greet()
+
+
+def greetwithname(name):
+    print(f"Hello {name}")
+    print(f"How are you {name}")    
+greetwithname("Elshad")    
