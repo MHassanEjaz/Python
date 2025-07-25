@@ -1180,4 +1180,12 @@ lists are mutable means to be changed'''
 #     print(number_of_cans)
 # height = int(input("Enter height of wall: "))
 # width = int(input("Enter width of wall: "))
-# calculate_can_number(height,width,4)               
+# calculate_can_number(height,width,4) 
+
+# Functions with output
+def format_name(f_name, l_name):
+    formated_f_name = f_name.title()
+    formated_l_name = l_name.title() 
+    return f"{formated_f_name}, {formated_l_name}" 
+output = format_name("elsahd", "karimov")                
+print(output)
