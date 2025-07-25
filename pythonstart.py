@@ -1070,3 +1070,6 @@ lists are mutable means to be changed'''
 
 
 # Functions in python
+import math
+result = math.sqrt(5)
+print(result)
