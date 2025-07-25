@@ -1089,3 +1089,33 @@ lists are mutable means to be changed'''
 # print(f"The factorial of {num} is: {factorial}")
 
 # Random number in python
+import random
+# randomintegers =  random.randint(10,20)
+# print(randomintegers)
+
+
+# print("Welcome to Love Calculator ")
+# name1 = input("Enter your name: ")
+# name2 = input("Enter your lover name: ")
+# combibedname = name1 + name2
+# lowercasename = combibedname.lower()
+# t = lowercasename.count("t")
+# r = lowercasename.count("r")
+# u = lowercasename.count("u")
+# e = lowercasename.count("e")
+# true = t + r + u + e
+# l = lowercasename.count("l")
+# o = lowercasename.count("o")
+# v = lowercasename.count("v")
+# e = lowercasename.count("e")
+# love = l + o + v + e
+# lovescore =  int(str(true) + str(love))
+# print(lovescore)
+
+# lovescore = random.randint(1,100)
+# if lovescore <10 or lovescore>85:
+#     print(f"Your score is {lovescore}, you go together like coke and mentos. ")
+# elif lovescore >= 40 and lovescore <= 70:
+#     print(f"Your score is {lovescore}, you are alright together ")    
+# else:
+#     print(f"Your score is {lovescore}. ")    
