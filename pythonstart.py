@@ -1373,8 +1373,10 @@ lists are mutable means to be changed'''
 # print(countrys)
 
 # Loops
-vegetables = ["Carrot", "Brocolli", "Corn"]
-for vegetable in vegetables:
-    print(vegetable)
+# vegetables = ["Carrot", "Brocolli", "Corn"]
+# for vegetable in vegetables:
+#     print(vegetable)
+#     # print(vegetable + "pie")
+# print(vegetables)
 
     
