@@ -1401,7 +1401,25 @@ lists are mutable means to be changed'''
     
     
 # Find integers numbers
-custom_list = [11, 30.1, 90.2, 30, 45.1, 54, "54"]
-for item in custom_list:
-    if isinstance(item, int):
-        print(item)    
+# custom_list = [11, 30.1, 90.2, 30, 45.1, 54, "54"]
+# for item in custom_list:
+#     if isinstance(item, int):
+#         print(item)    
+
+
+# Sum of above average scores
+student_scores = [80, 60, 50, 65, 75, 55]
+def sum_score_above_average(p_student_scores):
+    sum_score = 0
+    number_of_students = 0
+    for score in student_scores:
+        sum_score += score
+        number_of_students += 1
+    average_score =  sum_score / number_of_students
+    sum_above_average = 0
+    for score in p_student_scores:
+        if score > average_score:
+            sum_above_average += score
+    return sum_above_average
+print(sum_score_above_average(student_scores))             
+         
