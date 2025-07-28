@@ -1439,3 +1439,32 @@ lists are mutable means to be changed'''
 #     result = password_controller(password)
 #     print(password, result)            
          
+         
+
+# For loop with range
+# total = 0
+# for number in range(1, 101):
+#     total += number
+# print(total)
+
+
+
+# Adding odd numbers
+# def add_odd_numbers():
+#     total = 0
+#     for number in range(1, 101, 2):
+#         total += number
+#     return total    
+# print(add_odd_numbers())
+             
+             
+             
+# Adding even numbers
+def add_even_numbers(start, end):
+    total = 0
+    for number in range(start, end+1):
+        if number % 2 == 0:
+            total += number
+    return total          
+print(add_even_numbers(1,100))
+                          
