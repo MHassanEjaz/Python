@@ -1399,3 +1399,9 @@ lists are mutable means to be changed'''
 #         highest_score = score
 # print(f"The Highest score in the class is: {highest_score}")
     
+    
+# Find integers numbers
+custom_list = [11, 30.1, 90.2, 30, 45.1, 54, "54"]
+for item in custom_list:
+    if isinstance(item, int):
+        print(item)    
