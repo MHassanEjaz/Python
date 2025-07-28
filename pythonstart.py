@@ -1365,4 +1365,8 @@ lists are mutable means to be changed'''
 
 # print(max_of_three(1, 2, 3))
 
+
+# Python Lists
+countrys = ["England", "Scotland"]
+
     
