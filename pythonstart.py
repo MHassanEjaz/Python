@@ -1367,8 +1367,12 @@ lists are mutable means to be changed'''
 
 
 # Python Lists
-countrys = ["England", "Scotland", "Wales", "Nothern Ireland"]
-print(countrys[-1])
+# countrys = ["England", "Scotland", "Wales", "Nothern Ireland"]
+# print(countrys[-1])
+# countrys.append("Netherland")
+# print(countrys)
+
+# Loops
 
 
     
