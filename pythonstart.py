@@ -1379,4 +1379,23 @@ lists are mutable means to be changed'''
 #     # print(vegetable + "pie")
 # print(vegetables)
 
+
+# Updating Variable
+# a = 2
+# a += 2
+# print(a)
+# nums = [1,2,3]
+# s=0
+# for num in nums:
+#     s = s + num
+#     print(s)
+
+
+# Highest Score
+# student_scores = [80, 60, 50, 65, 75, 55]
+# highest_score = 0
+# for score in student_scores:
+#     if score > highest_score:
+#         highest_score = score
+# print(f"The Highest score in the class is: {highest_score}")
     
