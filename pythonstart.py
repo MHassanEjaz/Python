@@ -1520,8 +1520,15 @@ lists are mutable means to be changed'''
                              
              
 # Factorial using loop
-import math
-print(math.factorial(5))
 # def factorial(p_num):
-#     fact = 0
+#     factorial = 1
+#     if p_num < 0:
+#         return "Factorial does not exist for negative numbers"
+#     if p_num == 0:
+#         return "The factorial of 0 is 1"
+#     else:
+#         for num in range(1, p_num + 1):
+#             factorial = factorial * num
+#         return f"The factorial of {p_num} is {factorial} "
+# print(factorial(4))        
                                 
