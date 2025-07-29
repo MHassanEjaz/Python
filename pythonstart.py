@@ -1491,9 +1491,16 @@ lists are mutable means to be changed'''
 #     print(num)  
 
 
-num = 11
-while num > 0:
-    num -= 1
+# num = 11
+# while num > 0:
+#     num -= 1
+#     if num == 5:
+#         break
+#     print(num)   
+
+
+for num in range(1,11):
     if num == 5:
         break
-    print(num)                          
+    print(num) 
+print("The End ")                          
