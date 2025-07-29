@@ -1499,8 +1499,22 @@ lists are mutable means to be changed'''
 #     print(num)   
 
 
-for num in range(1,11):
-    if num == 5:
-        break
-    print(num) 
-print("The End ")                          
+# for num in range(1,11):
+#     if num == 5:
+#         break
+#     print(num) 
+# print("The End ")  
+
+
+
+# Number Divisible by 5 until 130
+# list1 = [12, 15, 32, 40, 52, 75, 122, 132, 150, 180, 200]
+# def numbers_divisible_byfive(p_list):
+#     for item in p_list:
+#         if item > 130:
+#             break
+#         if item % 5 == 0:
+#             print(item)
+#     print("STOP") 
+# numbers_divisible_byfive(list1)          
+                                
