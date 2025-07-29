@@ -1474,4 +1474,18 @@ lists are mutable means to be changed'''
 # username = ""
 # while username != "test":
 #     username = input("Enter Username: ")
-                          
+
+
+# Iterations with continue and break
+# for num in range(1,11):
+#     if num == 5:
+#         continue
+#     print(num)
+                
+
+num = 11
+while num > 0:
+    num -= 1
+    if num == 5:
+        continue
+    print(num)                          
