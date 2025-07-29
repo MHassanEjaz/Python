@@ -1557,5 +1557,33 @@ lists are mutable means to be changed'''
 #     total = total + input_number
 # if count != 0:    
 #   average = total / count        
-# print(total, count, average)          
-                                
+# print(total, count, average)    
+
+
+# Maximum and Minimum of Input Numbers      
+# def check_for_float(p_input):
+#     try:
+#         val = float(p_input)
+#         return val
+#     except (ValueError, TypeError):
+#         print("Error, please enter numeric input")
+#         return False 
+# input1 = input("Enter a number: ")
+# if input1 == "done":
+#     quit()
+# number = check_for_float(input1) 
+# if not number:
+#     print("The first entered has to be number to comtinue")    
+# smallest = number
+# biggest = number
+# while True:
+#     input1 = input("Enter a number: ")
+#     if input1 == "done":
+#         break
+#     number = check_for_float(input1)
+#     if number > biggest:
+#         biggest = number
+#     if number < smallest:
+#         smallest = number
+# print(f"Maximum number: {biggest}, Minimum number: {smallest}")        
+                                              
