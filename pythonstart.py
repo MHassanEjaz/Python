@@ -1517,4 +1517,11 @@ lists are mutable means to be changed'''
 #             print(item)
 #     print("STOP") 
 # numbers_divisible_byfive(list1)          
+                             
+             
+# Factorial using loop
+import math
+print(math.factorial(5))
+# def factorial(p_num):
+#     fact = 0
                                 
