@@ -1594,5 +1594,6 @@ rollagain = "Y"
 while rollagain == "Y":
     dice1 = random.randint(1,6)
     dice2 = random.randint(1,6)
-    print(f"Dice1: {dice1}")
-    print(f"Dice2: {dice2}")
+    print(f"Dice1: {dice1}", f"\nDice2: {dice2}")
+    rollagain = input("Roll the dice again? (Y?N) ")
+    
