@@ -1589,11 +1589,25 @@ lists are mutable means to be changed'''
                                               
 
 # Project 15 Dice Rolling Simulator
-import random
-rollagain = "Y"
-while rollagain == "Y":
-    dice1 = random.randint(1,6)
-    dice2 = random.randint(1,6)
-    print(f"Dice1: {dice1}", f"\nDice2: {dice2}")
-    rollagain = input("Roll the dice again? (Y?N) ")
+# import random
+# rollagain = "Y"
+# while rollagain == "Y":
+#     dice1 = random.randint(1,6)
+#     dice2 = random.randint(1,6)
+#     print(f"Dice1: {dice1}", f"\nDice2: {dice2}")
+#     rollagain = input("Roll the dice again? (Y?N)")
+
+
+
+# Project 16 Fizz Buzz Game
+for num in range(1, 101):
+    if num % 5 == 0:
+        print("Fizz")
+    elif num % 7 == 0:
+        print("Buzz")
+    elif num % 5 == 0 and num % 7 == 0:
+        print("FizzBuzz") 
+    else:
+        print(num)       
+             
     
