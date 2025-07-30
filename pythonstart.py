@@ -1589,3 +1589,7 @@ lists are mutable means to be changed'''
                                               
 
 # Project 15 Dice Rolling Simulator
+import random
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+print(randomnumber)
