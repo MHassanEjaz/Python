@@ -1666,12 +1666,11 @@ lists are mutable means to be changed'''
 
 # Project 19 Rock, Paper, Scissors
 import random
-while True:
-    useraction = input("Enter a choice (rock, paper, scissors): ")
+def selectcomputeraction():
     possibleactions = ["rock", "paper", "scissors"]
     computeraction = random.choice(possibleactions)
-    print(f"\nYou chose {useraction}, computer chose {computeraction}")
-
+    return computeraction
+def determinewinner(computeraction, useraction):
     if useraction == computeraction:
         print(f"Both players selected {useraction}. Its a tie ")
     elif useraction == "rock":
@@ -1688,7 +1687,15 @@ while True:
         if computeraction == "paper":
             print("Scissors cuts paper! you win! ")
         else:
-            print("Paper covers rock! you lose ")                
+            print("Paper covers rock! you lose ") 
+    
+while True:
+    useraction = input("Enter a choice (rock, paper, scissors): ")
+    computeraction = random.choice(possibleactions)
+    print(f"\nYou chose {useraction}, computer chose {computeraction}")
+    determinewinner(computeraction, useraction)
+
+                   
                     
     palyagain = input("Play again (Y/N)? ")
     if palyagain != "Y":
