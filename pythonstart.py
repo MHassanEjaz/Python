@@ -1587,3 +1587,5 @@ lists are mutable means to be changed'''
 #         smallest = number
 # print(f"Maximum number: {biggest}, Minimum number: {smallest}")        
                                               
+
+# Project 15 Dice Rolling Simulator
