@@ -1612,6 +1612,26 @@ lists are mutable means to be changed'''
 
 
 
-# Project 16 Guessing the number      
+# Project 16 Guessing the number 
+# import math
+# import random
+# lower = input("Enter Lower bound: ")
+# upper = input("Enter upper bound: ") 
+# numberofchances = int(math.log(upper-lower+1,2))  
+# print(f"\n\tYou've only {numberofchances} chances to guess the integer!\n ")
+# generatednumber = random.randint(lower, upper) 
+# count = 0
+# while count < numberofchances:
+#     count += 1
+#     guess = int(input("Guess a number: "))
+#     if generatednumber == guess:
+#         print(f"Congratulations you did it in {count} try ")
+#         break
+#     elif guess > generatednumber:
+#         print("You guessed too high ")
+#     elif guess < generatednumber:
+#         print("You guessed too low ")
+# print(f"\nThe number is {generatednumber} ")
+# print(f"\nBetter luck next time ")            
              
     
