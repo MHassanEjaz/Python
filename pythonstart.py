@@ -1590,6 +1590,9 @@ lists are mutable means to be changed'''
 
 # Project 15 Dice Rolling Simulator
 import random
-dice1 = random.randint(1,6)
-dice2 = random.randint(1,6)
-print(randomnumber)
+rollagain = "Y"
+while rollagain == "Y":
+    dice1 = random.randint(1,6)
+    dice2 = random.randint(1,6)
+    print(f"Dice1: {dice1}")
+    print(f"Dice2: {dice2}")
