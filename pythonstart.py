@@ -1636,29 +1636,56 @@ lists are mutable means to be changed'''
 
 
 # Project 18 password generator
+# import random
+
+# letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# numbers = "1234567890"
+# symbols = "-+=!@#$%^&*"
+
+# numberofletters = int(input("How many letters do you want in your password: "))
+# numberofnumbers = int(input("How many numbers do you want in your password: "))
+# numberofsymbols = int(input("How many symbols do you want in your password: "))
+
+# # Generate characters
+# password = ""
+# for _ in range(numberofletters):
+#     password += random.choice(letters)
+# for _ in range(numberofnumbers):
+#     password += random.choice(numbers)
+# for _ in range(numberofsymbols):
+#     password += random.choice(symbols)
+
+# # Shuffle the password
+# password_list = list(password)
+# random.shuffle(password_list)
+# final_password = ''.join(password_list)
+
+# # Output
+# print(f"\nYour Password is: {final_password}")
+
+
+# Project 19 Rock, Paper, Scissors
 import random
+useraction = input("Enter a choice (rock, paper, scissors): ")
+possibleactions = ["rock", "paper", "scissors"]
+computeraction = random.choice(possibleactions)
+print(f"\nYou chose {useraction}, computer chose {computeraction}")
 
-letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-numbers = "1234567890"
-symbols = "-+=!@#$%^&*"
-
-numberofletters = int(input("How many letters do you want in your password: "))
-numberofnumbers = int(input("How many numbers do you want in your password: "))
-numberofsymbols = int(input("How many symbols do you want in your password: "))
-
-# Generate characters
-password = ""
-for _ in range(numberofletters):
-    password += random.choice(letters)
-for _ in range(numberofnumbers):
-    password += random.choice(numbers)
-for _ in range(numberofsymbols):
-    password += random.choice(symbols)
-
-# Shuffle the password
-password_list = list(password)
-random.shuffle(password_list)
-final_password = ''.join(password_list)
-
-# Output
-print(f"\nYour Password is: {final_password}")
+if useraction == computeraction:
+    print(f"Both players selected {useraction}. Its a tie ")
+elif useraction == "rock":
+    if computeraction == "scissors":
+        print("Rock smashes scissors! you win! ")
+    else:
+        print("Paper covers rock! you lose ")
+elif useraction == "paper":
+    if computeraction == "scissors":
+        print("Scissors cuts paper! you lose! ")
+    else:
+        print("Paper covers rock! you win ")
+elif useraction == "scissors":
+    if computeraction == "paper":
+        print("Scissors cuts paper! you win! ")
+    else:
+        print("Paper covers rock! you lose ")                
+                   
