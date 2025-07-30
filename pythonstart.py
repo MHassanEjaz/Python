@@ -1600,14 +1600,18 @@ lists are mutable means to be changed'''
 
 
 # Project 16 Fizz Buzz Game
-for num in range(1, 101):
-    if num % 5 == 0 and num % 7 == 0:
-        print("Fizz")
-    elif num % 5 == 0:
-        print("Buzz")
-    elif num % 7 == 0:
-        print("FizzBuzz") 
-    else:
-        print(num)       
+# for num in range(1, 101):
+#     if num % 5 == 0 and num % 7 == 0:
+#         print("Fizz")
+#     elif num % 5 == 0:
+#         print("Buzz")
+#     elif num % 7 == 0:
+#         print("FizzBuzz") 
+#     else:
+#         print(num)  
+
+
+
+# Project 16 Guessing the number      
              
     
