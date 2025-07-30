@@ -1612,7 +1612,7 @@ lists are mutable means to be changed'''
 
 
 
-# Project 16 Guessing the number 
+# Project 17 Guessing the number 
 # import math
 # import random
 # lower = input("Enter Lower bound: ")
@@ -1632,6 +1632,17 @@ lists are mutable means to be changed'''
 #     elif guess < generatednumber:
 #         print("You guessed too low ")
 # print(f"\nThe number is {generatednumber} ")
-# print(f"\nBetter luck next time ")            
-             
-    
+# print(f"\nBetter luck next time ")
+
+
+# Project 18 password generator
+letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+numbers = "1234567890"
+symbols = "-+=!@#$%^&*"
+
+letters1 = int(input("How many letters do you want in your password: "))
+numbers1 = int(input("How many numbers do you want in your password: "))
+symbols1 = int(input("How many symbols do you want in your password: "))            
+password = ""
+          
+   
