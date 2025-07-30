@@ -1666,26 +1666,30 @@ lists are mutable means to be changed'''
 
 # Project 19 Rock, Paper, Scissors
 import random
-useraction = input("Enter a choice (rock, paper, scissors): ")
-possibleactions = ["rock", "paper", "scissors"]
-computeraction = random.choice(possibleactions)
-print(f"\nYou chose {useraction}, computer chose {computeraction}")
+while True:
+    useraction = input("Enter a choice (rock, paper, scissors): ")
+    possibleactions = ["rock", "paper", "scissors"]
+    computeraction = random.choice(possibleactions)
+    print(f"\nYou chose {useraction}, computer chose {computeraction}")
 
-if useraction == computeraction:
-    print(f"Both players selected {useraction}. Its a tie ")
-elif useraction == "rock":
-    if computeraction == "scissors":
-        print("Rock smashes scissors! you win! ")
-    else:
-        print("Paper covers rock! you lose ")
-elif useraction == "paper":
-    if computeraction == "scissors":
-        print("Scissors cuts paper! you lose! ")
-    else:
-        print("Paper covers rock! you win ")
-elif useraction == "scissors":
-    if computeraction == "paper":
-        print("Scissors cuts paper! you win! ")
-    else:
-        print("Paper covers rock! you lose ")                
-                   
+    if useraction == computeraction:
+        print(f"Both players selected {useraction}. Its a tie ")
+    elif useraction == "rock":
+        if computeraction == "scissors":
+            print("Rock smashes scissors! you win! ")
+        else:
+            print("Paper covers rock! you lose ")
+    elif useraction == "paper":
+        if computeraction == "scissors":
+            print("Scissors cuts paper! you lose! ")
+        else:
+            print("Paper covers rock! you win ")
+    elif useraction == "scissors":
+        if computeraction == "paper":
+            print("Scissors cuts paper! you win! ")
+        else:
+            print("Paper covers rock! you lose ")                
+                    
+    palyagain = input("Play again (Y/N)? ")
+    if palyagain != "Y":
+        break
