@@ -1636,6 +1636,7 @@ lists are mutable means to be changed'''
 
 
 # Project 18 password generator
+import random
 letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numbers = "1234567890"
 symbols = "-+=!@#$%^&*"
@@ -1644,5 +1645,8 @@ letters1 = int(input("How many letters do you want in your password: "))
 numbers1 = int(input("How many numbers do you want in your password: "))
 symbols1 = int(input("How many symbols do you want in your password: "))            
 password = ""
-          
+for letter in range(1, letters1+1):
+    password += random.choice(letters)
+    print(password)
+              
    
