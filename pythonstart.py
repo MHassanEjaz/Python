@@ -1777,8 +1777,13 @@ lists are mutable means to be changed'''
 # str2 =  "World"
 # print(str1 + str2)
 
-newstring = input("Enter a string: ")
-if newstring < "hello":
-    print(F"your word {newstring} comes before hello")
-elif newstring > "hello":
-    print(f"your word {newstring} comes after hello")    
+# newstring = input("Enter a string: ")
+# if newstring < "hello":
+#     print(F"your word {newstring} comes before hello")
+# elif newstring > "hello":
+#     print(f"your word {newstring} comes after hello")
+
+
+# coding exercise first and last two characters
+def first_last_characters(word):
+    
