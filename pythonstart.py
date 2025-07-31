@@ -1795,5 +1795,6 @@ lists are mutable means to be changed'''
 
 
 # String methods
-myname = "Elhsad" 
-print(dir(myname)) 
+# myname = "Elhsad" 
+# print(dir(myname)) 
+
