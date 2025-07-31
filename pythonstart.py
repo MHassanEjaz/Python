@@ -1763,10 +1763,16 @@ lists are mutable means to be changed'''
 
 
 # coding exercise count characters in a string
-def count_letter(word, letter):
-    counter = 0
-    for char in word:
-        if char == letter:
-            counter += 1
-            return counter
-print(count_letter("Learning python", "n"))
+# def count_letter(word, letter):
+#     counter = 0
+#     for char in word:
+#         if char == letter:
+#             counter += 1
+#     return counter
+# print(count_letter("Learning python", "n"))
+
+
+# string operation
+str1 = "Hello"
+str2 =  "World"
+print(str1 + str2)
