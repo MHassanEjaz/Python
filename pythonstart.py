@@ -1744,10 +1744,18 @@ lists are mutable means to be changed'''
 
 
 # coding exercise string backward traversal
-new_string = input("Enter a string: ")
-index = -1
-length = -1 * len(new_string)
-while index >= length:
-    letter = new_string[index]
-    print(letter)
-    index -= 1
+# new_string = input("Enter a string: ")
+# index = -1
+# length = -1 * len(new_string)
+# while index >= length:
+#     letter = new_string[index]
+#     print(letter)
+#     index -= 1
+
+
+# coding exercise sum of digits
+number  = input("Enter an integer number: ")
+sum_digits = 0
+for num in number:
+    sum_digits += int(num)
+print(sum_digits)
