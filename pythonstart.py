@@ -1773,6 +1773,12 @@ lists are mutable means to be changed'''
 
 
 # string operation
-str1 = "Hello"
-str2 =  "World"
-print(str1 + str2)
+# str1 = "Hello"
+# str2 =  "World"
+# print(str1 + str2)
+
+newstring = input("Enter a string: ")
+if newstring < "hello":
+    print(F"your word {newstring} comes before hello")
+elif newstring > "hello":
+    print(f"your word {newstring} comes after hello")    
