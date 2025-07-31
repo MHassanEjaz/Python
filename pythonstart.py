@@ -1785,10 +1785,15 @@ lists are mutable means to be changed'''
 
 
 # coding exercise first and last two characters
-def first_last_characters(word):
-    if len(word) < 2:
-        return ''
-    first_two_chars = word[0:2]
-    last_two_chars = word[-2:]
-    return first_two_chars + last_two_chars
-print(first_last_characters("appmillers"))    
+# def first_last_characters(word):
+#     if len(word) < 2:
+#         return ''
+#     first_two_chars = word[0:2]
+#     last_two_chars = word[-2:]
+#     return first_two_chars + last_two_chars
+# print(first_last_characters("appmillers"))  
+
+
+# String methods
+myname = "Elhsad" 
+print(dir(myname)) 
