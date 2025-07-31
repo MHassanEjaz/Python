@@ -1706,3 +1706,11 @@ lists are mutable means to be changed'''
 #     if play_again != "Y":
 #         print("Thanks for playing!")
 #         break
+
+
+
+# Strings in python
+# myname = 'elsahd'
+fruit = "apple"
+letter = fruit[1]
+print(letter)
