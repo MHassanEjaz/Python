@@ -1723,8 +1723,31 @@ lists are mutable means to be changed'''
 
 
 # Sum of Digits of 2 digit number
-def sum_of_two_digits():
-    two_digit_number = input("Enter two digit number: ")
-    sum_of_digits = int(two_digit_number[0]) + int(two_digit_number[1])
-    return sum_of_digits
-print(sum_of_two_digits())
+# def sum_of_two_digits():
+#     two_digit_number = input("Enter two digit number: ")
+#     sum_of_digits = int(two_digit_number[0]) + int(two_digit_number[1])
+#     return sum_of_digits
+# print(sum_of_two_digits())
+
+
+
+# String Traversal
+# fruit = "orange"
+# for char in fruit:
+#     print(char)
+
+# index = 0
+# while index < len(fruit):
+#     letter = fruit(index)
+#     print(letter)
+#     index += 1
+
+
+# coding exercise string backward traversal
+new_string = input("Enter a string: ")
+index = -1
+length = -1 * len(new_string)
+while index >= length:
+    letter = new_string[index]
+    print(letter)
+    index -= 1
