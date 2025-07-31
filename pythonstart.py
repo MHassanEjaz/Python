@@ -1754,8 +1754,19 @@ lists are mutable means to be changed'''
 
 
 # coding exercise sum of digits
-number  = input("Enter an integer number: ")
-sum_digits = 0
-for num in number:
-    sum_digits += int(num)
-print(sum_digits)
+# number  = input("Enter an integer number: ")
+# sum_digits = 0
+# for num in number:
+#     sum_digits += int(num)
+# print(sum_digits)
+
+
+
+# coding exercise count characters in a string
+def count_letter(word, letter):
+    counter = 0
+    for char in word:
+        if char == letter:
+            counter += 1
+            return counter
+print(count_letter("Learning python", "n"))
