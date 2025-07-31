@@ -1711,6 +1711,11 @@ lists are mutable means to be changed'''
 
 # Strings in python
 # myname = 'elsahd'
-fruit = "apple"
-letter = fruit[1]
-print(letter)
+# fruit = "apple"
+# print(len(fruit))
+# a = 3
+# letter = fruit[1]
+# print(a)
+
+newstring = "Hello Python"
+print(newstring[0:7])
