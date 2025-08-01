@@ -1807,12 +1807,19 @@ lists are mutable means to be changed'''
 
 
 # String parsing
-data = 'from example.email@edu.co.uk sat sep 5 09:14:16 2021'
-at_index = data.find("@")
-print(at_index)
-sapce_after = data.find(' ', at_index)
-print(sapce_after)
-domain = data[at_index+1:sapce_after]
-print(domain)
+# data = 'from example.email@edu.co.uk sat sep 5 09:14:16 2021'
+# at_index = data.find("@")
+# print(at_index)
+# sapce_after = data.find(' ', at_index)
+# print(sapce_after)
+# domain = data[at_index+1:sapce_after]
+# print(domain)
+
+
+mystring = "I love learning python"
+output = mystring.split("_", maxsplit=2)
+print(output)
+joinback = "_".join(output)
+print(joinback)
 
 
