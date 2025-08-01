@@ -1836,5 +1836,14 @@ lists are mutable means to be changed'''
 # print(question)
 
 
-path = "C:\Python\nib"
-print(path)
+# path = "C:\Python\nib"
+# print(path)
+
+
+# String Formatting
+errorno = 45457984738
+name = 'Edy'
+print('Hello, %s' %name)
+print('%x' %errorno)
+print('Hey %s, there is a 0x%x error' %(name, errorno))
+
