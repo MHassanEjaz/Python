@@ -1841,11 +1841,18 @@ lists are mutable means to be changed'''
 
 
 # String Formatting
-errorno = 45457984738
-name = 'Edy'
+# errorno = 45457984738
+# name = 'Edy'
 # print('Hello, %s' %name)
 # print('%x' %errorno)
 # print('Hey %s, there is a 0x%x error' %(name, errorno))
 
-print('Hello, {}'.format(name))
-print('Hey{}, there is a 0x{} error!'.format(name, errorno))
+# print('Hello, {}'.format(name))
+# print('Hey{}, there is a 0x{} error!'.format(name, errorno))
+
+
+
+# coding exercise format a string
+custom_string = "X-MAPDS-Confidence:0.8475"
+index_col = custom_string.find(":")
+print(index_col)
