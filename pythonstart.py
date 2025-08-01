@@ -1861,14 +1861,24 @@ lists are mutable means to be changed'''
 
 
 # coding exercise print pattern
-def print_pattern(n):
-    for i in range(0, n):
-        for j in range(0, i+1):
-            print("*", end = ' ')
-        print()   
-    for i in range(n, 0, -1):
-        for j in range(0, i-1):
-            print("*", end=' ')
-        print()
-        
-print_pattern(4)             
+# def print_pattern(n):
+#     for i in range(0, n):
+#         for j in range(0, i+1):
+#             print("*", end = ' ')
+#         print()   
+#     for i in range(n, 0, -1):
+#         for j in range(0, i-1):
+#             print("*", end=' ')
+#         print()
+# print_pattern(4)             
+
+
+
+# project 20 String Formatting
+# names = ['John', 'Edy', 'Jane', 'Kane']
+# scores = [90, 95, 80, 75]
+# print('{0:<10} {1:<5}'.format("Name", "Score"))
+# for index in range(len(names)):
+#     name = names[index]
+#     score = scores[index]
+#     print('{0:<10} {1:<5}'.format(name, score))
