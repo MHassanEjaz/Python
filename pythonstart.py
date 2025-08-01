@@ -1858,3 +1858,18 @@ lists are mutable means to be changed'''
 # number = custom_string[index_col + 1 : ]
 # number = float(number)
 # print(number)
+
+
+# coding exercise print pattern
+n = 5
+def print_pattern(n):
+    for i in range(0, n):
+        for j in range(0, i+1):
+            print("*", end = ' ')
+        print()   
+    for i in range(n, 0, -1):
+        for j in range(0, i-1):
+            print("*", end=' ')
+        print()
+        
+print(print_pattern(4))             
