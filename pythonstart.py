@@ -1861,7 +1861,6 @@ lists are mutable means to be changed'''
 
 
 # coding exercise print pattern
-n = 5
 def print_pattern(n):
     for i in range(0, n):
         for j in range(0, i+1):
@@ -1872,4 +1871,4 @@ def print_pattern(n):
             print("*", end=' ')
         print()
         
-print(print_pattern(4))             
+print_pattern(4)             
