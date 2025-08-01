@@ -1798,3 +1798,11 @@ lists are mutable means to be changed'''
 # myname = "Elhsad" 
 # print(dir(myname)) 
 
+
+# coding exercise replace character in a string
+# custom_string = 'I love Python.I Like Learning it.'
+# new_string = custom_string.replace(".", "!", 2)
+# print(custom_string)
+# print(new_string)
+
+
