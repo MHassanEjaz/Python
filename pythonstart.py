@@ -1816,10 +1816,25 @@ lists are mutable means to be changed'''
 # print(domain)
 
 
-mystring = "I love learning python"
-output = mystring.split("_", maxsplit=2)
-print(output)
-joinback = "_".join(output)
-print(joinback)
+# mystring = "I love learning python"
+# output = mystring.split("_", maxsplit=2)
+# print(output)
+# joinback = "_".join(output)
+# print(joinback)
 
 
+# triple quotes
+# question = '''He said "What's your name?" '''
+# print(question)
+
+# escaping single quotes
+# question = 'He said "What\s your name" '''
+# print(question)
+
+# escaping double quotes
+# question = "He said \"What's your name?\""
+# print(question)
+
+
+path = "C:\Python\nib"
+print(path)
