@@ -1937,8 +1937,8 @@ lists are mutable means to be changed'''
 
 
 # List Method practice
-animals = ['dog', 'cat', 'mouse', 'horse', 'bear']
-animals2 = ['fox', 'rabbit']
+# animals = ['dog', 'cat', 'mouse', 'horse', 'bear']
+# animals2 = ['fox', 'rabbit']
 # index = animals.index('horse')
 # print(index,4,5)
 # animals.extend(animals2)
@@ -1952,5 +1952,14 @@ animals2 = ['fox', 'rabbit']
 # animals.sort(reverse=True)
 # newanimals = animals.copy()
 # print(animals)
-print(animals)
+# animals.clear()
+# print(animals)
 
+
+
+
+# coding exercise update the first occurrence
+list1 = [10,10,5,15,50,50,20]
+index = list1.index(50)
+list1[index] = 5
+print(list1)
