@@ -1943,6 +1943,12 @@ animals2 = ['fox', 'rabbit']
 # print(index,4,5)
 # animals.extend(animals2)
 # animals.append('fox')
-animals.insert(2, 'rabbit')
+# animals.insert(2, 'rabbit')
+# animals.remove('bear')
+# count = animals.count('horse')
+# animals.pop(1)
+# animals.reverse()
+# animals.sort()
+animals.sort(reverse=True)
 print(animals)
 
