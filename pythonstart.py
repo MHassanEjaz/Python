@@ -1938,5 +1938,11 @@ lists are mutable means to be changed'''
 
 # List Method practice
 animals = ['dog', 'cat', 'mouse', 'horse', 'bear']
-print(dir(animals))
+animals2 = ['fox', 'rabbit']
+# index = animals.index('horse')
+# print(index,4,5)
+# animals.extend(animals2)
+# animals.append('fox')
+animals.insert(2, 'rabbit')
+print(animals)
 
