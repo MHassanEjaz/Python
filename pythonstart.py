@@ -1984,12 +1984,27 @@ lists are mutable means to be changed'''
 # print(nums)
 
 
-numlist = []
-while True:
-    inp = input("Enter a number: ")
-    if inp == "done":
-        break
-    value = float(inp)
-    numlist.append(value)
-average = sum(numlist) / len(numlist) 
-print(f"Average: {average}")          
+# numlist = []
+# while True:
+#     inp = input("Enter a number: ")
+#     if inp == "done":
+#         break
+#     value = float(inp)
+#     numlist.append(value)
+# average = sum(numlist) / len(numlist) 
+# print(f"Average: {average}")          
+
+
+
+
+# coding exercise create a list from two lists
+# list_one = [4,12,16,21,24,28,32]
+# list_two = [5,10,15,20,25,30,35]
+# third_list = list()
+# odd_elements = list_one[1::2]
+# print(odd_elements)
+# even_elements = list_two[0::2]
+# print(even_elements)
+# third_list.extend(odd_elements)
+# third_list.extend(even_elements)
+# print(third_list)
