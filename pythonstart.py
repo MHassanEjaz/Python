@@ -1931,7 +1931,12 @@ lists are mutable means to be changed'''
 
 
 # coding exercise reverse a list using slice operator
-custom_list = [1,2,3,4,5,6,7,8,9,10]
-custom_list = custom_list[::-1]
-print(custom_list)
+# custom_list = [1,2,3,4,5,6,7,8,9,10]
+# custom_list = custom_list[::-1]
+# print(custom_list)
+
+
+# List Method practice
+animals = ['dog', 'cat', 'mouse', 'horse', 'bear']
+print(dir(animals))
 
