@@ -1949,6 +1949,8 @@ animals2 = ['fox', 'rabbit']
 # animals.pop(1)
 # animals.reverse()
 # animals.sort()
-animals.sort(reverse=True)
+# animals.sort(reverse=True)
+# newanimals = animals.copy()
+# print(animals)
 print(animals)
 
