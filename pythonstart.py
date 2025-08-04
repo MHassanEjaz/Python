@@ -1904,5 +1904,26 @@ lists are mutable means to be changed'''
 
 
 # Slicing
-mylist = ['a', 'b', 'c', 'd', 'd']
-print(mylist[1:])
+# mylist = ['a', 'b', 'c', 'd', 'd']
+# mylist[1:3] = ['x', 'y']
+# print(mylist)
+
+
+
+# + Operator (Concatenate)
+# list1 = [1,2,3]
+# list2 = [4,5,6]
+# list3 = list1 + list2
+# print(list3)
+
+
+# * Operator
+# list1 = [1]
+# list2 = list1 * 4
+# print(list2)
+
+
+# in keyword
+list1 = [1,2,4, 'a', 'b', 'c', 'd']
+print('a' in list1)
+print(5 in list1)
