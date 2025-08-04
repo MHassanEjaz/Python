@@ -1897,3 +1897,12 @@ lists are mutable means to be changed'''
 
 
 # index out of range
+# countriesofuk = ["England", "Scotland", "Nothern Ireland", "Wales"]
+# numofcountries = len(countriesofuk)
+# print(numofcountries)
+
+
+
+# Slicing
+mylist = ['a', 'b', 'c', 'd', 'd']
+print(mylist[1:])
