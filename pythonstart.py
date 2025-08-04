@@ -1967,11 +1967,29 @@ lists are mutable means to be changed'''
 
 
 # coding exercise first and last characters
-list1 = ['cbc', 'xyz', 'aba', '2332', 'abc']
-def count_words(p_list):
-    ctr = 0
-    for word in p_list:
-        if len(word) >= 2 and word[0] == word[-1]:
-            ctr +=1
-    return ctr
-print(count_words(list1))        
+# list1 = ['cbc', 'xyz', 'aba', '2332', 'abc']
+# def count_words(p_list):
+#     ctr = 0
+#     for word in p_list:
+#         if len(word) >= 2 and word[0] == word[-1]:
+#             ctr +=1
+#     return ctr
+# print(count_words(list1)) 
+
+
+
+# List and functions
+# nums = [10,15,20,30,5]
+# del nums[1]
+# print(nums)
+
+
+numlist = []
+while True:
+    inp = input("Enter a number: ")
+    if inp == "done":
+        break
+    value = float(inp)
+    numlist.append(value)
+average = sum(numlist) / len(numlist) 
+print(f"Average: {average}")          
