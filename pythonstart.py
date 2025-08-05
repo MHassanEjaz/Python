@@ -2016,3 +2016,7 @@ lists are mutable means to be changed'''
 # custom_list.insert(2, element)
 # custom_list.append(element)
 # print(custom_list)
+
+
+
+# coding exercise Three equal chunks
