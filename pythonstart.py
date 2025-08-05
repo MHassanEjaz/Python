@@ -2008,3 +2008,6 @@ lists are mutable means to be changed'''
 # third_list.extend(odd_elements)
 # third_list.extend(even_elements)
 # print(third_list)
+
+
+# coding exercise remove and add value
