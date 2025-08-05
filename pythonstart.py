@@ -2023,3 +2023,4 @@ lists are mutable means to be changed'''
 sample_list = [21,55,18,33,24,22,68,35,79]
 length = len(sample_list)
 chunk_size = int(length/3)
+start = 0
