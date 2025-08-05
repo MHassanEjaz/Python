@@ -2035,3 +2035,9 @@ lists are mutable means to be changed'''
 
 
 # String and list
+custom_string = "hello world. I love python"
+# custom_list = list(custom_string)
+custom_list = ['Jane', 'Edy', 'John']
+string1 = "_".join(custom_list)
+# custom_list = custom_string.split()
+print(custom_list)
