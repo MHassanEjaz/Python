@@ -2035,9 +2035,16 @@ lists are mutable means to be changed'''
 
 
 # String and list
-custom_string = "hello world. I love python"
-# custom_list = list(custom_string)
-custom_list = ['Jane', 'Edy', 'John']
-string1 = "_".join(custom_list)
-# custom_list = custom_string.split()
-print(custom_list)
+# custom_string = "hello world. I love python"
+# # custom_list = list(custom_string)
+# custom_list = ['Jane', 'Edy', 'John']
+# string1 = "_".join(custom_list)
+# # custom_list = custom_string.split()
+# print(custom_list)
+
+
+
+# coding exercise Format List
+custmo_list = [1,2,3,4,5]
+custom_string = " | ".join(custmo_list)
+print(custom_string)
