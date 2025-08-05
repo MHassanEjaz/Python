@@ -2062,4 +2062,21 @@ lists are mutable means to be changed'''
 # print(alldays)
 
 
-mylist = ['a', 'b', ]
+# mylist = ['a', 'b', ['cc', 'dd', ['eee', 'fff']], 'g', 'h']
+# mylist[2].append('ggg')
+# mylist[2][2].insert(0, "ggg")
+# mylist[2].extend([1,2,3])
+# mylist[2][2].pop(0)
+# del mylist[2][2][0]
+# length = len(mylist[2])
+# print(mylist)
+# mylist[1] = 0
+# print(mylist)
+# for item in mylist:
+#     for item2 in item:
+#         for item3 in item2:
+#             print(item2)
+
+
+# coding exercise Add item in Nested List
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
