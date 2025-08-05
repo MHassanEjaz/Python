@@ -2079,4 +2079,25 @@ lists are mutable means to be changed'''
 
 
 # coding exercise Add item in Nested List
-list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+# list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+# list1[2][2].insert(1, 7000)
+# print(list1)
+
+
+
+# coding exercise Extend Nested List
+# list1 = ['a', 'b', ['c', ['d', 'e', ['f', 'g'], 'k'], 'l'], 'm', 'n']
+# sublist = ['h', 'i', 'j']
+# list1[2][1][2].extend(sublist)
+# print(list1)
+
+
+
+# Objects and Values
+# True
+# a = "apple"
+# b = "apple"
+# False
+a = [1,2,3]
+b = [1,2,3]
+print(a is b)
