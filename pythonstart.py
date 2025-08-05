@@ -2027,3 +2027,6 @@ start = 0
 end = chunk_size
 for i in range(1,4):
     list_chunk = sample_list[start:end]
+    reversed_chunk = reversed(list_chunk)
+    print(f"Chunk-{i} = {list(reversed(list_chunk))}")
+    start = end
