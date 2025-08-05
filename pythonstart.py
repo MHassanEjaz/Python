@@ -2054,3 +2054,12 @@ lists are mutable means to be changed'''
 
 
 # Nested List
+# day1 = [11,12,5,2]
+# day2 = [15,11,6,7]
+# day3 = [10,13,7,5]
+# day4 = [12,15,8,6]
+# alldays = [day1, day2, day3, day4]
+# print(alldays)
+
+
+mylist = ['a', 'b', ]
