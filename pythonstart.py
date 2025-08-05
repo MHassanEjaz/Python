@@ -2020,13 +2020,18 @@ lists are mutable means to be changed'''
 
 
 # coding exercise Three equal chunks
-sample_list = [21,55,18,33,24,22,68,35,79]
-length = len(sample_list)
-chunk_size = int(length/3)
-start = 0
-end = chunk_size
-for i in range(1,4):
-    list_chunk = sample_list[start:end]
-    reversed_chunk = reversed(list_chunk)
-    print(f"Chunk-{i} = {list(reversed(list_chunk))}")
-    start = end
+# sample_list = [21,55,18,33,24,22,68,35,79]
+# length = len(sample_list)
+# chunk_size = int(length/3)
+# start = 0
+# end = chunk_size
+# for i in range(1,4):
+#     list_chunk = sample_list[start:end]
+#     reversed_chunk = reversed(list_chunk)
+#     print(f"Chunk-{i} = {list(reversed(list_chunk))}")
+#     start = end
+#     end += chunk_size
+
+
+
+# String and list
