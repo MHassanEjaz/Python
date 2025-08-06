@@ -2145,5 +2145,13 @@ lists are mutable means to be changed'''
 
 
 # Project 22 Find the Golden Star
+import random
+def print_map(p_map):
+    print('\n'.join([' '.join(['{:2}'.format(item) for item in row]) for row in p_map]))
+
+map1 = [["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"]]
+print("This is our initial map...")
+print_map(map1)
+
 
 
