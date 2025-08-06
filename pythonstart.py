@@ -2098,6 +2098,37 @@ lists are mutable means to be changed'''
 # a = "apple"
 # b = "apple"
 # False
-a = [1,2,3]
-b = [1,2,3]
-print(a is b)
+# a = [1,2,3]
+# b = [1,2,3]
+# print(a is b)
+
+# def deletefirst(p_list):
+#     del p_list[0]
+# mylist = [1,2,3,4,5]
+# deletefirst(mylist)
+# print(mylist)    
+
+
+# coding exercise List Addition with function
+# def custom_insert(p_list, value):
+#     copy_list = p_list[:]
+#     copy_list.append(value)
+#     return copy_list
+# list1 = [1,2,3,4,5]
+# list2 = custom_insert(list1, 6)
+# print(list1)
+# print(list2)
+
+
+# coding exercise Concatenate two list in one list item wise
+# def concatenate(p_list1, p_list2):
+#     list3 = []
+#     for item1 in p_list1:
+#         for item2 in p_list2:
+#             list3.append(item1 + item2)
+#     return list3
+# list1= ["Hello ", "take "]
+# list2= ["Dear ", "Sir "]
+# concatenate(list1, list2)            
+
+
