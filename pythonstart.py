@@ -2133,6 +2133,17 @@ lists are mutable means to be changed'''
 
 
 # Project 21 Bill Roulette
-         
+# import random
+# name_string = input("Input everyone's name, seperated by a comma. ")
+# names = name_string.split(", ")
+# num_items = len(names)
+# random_list = random.randint(0, num_items-1)
+# person_names = names[random_list]
+# print(f"{person_names} is going to buy the meal today! ")         
+
+
+
+
+# Project 22 Find the Golden Star
 
 
