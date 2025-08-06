@@ -2152,6 +2152,16 @@ def print_map(p_map):
 map1 = [["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"]]
 print("This is our initial map...")
 print_map(map1)
-
-
+gold_hor = random.randint(0,2)
+gold_ver = random.randint(0,2)
+map1[gold_hor][gold_ver] = "⭐️"
+goldposition = str(gold_hor+1) +str(gold_ver+1)
+position = input("What do you think: where is the Golden Star in the map? ")
+if goldposition == position:
+    print("Congratulations! You have found the Golden Star")
+else:
+    horizontal = int(position[0])
+    vertical = int(position[1])
+    map1[horizontal-1][vertical-1] = "*"
+    print("Unfortunately you could find it. ")   
 
