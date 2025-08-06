@@ -2145,28 +2145,84 @@ lists are mutable means to be changed'''
 
 
 # Project 22 Find the Golden Star
-import random
-def print_map(p_map):
-    print('\n'.join([' '.join(['{:2}'.format(item) for item in row]) for row in p_map]))
+# import random
+# def print_map(p_map):
+#     print('\n'.join([' '.join(['{:2}'.format(item) for item in row]) for row in p_map]))
 
-map1 = [["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"]]
-print("This is our initial map...")
-print_map(map1)
-gold_hor = random.randint(0,2)
-gold_ver = random.randint(0,2)
-map1[gold_hor][gold_ver] = "⭐️"
-goldposition = str(gold_hor+1) +str(gold_ver+1)
-position = input("What do you think: where is the Golden Star in the map? ")
-if goldposition == position:
-    print("Congratulations! You have found the Golden Star")
-else:
-    horizontal = int(position[0])
-    vertical = int(position[1])
-    map1[horizontal-1][vertical-1] = "*"
-    print("Unfortunately you could find it. ") 
+# map1 = [["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"],["⬜️","️⬜️","️⬜️"]]
+# print("This is our initial map...")
+# print_map(map1)
+# gold_hor = random.randint(0,2)
+# gold_ver = random.randint(0,2)
+# map1[gold_hor][gold_ver] = "⭐️"
+# goldposition = str(gold_hor+1) +str(gold_ver+1)
+# position = input("What do you think: where is the Golden Star in the map? ")
+# if goldposition == position:
+#     print("Congratulations! You have found the Golden Star")
+# else:
+#     horizontal = int(position[0])
+#     vertical = int(position[1])
+#     map1[horizontal-1][vertical-1] = "*"
+#     print("Unfortunately you could find it. ") 
+# print_map(map1)
+
+
+
+
+# import random
+
+# def print_map(p_map):
+#     print('\n'.join([' '.join(['{:2}'.format(item) for item in row]) for row in p_map]))
+
+# # Create the initial map
+# map1 = [["⬜️", "⬜️", "⬜️"],
+#         ["⬜️", "⬜️", "⬜️"],
+#         ["⬜️", "⬜️", "⬜️"]]
+
+# print("This is our initial map:")
+# print_map(map1)
+
+# # Random position for golden star
+# gold_row = random.randint(0, 2)
+# gold_col = random.randint(0, 2)
+
+# # Store the correct answer
+# gold_position = str(gold_row + 1) + str(gold_col + 1)
+
+# # Get user's guess
+# position = input("Guess where the Golden Star ⭐️ is hidden (e.g., 23 means row 2, column 3): ")
+
+# # Check guess
+# if position == gold_position:
+#     map1[gold_row][gold_col] = "⭐️"
+#     print("\n🎉 Congratulations! You found the Golden Star!")
+# else:
+#     try:
+#         guess_row = int(position[0]) - 1
+#         guess_col = int(position[1]) - 1
+#         map1[guess_row][guess_col] = "❌"
+#         map1[gold_row][gold_col] = "⭐️"
+#         print("\n❌ Oops! You missed it. Here's the correct map:")
+#     except:
+#         print("\nInvalid input. Please enter two digits like 12 or 31.")
+#         map1[gold_row][gold_col] = "⭐️"
+
+# # Print final map
+# print_map(map1)
+
     
     
     
-# Project 22 Escaping the Maze
+# Project 22 Escaping the Maze (with reeborgs wordl)
+def turnright():
+    turn_left()
+    turn_left()
+    turn_left()
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()    
+    
+
       
 
