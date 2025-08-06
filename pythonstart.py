@@ -2163,5 +2163,10 @@ else:
     horizontal = int(position[0])
     vertical = int(position[1])
     map1[horizontal-1][vertical-1] = "*"
-    print("Unfortunately you could find it. ")   
+    print("Unfortunately you could find it. ") 
+    
+    
+    
+# Project 22 Escaping the Maze
+      
 
