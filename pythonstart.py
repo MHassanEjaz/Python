@@ -2219,20 +2219,42 @@ lists are mutable means to be changed'''
 
 
 # Project 24 Cryptography with python Caesar Cipher
+# alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+# message = input("Enter your message:\n").upper()
+# shift_number = int(input("Enter the shift number:\n"))
+# Encryption
+# def encrypt(p_message, p_shift_number):
+#     cipher_message = " "
+#     for char in p_message:
+#         if char in alphabet:
+#             position = alphabet.index(char)
+#             new_position = position + p_shift_number
+#             while new_position > 25:
+#                 new_position = new_position - 26
+#             new_char = alphabet[new_position]
+#             cipher_message += new_char
+#         else:
+#             cipher_message += char   
+#     return f"The encoded message is {cipher_message}"
+# encoded_message = encrypt(message, shift_number)
+# print(encoded_message)
+
+
+
 alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-message = input("Enter your message:\n").upper()
+cipher_message = input("Enter your message:\n").upper()
 shift_number = int(input("Enter the shift number:\n"))
-def encrypt(p_message, p_shift_number):
-    cipher_message = " "
+def decrypt(p_message, p_shift_number):
+    message = ""
     for char in p_message:
         position = alphabet.index(char)
-        new_position = position + p_shift_number
-        new_char = alphabet[new_position]
-        cipher_message += new_char
-    return f"The encoded message is {cipher_message}"
-encoded_message = encrypt(message, shift_number)
-print(encoded_message)
+        old_position = position - p_shift_number
+        letter = alphabet[old_position]
+        message += letter
+    return f"The decoded text is {message}"
+print(decrypt(cipher_message, shift_number))        
          
     
 
