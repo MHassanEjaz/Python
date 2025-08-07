@@ -2219,7 +2219,12 @@ lists are mutable means to be changed'''
 
 
 # Project 24 Cryptography with python Caesar Cipher
+alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
+message = input("Enter your message:\n").upper()
+shift_number = int(input("Enter the shift number:\n"))
+def encrypt(p_message, p_shift_number):
+    
          
     
 
