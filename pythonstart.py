@@ -2223,7 +2223,7 @@ lists are mutable means to be changed'''
 
 # message = input("Enter your message:\n").upper()
 # shift_number = int(input("Enter the shift number:\n"))
-# Encryption
+# # Encryption
 # def encrypt(p_message, p_shift_number):
 #     cipher_message = " "
 #     for char in p_message:
@@ -2242,21 +2242,179 @@ lists are mutable means to be changed'''
 
 
 
-alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+# alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-cipher_message = input("Enter your message:\n").upper()
-shift_number = int(input("Enter the shift number:\n"))
-def decrypt(p_message, p_shift_number):
-    message = ""
-    for char in p_message:
-        position = alphabet.index(char)
-        old_position = position - p_shift_number
-        letter = alphabet[old_position]
-        message += letter
-    return f"The decoded text is {message}"
-print(decrypt(cipher_message, shift_number))        
+# enc_dec = input("Type 'E' to encrypt, type 'D' to decrypt:\n")
+# cipher_message = input("Enter your message:\n").upper()
+# shift_number = int(input("Enter the shift number:\n"))
+# def decrypt(p_message, p_shift_number):
+#     message = ""
+#     for char in p_message:
+#         if char in alphabet:
+#             position = alphabet.index(char)
+#             old_position = position - p_shift_number
+#             while old_position < 0:
+#                 old_position = old_position + 26
+#             letter = alphabet[old_position]
+#             message += letter
+#         else:
+#             message += letter    
+#     return f"The decoded text is {message}"
+# print(decrypt(cipher_message, shift_number))        
          
     
 
+
+
+# alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+
+
+
+# def encrypt(p_message, p_shift_number):
+#     cipher_message = " "
+#     for char in p_message:
+#         if char in alphabet:
+#             position = alphabet.index(char)
+#             new_position = position + p_shift_number
+#             while new_position > 25:
+#                 new_position = new_position - 26
+#             new_char = alphabet[new_position]
+#             cipher_message += new_char
+#         else:
+#             cipher_message += char   
+#     return f"The encoded message is {cipher_message}"
+# encoded_message = encrypt(message, shift_number)
+# print(encoded_message)
+
+
+
+# def decrypt(p_message, p_shift_number):
+#     message = ""
+#     for char in p_message:
+#         if char in alphabet:
+#             position = alphabet.index(char)
+#             old_position = position - p_shift_number
+#             while old_position < 0:
+#                 old_position = old_position + 26
+#             letter = alphabet[old_position]
+#             message += letter
+#         else:
+#             message += letter    
+#     return f"The decoded text is {message}"
+# print(decrypt(cipher_message, shift_number)) 
+
+
+
+# from logo import logo
+# print(logo)
+# end_program = False
+# while not end_program:
+#     enc_dec = input("Type 'E' to encrypt, type 'D' to decrypt:\n")
+#     message = input("Enter your message:\n").upper()
+#     shift_number = int(input("Enter the shift number:\n"))
+#     if enc_dec == "E":
+#         encrypted_message = encrypt(message, shift_number)
+#         print(encrypted_message)
+#     else:
+#         decrypt_message = decrypt(cipher_message, shift_number)
+#         print(decrypt_message) 
+#     restart = input("Type 'Y' if you want to continue. otherwise type 'N'\n")
+#     if restart == "N":
+#         end_program = True
+#         print("See you next time")            
+
+
+
+
+
+
+
+# Caesar Cipher Program
+
+# Alphabet list
+alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+
+def refactor_position(p_position, p_cipher_type):
+    if p_cipher_type == 'E':
+        while p_position > 25:
+            p_position = p_position - 26
+        return p_position
+    else:
+        while p_position < 0:
+            p_position = p_position + 26
+        return p_position
+    
+def caesar_chiper(p_initial_text, p_shift_amount, p_cipher_type):
+  final_text = ""
+  if p_cipher_type == "D":
+    p_shift_amount *= -1
+  for char in p_initial_text:
+    if char in alphabet:
+      position = alphabet.index(char)
+      new_position = position + p_shift_amount
+      new_position = refactor_position(new_position, p_cipher_type)
+      final_text += alphabet[new_position]
+    else:
+      final_text += char
+  print(f"Here's the {'decode' if p_cipher_type=='D' else 'encode'}d result: {final_text}")    
+
+
+
+# Encryption function
+def encrypt(p_message, p_shift_number):
+    cipher_message = ""
+    for char in p_message:
+        if char in alphabet:
+            position = alphabet.index(char)
+            new_position = (position + p_shift_number) % 26
+            cipher_message += alphabet[new_position]
+        else:
+            cipher_message += char   
+    return f"The encoded message is: {cipher_message}"
+
+# Decryption function
+def decrypt(p_message, p_shift_number):
+    message = ""
+    for char in p_message:
+        if char in alphabet:
+            position = alphabet.index(char)
+            old_position = (position - p_shift_number) % 26
+            message += alphabet[old_position]
+        else:
+            message += char    
+    return f"The decoded message is: {message}"
+
+# Import and display ASCII logo (if available)
+try:
+    from logo import logo
+    print(logo)
+except ImportError:
+    print("Welcome to Caesar Cipher!")
+
+# Main loop
+end_program = False
+while not end_program:
+    enc_dec = input("Type 'E' to encrypt, type 'D' to decrypt:\n").upper()
+    message = input("Enter your message:\n").upper()
+    shift_number = int(input("Enter the shift number:\n"))
+
+    if enc_dec == "E":
+        encrypted_message = encrypt(message, shift_number)
+        print(encrypted_message)
+    elif enc_dec == "D":
+        decrypted_message = decrypt(message, shift_number)
+        print(decrypted_message)
+    else:
+        print("Invalid option. Please type 'E' or 'D'.")
+
+    restart = input("Type 'Y' if you want to continue, otherwise type 'N':\n").upper()
+    if restart == "N":
+        end_program = True
+        print("See you next time!")
+  
+         
       
 
