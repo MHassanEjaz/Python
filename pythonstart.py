@@ -2224,7 +2224,15 @@ alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'
 message = input("Enter your message:\n").upper()
 shift_number = int(input("Enter the shift number:\n"))
 def encrypt(p_message, p_shift_number):
-    
+    cipher_message = " "
+    for char in p_message:
+        position = alphabet.index(char)
+        new_position = position + p_shift_number
+        new_char = alphabet[new_position]
+        cipher_message += new_char
+    return f"The encoded message is {cipher_message}"
+encoded_message = encrypt(message, shift_number)
+print(encoded_message)
          
     
 
