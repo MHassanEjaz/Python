@@ -2199,10 +2199,10 @@ lists are mutable means to be changed'''
     
     
 # Project 22 Escaping the Maze (with reeborgs wordl)
-def turnright():
-    turn_left()
-    turn_left()
-    turn_left()
+# def turnright():
+#     turn_left()
+#     turn_left()
+#     turn_left()
     
 while front_is_clear():
     move() 
@@ -2214,7 +2214,9 @@ while not at_goal():
     elif front_is_clear():
         move()
     else:
-        turn_left()         
+        turn_left()
+
+         
     
 
       
