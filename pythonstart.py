@@ -2466,23 +2466,33 @@ import random
 secret_word = random.choice(word_list)
 length_word = len(secret_word)
 blanks = []
+
 for _ in range(length_word):
-        blanks.append("_")
-        
+    blanks.append("_")
+
 print(blanks)
 
-guess = input("Guess a Letter: ").upper()
-guessed_letter = []
-if guess in guessed_letter:
-    print("You have already guessed this letter!")
-else:
-    guessed_letter.append(guess)
-    
-for position in range(length_word):
-    letter = secret_word[position]
-    if guess == letter:
-       blanks[position] = letter
-print(blanks)
+
+
+guessed_letters = []
+end_game = False
+while not end_game:
+    guess = input("Guess a letter: ").upper()
+    if guess in guessed_letters:
+        print("You have already guessed this letter!")
+        continue
+    else:
+        guessed_letters.append(guess)
+    print(guessed_letters)
+
+    for position in range(length_word):
+        letter = secret_word[position]
+        if guess == letter:
+            blanks[position] = letter
+    print(blanks)
+    if "_" not in blanks:
+        end_game = True
+
 
 
 
