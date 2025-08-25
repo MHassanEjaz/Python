@@ -2461,117 +2461,252 @@ lists are mutable means to be changed'''
 
 
 # Hangman, Flowchart, Pick Secret Word, Check letters and track lives
-hangman_stages = ['''
-  +---+
-  |   |
-  |   O
-  |  /|\  
-  |  / \ 
-  |    
-==========
-''', '''
-  +---+
-  |   |
-  |   O
-  |  /|\  
-  |  / 
-  |    
-==========
-''', '''
-  +---+
-  |   |
-  |   O
-  |  /|\  
-  |  
-  |    
-==========
-''', '''
-  +---+
-  |   |
-  |   O
-  |  /| 
-  |  
-  |    
-==========''', '''
-  +---+
-  |   |
-  |   O
-  |   |
-  |  
-  |    
-==========
-''', '''
-  +---+
-  |   |
-  |   O
-  |   
-  |  
-  |    
-==========
-''', '''
-  +---+
-  |   |
-  |   
-  |   
-  |  
-  |    
-==========
-''']
+# hangman_stages = ['''
+#   +---+
+#   |   |
+#   |   O
+#   |  /|\  
+#   |  / \ 
+#   |    
+# ==========
+# ''', '''
+#   +---+
+#   |   |
+#   |   O
+#   |  /|\  
+#   |  / 
+#   |    
+# ==========
+# ''', '''
+#   +---+
+#   |   |
+#   |   O
+#   |  /|\  
+#   |  
+#   |    
+# ==========
+# ''', '''
+#   +---+
+#   |   |
+#   |   O
+#   |  /| 
+#   |  
+#   |    
+# ==========''', '''
+#   +---+
+#   |   |
+#   |   O
+#   |   |
+#   |  
+#   |    
+# ==========
+# ''', '''
+#   +---+
+#   |   |
+#   |   O
+#   |   
+#   |  
+#   |    
+# ==========
+# ''', '''
+#   +---+
+#   |   |
+#   |   
+#   |   
+#   |  
+#   |    
+# ==========
+# ''']
 
-word_list = ["UDEMY", "APPMILLERS", "PYTHON"]
+# word_list = ["UDEMY", "APPMILLERS", "PYTHON"]
+# import random
+# secret_word = random.choice(word_list)
+# length_word = len(secret_word)
+# print(secret_word)
+# blanks = []
+
+# for _ in range(length_word):
+#     blanks.append("_")
+
+# guessed_letters = []
+# lives = 6
+# end_game = False
+# while not end_game:
+#     guess = input("Guess a letter: ").upper()
+#     if guess in guessed_letters:
+#         print("You have already guessed this letter!")
+#         continue
+#     else:
+#         guessed_letters.append(guess)
+
+#     for position in range(length_word):
+#         letter = secret_word[position]
+#         if guess == letter:
+#             blanks[position] = letter
+    
+#     if guess not in secret_word:
+#         lives -= 1
+#     if lives == 0:
+#         end_game = True
+#         print("You lose!")
+#     print(" ".join(blanks))
+#     print(hangman_stages[lives])
+#     if "_" not in blanks:
+#         end_game = True
+#         print("You win.")
+#     if end_game:
+#         ask = input("Do you want to play again? (Y/N)")
+#         if ask == "Y":
+#             secret_word = random.choice(word_list)
+#             blanks.clear()
+#             length_word = len(secret_word)
+#             for _ in range(length_word):
+#                 blanks.append("_")
+#             end_game = False
+#             guessed_letters.clear()
+#             lives = 6
+#         else:
+#             print("See you next time!")
+
+
+
+
+
 import random
+import os
+
+# function to clear terminal screen
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+# Hangman logo (optional ASCII art)
+logo = """
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/                       
+"""
+
+# Hangman stages (ASCII art)
+hangman_stages = [
+    """
+       --------
+       |      |
+       |      O
+       |     \\|/
+       |      |
+       |     / \\
+       -
+    """,
+    """
+       --------
+       |      |
+       |      O
+       |     \\|/
+       |      |
+       |     / 
+       -
+    """,
+    """
+       --------
+       |      |
+       |      O
+       |     \\|/
+       |      |
+       |      
+       -
+    """,
+    """
+       --------
+       |      |
+       |      O
+       |     \\|
+       |      |
+       |     
+       -
+    """,
+    """
+       --------
+       |      |
+       |      O
+       |      |
+       |      |
+       |     
+       -
+    """,
+    """
+       --------
+       |      |
+       |      O
+       |    
+       |      
+       |     
+       -
+    """,
+    """
+       --------
+       |      |
+       |      
+       |    
+       |      
+       |     
+       -
+    """,
+]
+
+print(logo)
+
+word_list = ["APPMILLERS", "UDEMY"]
 secret_word = random.choice(word_list)
-length_word = len(secret_word)
-print(secret_word)
-blanks = []
-
-for _ in range(length_word):
-    blanks.append("_")
-
+word_length = len(secret_word)
 guessed_letters = []
+blanks = ["_"] * word_length
 lives = 6
+
 end_game = False
 while not end_game:
     guess = input("Guess a letter: ").upper()
+    clear()
+
     if guess in guessed_letters:
         print("You have already guessed this letter!")
         continue
     else:
         guessed_letters.append(guess)
 
-    for position in range(length_word):
+    for position in range(word_length):
         letter = secret_word[position]
         if guess == letter:
             blanks[position] = letter
-    
+
     if guess not in secret_word:
         lives -= 1
-    if lives == 0:
-        end_game = True
-        print("You lose!")
+        if lives == 0:
+            end_game = True
+            print("You Lose.")
+            print(f"The word was: {secret_word}")
+
     print(" ".join(blanks))
     print(hangman_stages[lives])
+
     if "_" not in blanks:
         end_game = True
-        print("You win.")
+        print("You win!")
+
     if end_game:
-        ask = input("Do you want to play again? (Y/N)")
+        ask = input("Do you want to play again?(Y/N) ").upper()
         if ask == "Y":
             secret_word = random.choice(word_list)
-            blanks.clear()
-            length_word = len(secret_word)
-            for _ in range(length_word):
-                blanks.append("_")
-            end_game = False
+            blanks = ["_"] * len(secret_word)
             guessed_letters.clear()
             lives = 6
+            end_game = False
         else:
             print("See you next time!")
-
-
-
-
-
 
 
 
