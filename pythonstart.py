@@ -2422,18 +2422,18 @@ def caesar_cipher(p_initial_text, p_shift_amount, p_cipher_type):
 
 
 # Main program loop
-end_program = False
-while not end_program:
-    enc_dec = input("Type 'E' to encrypt, type 'D' to decrypt:\n").upper()
-    text = input("Enter your message:\n").upper()
-    shift = int(input("Enter the shift number:\n"))
+# end_program = False
+# while not end_program:
+#     enc_dec = input("Type 'E' to encrypt, type 'D' to decrypt:\n").upper()
+#     text = input("Enter your message:\n").upper()
+#     shift = int(input("Enter the shift number:\n"))
 
-    caesar_cipher(p_initial_text=text, p_shift_amount=shift, p_cipher_type=enc_dec)
+#     caesar_cipher(p_initial_text=text, p_shift_amount=shift, p_cipher_type=enc_dec)
 
-    restart = input("Type 'Y' if you want to go again. Otherwise type 'N':\n").upper()
-    if restart == "N":
-        end_program = True
-        print("See you next time!")
+#     restart = input("Type 'Y' if you want to go again. Otherwise type 'N':\n").upper()
+#     if restart == "N":
+#         end_program = True
+#         print("See you next time!")
 
   
          
