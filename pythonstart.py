@@ -2470,7 +2470,8 @@ for _ in range(length_word):
         blanks.append("_")
 print(blanks)
 
-guess = input("Guess a Letter: ")
+guess = input("Guess a Letter: ").upper()
+
 
 
         
