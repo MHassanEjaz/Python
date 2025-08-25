@@ -2446,7 +2446,18 @@ def sentence_maker(text):
         if text.startswith(word):
             return "{}?".format(cap_text)
     return "{}.".format(cap_text)
-print(sentence_maker("Hello World."))    
+  
+
+result = []
+while True:
+    user_input = input("What is on your mind. ")
+    if user_input == "\end":
+        break
+    else:
+        result.append(user_input)
+print(result)
+        
+      
     
 
   
