@@ -2464,7 +2464,15 @@ lists are mutable means to be changed'''
 word_list = ["UDEMY", "APPMILLERS", "PYTHON"]
 import random
 secret_word = random.choice(word_list)
- 
+length_word = len(secret_word)
+blanks = []
+for _ in range(length_word):
+        blanks.append("_")
+print(blanks)
+
+guess = input("Guess a Letter: ")
+
+
         
       
     
