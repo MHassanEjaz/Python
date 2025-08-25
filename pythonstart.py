@@ -2439,25 +2439,25 @@ lists are mutable means to be changed'''
 
 
 # Project 25 Story Generator
-def sentence_maker(text):
-    words = ['what', 'how', 'where']
-    cap_text = text.capitalize()
-    for word in words:
-        if text.startswith(word):
-            return "{}?".format(cap_text)
-    return "{}.".format(cap_text)
+# def sentence_maker(text):
+#     words = ['what', 'how', 'where']
+#     cap_text = text.capitalize()
+#     for word in words:
+#         if text.startswith(word):
+#             return "{}?".format(cap_text)
+#     return "{}.".format(cap_text)
   
 
-result = []
-while True:
-    user_input = input("What is on your mind. ")
-    if user_input == "\end":
-        break
-    else:
-        complete_sentence = sentence_maker(user_input)
-        result.append(complete_sentence)
-story = " ".join(result)
-print(result)
+# result = []
+# while True:
+#     user_input = input("What is on your mind. ")
+#     if user_input == "\end":
+#         break
+#     else:
+#         complete_sentence = sentence_maker(user_input)
+#         result.append(complete_sentence)
+# story = " ".join(result)
+# print(story)
         
       
     
