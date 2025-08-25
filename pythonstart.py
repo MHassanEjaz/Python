@@ -2461,6 +2461,7 @@ lists are mutable means to be changed'''
 
 
 # Hangman, Flowchart, Pick Secret Word, Check letters and track lives
+word_list = ["UDEMY", "APPMILLERS", "PYTHON"]
  
         
       
