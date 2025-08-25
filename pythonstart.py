@@ -2461,57 +2461,114 @@ lists are mutable means to be changed'''
 
 
 # Hangman, Flowchart, Pick Secret Word, Check letters and track lives
+hangman_stages = ['''
+  +---+
+  |   |
+  |   O
+  |  /|\  
+  |  / \ 
+  |    
+==========
+''', '''
+  +---+
+  |   |
+  |   O
+  |  /|\  
+  |  / 
+  |    
+==========
+''', '''
+  +---+
+  |   |
+  |   O
+  |  /|\  
+  |  
+  |    
+==========
+''', '''
+  +---+
+  |   |
+  |   O
+  |  /| 
+  |  
+  |    
+==========''', '''
+  +---+
+  |   |
+  |   O
+  |   |
+  |  
+  |    
+==========
+''', '''
+  +---+
+  |   |
+  |   O
+  |   
+  |  
+  |    
+==========
+''', '''
+  +---+
+  |   |
+  |   
+  |   
+  |  
+  |    
+==========
+''']
+
+word_list = ["UDEMY", "APPMILLERS", "PYTHON"]
 import random
-from replit import clear
-print(logo)
-word_list = ["APPMILLERS", "UDEMY"]
 secret_word = random.choice(word_list)
-word_length =len(secret_word)
-guessed_letters = []
+length_word = len(secret_word)
+print(secret_word)
 blanks = []
-lives = 6
-for _ in range(word_length):
+
+for _ in range(length_word):
     blanks.append("_")
+
+guessed_letters = []
+lives = 6
 end_game = False
 while not end_game:
-    guess = input("Guess a letter: ").upper() 
-    clear()
+    guess = input("Guess a letter: ").upper()
     if guess in guessed_letters:
         print("You have already guessed this letter!")
         continue
     else:
         guessed_letters.append(guess)
-    
-    for position in range(word_length):
+
+    for position in range(length_word):
         letter = secret_word[position]
         if guess == letter:
             blanks[position] = letter
+    
     if guess not in secret_word:
         lives -= 1
-        if lives == 0:
-            end_game = True
-            print("You Lose.")
-    
+    if lives == 0:
+        end_game = True
+        print("You lose!")
     print(" ".join(blanks))
-    # TODO 2
     print(hangman_stages[lives])
     if "_" not in blanks:
         end_game = True
-        print("You win")
-    # TODO 1
+        print("You win.")
     if end_game:
-        ask = input("Do you want to play again?(Y/N) ")
+        ask = input("Do you want to play again? (Y/N)")
         if ask == "Y":
             secret_word = random.choice(word_list)
             blanks.clear()
-            word_length =len(secret_word)
-            for _ in range(word_length):
+            length_word = len(secret_word)
+            for _ in range(length_word):
                 blanks.append("_")
             end_game = False
             guessed_letters.clear()
             lives = 6
         else:
-            print("See you next time.")
+            print("See you next time!")
+
+
 
 
 
