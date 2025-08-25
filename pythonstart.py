@@ -2443,7 +2443,7 @@ def sentence_maker(text):
     words = ['what', 'how', 'where']
     cap_text = text.capitalize()
     for word in words:
-        if text.startwith(word):
+        if text.startswith(word):
             return "{}?".format(cap_text)
     return "{}.".format(cap_text)
 print(sentence_maker("Hello World."))    
