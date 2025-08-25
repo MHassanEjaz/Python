@@ -2463,6 +2463,7 @@ lists are mutable means to be changed'''
 # Hangman, Flowchart, Pick Secret Word, Check letters and track lives
 word_list = ["UDEMY", "APPMILLERS", "PYTHON"]
 import random
+secret_word = random.choice(word_list)
  
         
       
