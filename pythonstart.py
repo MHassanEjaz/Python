@@ -2387,37 +2387,37 @@ lists are mutable means to be changed'''
 # Caesar Cipher Program
 
 # Alphabet list
-alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+# alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+#             'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-# Recalculate position for encryption or decryption
-def refactor_position(p_position, p_cipher_type):
-    if p_cipher_type == 'E':
-        while p_position > 25:
-            p_position -= 26
-        return p_position
-    else:
-        while p_position < 0:
-            p_position += 26
-        return p_position
+# # Recalculate position for encryption or decryption
+# def refactor_position(p_position, p_cipher_type):
+#     if p_cipher_type == 'E':
+#         while p_position > 25:
+#             p_position -= 26
+#         return p_position
+#     else:
+#         while p_position < 0:
+#             p_position += 26
+#         return p_position
 
-# Core Caesar cipher function
-def caesar_cipher(p_initial_text, p_shift_amount, p_cipher_type):
-    final_text = ""
-    if p_cipher_type == "D":
-        p_shift_amount *= -1
+# # Core Caesar cipher function
+# def caesar_cipher(p_initial_text, p_shift_amount, p_cipher_type):
+#     final_text = ""
+#     if p_cipher_type == "D":
+#         p_shift_amount *= -1
 
-    for char in p_initial_text:
-        if char in alphabet:
-            position = alphabet.index(char)
-            new_position = position + p_shift_amount
-            new_position = refactor_position(new_position, p_cipher_type)
-            final_text += alphabet[new_position]
-        else:
-            final_text += char
+#     for char in p_initial_text:
+#         if char in alphabet:
+#             position = alphabet.index(char)
+#             new_position = position + p_shift_amount
+#             new_position = refactor_position(new_position, p_cipher_type)
+#             final_text += alphabet[new_position]
+#         else:
+#             final_text += char
 
-    action = "decoded" if p_cipher_type == "D" else "encoded"
-    print(f"Here's the {action} result: {final_text}")
+#     action = "decoded" if p_cipher_type == "D" else "encoded"
+#     print(f"Here's the {action} result: {final_text}")
 
 
 
@@ -2439,7 +2439,15 @@ def caesar_cipher(p_initial_text, p_shift_amount, p_cipher_type):
 
 
 # Project 25 Story Generator
-
+def sentence_maker(text):
+    words = ['what', 'how', 'where']
+    cap_text = text.capitalize()
+    for word in words:
+        if text.startwith(word):
+            return "{}?".format(cap_text)
+    return "{}.".format(cap_text)
+print(sentence_maker("Hello World."))    
+    
 
   
          
