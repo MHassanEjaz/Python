@@ -2454,7 +2454,9 @@ while True:
     if user_input == "\end":
         break
     else:
-        result.append(user_input)
+        complete_sentence = sentence_maker(user_input)
+        result.append(complete_sentence)
+story = " ".join(result)
 print(result)
         
       
