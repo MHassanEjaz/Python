@@ -2468,9 +2468,22 @@ length_word = len(secret_word)
 blanks = []
 for _ in range(length_word):
         blanks.append("_")
+        
 print(blanks)
 
 guess = input("Guess a Letter: ").upper()
+guessed-letter = []
+if guess in guessed-letter:
+    print("You have already guessed this letter!")
+else:
+    guessed_letter.append(guess)
+    
+for letter in secret_word:
+    if guess == letter:
+        print("Exist.")
+    else:
+        print("Not Exist.")
+    
 
 
 
