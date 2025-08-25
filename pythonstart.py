@@ -2472,18 +2472,17 @@ for _ in range(length_word):
 print(blanks)
 
 guess = input("Guess a Letter: ").upper()
-guessed-letter = []
-if guess in guessed-letter:
+guessed_letter = []
+if guess in guessed_letter:
     print("You have already guessed this letter!")
 else:
     guessed_letter.append(guess)
     
-for letter in secret_word:
+for position in range(length_word):
+    letter = secret_word[position]
     if guess == letter:
-        print("Exist.")
-    else:
-        print("Not Exist.")
-    
+       blanks[position] = letter
+print(blanks)
 
 
 
