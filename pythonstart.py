@@ -2779,8 +2779,19 @@ student_scores = {
 def convert_grade(p_dict):
     student_grades = {}
     for key in p_dict:
-       score = 
-convert_grade(student_scores)
+       score = p_dict[key]
+       if score >= 85:
+           student_grades[key] = "Outstanding"
+       elif score >= 65:
+           student_grades[key] = "Good"
+       elif score >= 50:
+           student_grades[key] = "Acceptable"
+       else:
+           student_grades[key] = "Fail"
+    return student_grades
+           
+           
+print(convert_grade(student_scores))
 
         
       
