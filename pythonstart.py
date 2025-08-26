@@ -2769,8 +2769,18 @@ lists are mutable means to be changed'''
 
 
 # Coding exercise Student Grades
-
-
+student_scores = {
+    "John" : 90,
+    "Edy" : 68,
+    "Marry" : 88,
+    "Ewan" : 79,
+    "Park" : 62,
+}
+def convert_grade(p_dict):
+    student_grades = {}
+    for key in p_dict:
+       score = 
+convert_grade(student_scores)
 
         
       
