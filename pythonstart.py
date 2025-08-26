@@ -2714,6 +2714,7 @@ lists are mutable means to be changed'''
 mydictionary = {"Miller" : "a person who owns or works in a corn mill",
                 "Programmer" : "a person who writes a computer program",
                 "App" : "an application, especially as downloaded by a user to a mobile device "}
+print(mydictionary)
 mydictionary = dict()
 print(mydictionary)
 
