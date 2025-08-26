@@ -2744,20 +2744,31 @@ lists are mutable means to be changed'''
 
 
 
-mydictionary = {"Miller" : "a person who owns or works in a corn mill",
-                "Programmer" : "a person who writes a computer program",
-                "App" : "an application, especially as downloaded by a user to a mobile device ",
-                123 : "One Two Three"}
+# mydictionary = {"Miller" : "a person who owns or works in a corn mill",
+#                 "Programmer" : "a person who writes a computer program",
+#                 "App" : "an application, especially as downloaded by a user to a mobile device ",
+#                 123 : "One Two Three"}
 
-for key in mydictionary:
-    if key == "App":
-        print("Key Exists")
-        print(mydictionary[key])
-
-
+# for key in mydictionary:
+#     if key == "App":
+#         print("Key Exists")
+#         print(mydictionary[key])
 
 
 
+# Coding exercise Multiply dictionary items
+# my_dict = {"One" : 1, "Two" : 2, "Three" : 3, "Four" : 4}
+# def multiply_values(p_dict):
+#     output = 1
+#     for key in p_dict:
+#         output = output * p_dict[key]
+#     return output
+# print(multiply_values(my_dict))
+
+
+
+
+# Coding exercise Student Grades
 
 
 
