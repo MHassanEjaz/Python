@@ -2725,8 +2725,9 @@ lists are mutable means to be changed'''
 mydictionary = {}
 print(mydictionary)
 mydictionary['Miller'] = 'a person who owns or works in a corn mill'
-mydictionary['']
+mydictionary['Programmer'] = 'a person who writes a computer program'
 print(mydictionary)
+print(mydictionary['Programmer'])
 
 
 
