@@ -2711,10 +2711,10 @@ lists are mutable means to be changed'''
 
 
 # Dictionaries in Python
-mydictionary = {"Miller" : "a person who owns or works in a corn mill",
-                "Programmer" : "a person who writes a computer program",
-                "App" : "an application, especially as downloaded by a user to a mobile device ",
-                123 : "One Two Three"}
+# mydictionary = {"Miller" : "a person who owns or works in a corn mill",
+#                 "Programmer" : "a person who writes a computer program",
+#                 "App" : "an application, especially as downloaded by a user to a mobile device ",
+#                 123 : "One Two Three"}
 # print(mydictionary)
 # mydictionary = dict()
 # print(mydictionary)
@@ -2722,7 +2722,11 @@ mydictionary = {"Miller" : "a person who owns or works in a corn mill",
 # mylist = ["Miller", "Programmer", "App"]
 # print(mylist[1])
 
-print(mydictionary[123])
+mydictionary = {}
+print(mydictionary)
+mydictionary['Miller'] = 'a person who owns or works in a corn mill'
+mydictionary['']
+print(mydictionary)
 
 
 
