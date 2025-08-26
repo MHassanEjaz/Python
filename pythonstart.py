@@ -2721,7 +2721,7 @@ mydictionary = {"Miller" : "a person who owns or works in a corn mill",
 # mylist = ["Miller", "Programmer", "App"]
 # print(mylist[1])
 
-# print(mydictionary["Miller"])
+print(mydictionary["Miller"])
 
 
 
