@@ -2769,35 +2769,42 @@ lists are mutable means to be changed'''
 
 
 # Coding exercise Student Grades
-student_scores = {
-    "John" : 90,
-    "Edy" : 68,
-    "Marry" : 88,
-    "Ewan" : 79,
-    "Park" : 62,
-}
-def convert_grade(p_dict):
-    student_grades = {}
-    for key in p_dict:
-       score = p_dict[key]
-       if score >= 85:
-           student_grades[key] = "Outstanding"
-       elif score >= 65:
-           student_grades[key] = "Good"
-       elif score >= 50:
-           student_grades[key] = "Acceptable"
-       else:
-           student_grades[key] = "Fail"
-    return student_grades
+# student_scores = {
+#     "John" : 90,
+#     "Edy" : 68,
+#     "Marry" : 88,
+#     "Ewan" : 79,
+#     "Park" : 62,
+# }
+# def convert_grade(p_dict):
+#     student_grades = {}
+#     for key in p_dict:
+#        score = p_dict[key]
+#        if score >= 85:
+#            student_grades[key] = "Outstanding"
+#        elif score >= 65:
+#            student_grades[key] = "Good"
+#        elif score >= 50:
+#            student_grades[key] = "Acceptable"
+#        else:
+#            student_grades[key] = "Fail"
+#     return student_grades
            
            
-print(convert_grade(student_scores))
+# print(convert_grade(student_scores))
 
         
       
     
 
-  
+# Remove items
+mydictionary = {"Miller" : "a person who owns or works in a corn mill",
+                "Programmer" : "a person who writes a computer program",
+                "App" : "an application, especially as downloaded by a user to a mobile device ",
+                123 : "One Two Three"}
+
+mydictionary.pop("Programmer")
+print(mydictionary)  
          
       
 
