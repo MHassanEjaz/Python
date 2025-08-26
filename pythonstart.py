@@ -2722,12 +2722,26 @@ lists are mutable means to be changed'''
 # mylist = ["Miller", "Programmer", "App"]
 # print(mylist[1])
 
-mydictionary = {}
-print(mydictionary)
-mydictionary['Miller'] = 'a person who owns or works in a corn mill'
-mydictionary['Programmer'] = 'a person who writes a computer program'
-print(mydictionary)
-print(mydictionary['Programmer'])
+# mydictionary = {}
+# print(mydictionary)
+# mydictionary['Miller'] = 'a person who owns or works in a corn mill'
+# mydictionary['Programmer'] = 'a person who writes a computer program'
+# print(mydictionary)
+# print(mydictionary['Programmer'])
+
+
+
+
+# Coding exercise Generate Dictionary
+# def genrate_dictionary(n):
+#     my_dict = dict()
+#     for num in range(1, n+1):
+#         my_dict[num] = num * num
+#     return my_dict
+# output = genrate_dictionary(5)
+# print(output)
+
+
 
 
 
