@@ -2803,7 +2803,17 @@ mydictionary = {"Miller" : "a person who owns or works in a corn mill",
                 "App" : "an application, especially as downloaded by a user to a mobile device ",
                 123 : "One Two Three"}
 
-mydictionary.pop("Programmer")
+# result = mydictionary.pop("Programmer", None)
+# print(result)
+# print(mydictionary) 
+
+
+# result = mydictionary.popitem()
+# print(result)
+# print(mydictionary)  
+
+
+del mydictionary['Miller']
 print(mydictionary)  
          
       
