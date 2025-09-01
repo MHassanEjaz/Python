@@ -2902,23 +2902,36 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # Nested dictionary inside list
-programming_language =[ {
-    "user_name" : "Elshad",
-    "favorite_languages" : ["Python", "Java", "C#"],
-    "experience" : 10
-},
-{
-"user_name" : "Renad",
-    "favorite_languages" : ["Scratch", "Python"],
-    "experience" : 2
-},
-]
-def add_new_user(p_user_name, p_favorite_languages, p_experience):
-    new_user = {}
-    new_user["user_name"] = p_user_name
-    new_user["favorite_languages"] = p_favorite_languages
-    new_user["experience"] = p_experience
-    programming_language.append(new_user)
-    print(programming_language)
-add_new_user("Edy", ["Java", "Kotlin", "Swift"], 10)
+# programming_language =[ {
+#     "user_name" : "Elshad",
+#     "favorite_languages" : ["Python", "Java", "C#"],
+#     "experience" : 10
+# },
+# {
+# "user_name" : "Renad",
+#     "favorite_languages" : ["Scratch", "Python"],
+#     "experience" : 2
+# },
+# ]
+# def add_new_user(p_user_name, p_favorite_languages, p_experience):
+#     new_user = {}
+#     new_user["user_name"] = p_user_name
+#     new_user["favorite_languages"] = p_favorite_languages
+#     new_user["experience"] = p_experience
+#     programming_language.append(new_user)
+#     print(programming_language)
+# add_new_user("Edy", ["Java", "Kotlin", "Swift"], 10)
 
+
+
+
+# Handling missing keys in dictionary
+items = {
+    "computer" : 10,
+    "printer" : 8,
+    "mouse" : 15,
+    "webcam" : 12,
+    "router" : 10,
+}
+quatity = items.get("microphone")
+print(f"Number of computer in the store: {quatity}")
