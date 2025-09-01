@@ -2860,8 +2860,11 @@ lists are mutable means to be changed'''
          
 # Nested Dictionaries
 programming_language = {
-    "Elshad" : ["Python", "Java", "C++"],
-    "Renad" : "Scratch",
+    "Elshad" : { "Favorite_language" : ["Python", "Java", "C++"], "experience" : 10
+                },
+    "Renad" : {"Favorite_language" : ["Scratch", "Python"],
+               "experience" : 2
+    },
     "Edy" : "Java",
 }
 mylist = [1,2,3,4,5,[1,2],[4,5]]
