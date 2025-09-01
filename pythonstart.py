@@ -2831,7 +2831,9 @@ lists are mutable means to be changed'''
 
 
 # IN/NOT IN Operator
-
+list1 = [1,2,3,4,5,6]
+string1 = "I Love Python"
+print("Like" not in string1)
          
       
 
