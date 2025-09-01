@@ -2918,5 +2918,7 @@ def add_new_user(p_user_name, p_favorite_languages, p_experience):
     new_user["user_name"] = p_user_name
     new_user["favorite_languages"] = p_favorite_languages
     new_user["experience"] = p_experience
-    print(new_user(""))
-add_new_user("")
+    programming_language.append(new_user)
+    print(programming_language)
+add_new_user("Edy", ["Java", "Kotlin", "Swift"], 10)
+
