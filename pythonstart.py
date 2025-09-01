@@ -2813,8 +2813,8 @@ lists are mutable means to be changed'''
 # print(mydictionary)  
 
 
-# del mydictionary['Miller']
-# print(mydictionary)  
+del mydictionary['Miller']
+print(mydictionary)  
          
       
 
