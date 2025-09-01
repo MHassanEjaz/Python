@@ -2845,15 +2845,20 @@ lists are mutable means to be changed'''
 
 
 # Coding exercise solution to count the characters in a word
-def count_character(word):
-    output_dict = dict()
-    for character in word:
-        print(character)
-        if character not in output_dict:
-            output_dict[character] = 1
-        else:
-            output_dict[character] = output_dict[character] + 1
-count_character("BABACDAS")
+# def count_character(word):
+#     output_dict = dict()
+#     for character in word:
+#         print(character)
+#         if character not in output_dict:
+#             output_dict[character] = 1
+#         else:
+#             output_dict[character] = output_dict[character] + 1
+#     return output_dict
+# print(count_character("BABACDAS"))
          
+         
+         
+# Nested Dictionaries
+
       
 
