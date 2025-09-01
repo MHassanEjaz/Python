@@ -2870,3 +2870,19 @@ programming_language = {
 mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
+
+# Nested dictionary inside list
+programming_language =[ {
+    "username" : "Elshad",
+    "favorite_language" : ["python", "java", "c++"],
+    "experience" : 10
+},
+{
+"username" : "Renad",
+    "favorite_language" : ["scratch", "java"],
+    "experience" : 2
+},
+]
+
+
+
