@@ -2820,14 +2820,18 @@ lists are mutable means to be changed'''
 
 
 # Coding exercise rename to key
-my_dict = {
-    "name" : "Edy",
-    "age" : 30,
-    "salary" : 5000,
-    "city" : "London",
-}
-my_dict["address"] = my_dict.pop("city")
-print(my_dict)
+# my_dict = {
+#     "name" : "Edy",
+#     "age" : 30,
+#     "salary" : 5000,
+#     "city" : "London",
+# }
+# my_dict["address"] = my_dict.pop("city")
+# print(my_dict)
+
+
+# IN/NOT IN Operator
+
          
       
 
