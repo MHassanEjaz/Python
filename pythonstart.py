@@ -2860,7 +2860,7 @@ lists are mutable means to be changed'''
          
 # Nested Dictionaries
 programming_language = {
-    "Elshad" : "Python",
+    "Elshad" : ["Python", "Java", "C++"],
     "Renad" : "Scratch",
     "Edy" : "Java",
 }
