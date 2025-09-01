@@ -2831,9 +2831,15 @@ lists are mutable means to be changed'''
 
 
 # IN/NOT IN Operator
-list1 = [1,2,3,4,5,6]
-string1 = "I Love Python"
-print("Like" not in string1)
+# list1 = [1,2,3,4,5,6]
+# string1 = "I Love Python"
+# # print("Like" not in string1)
+# my_dict = {
+#     1:"one",
+#     2:"two",
+#     3:"three"
+# }
+# print(9 not in my_dict)
          
       
 
