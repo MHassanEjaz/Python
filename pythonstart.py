@@ -2859,6 +2859,36 @@ lists are mutable means to be changed'''
          
          
 # Nested Dictionaries
+# programming_language = {
+#     "Elshad" : { "Favorite_language" : ["Python", "Java", "C++"], "experience" : 10
+#                 },
+#     "Renad" : {"Favorite_language" : ["Scratch", "Python"],
+#                "experience" : 2
+#     },
+#     "Edy" : "Java",
+# }
+# mylist = [1,2,3,4,5,[1,2],[4,5]]
+
+
+
+# # Nested dictionary inside list
+# programming_language =[ {
+#     "username" : "Elshad",
+#     "favorite_language" : ["python", "java", "c++"],
+#     "experience" : 10
+# },
+# {
+# "username" : "Renad",
+#     "favorite_language" : ["scratch", "java"],
+#     "experience" : 2
+# },
+# ]
+
+
+
+
+
+# Coding exercis nested dictionaries
 programming_language = {
     "Elshad" : { "Favorite_language" : ["Python", "Java", "C++"], "experience" : 10
                 },
@@ -2873,16 +2903,20 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 # Nested dictionary inside list
 programming_language =[ {
-    "username" : "Elshad",
-    "favorite_language" : ["python", "java", "c++"],
+    "user_name" : "Elshad",
+    "favorite_languages" : ["Python", "Java", "C#"],
     "experience" : 10
 },
 {
-"username" : "Renad",
-    "favorite_language" : ["scratch", "java"],
+"user_name" : "Renad",
+    "favorite_languages" : ["Scratch", "Python"],
     "experience" : 2
 },
 ]
-
-
-
+def add_new_user(p_user_name, p_favorite_languages, p_experience):
+    new_user = {}
+    new_user["user_name"] = p_user_name
+    new_user["favorite_languages"] = p_favorite_languages
+    new_user["experience"] = p_experience
+    print(new_user(""))
+add_new_user("")
