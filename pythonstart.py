@@ -2815,6 +2815,19 @@ lists are mutable means to be changed'''
 
 # del mydictionary['Miller']
 # print(mydictionary)  
+
+
+
+
+# Coding exercise rename to key
+my_dict = {
+    "name" : "Edy",
+    "age" : 30,
+    "salary" : 5000,
+    "city" : "London",
+}
+my_dict.pop("city")
+print(my_dict)
          
       
 
