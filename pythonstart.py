@@ -2934,4 +2934,4 @@ items = {
     "router" : 10,
 }
 quatity = items.get("microphone")
-print(f"Number of computer in the store: {quatity}")
+print(f"Number of microphones in the store: {quatity}")
