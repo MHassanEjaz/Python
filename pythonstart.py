@@ -2840,6 +2840,12 @@ lists are mutable means to be changed'''
 #     3:"three"
 # }
 # print(9 not in my_dict)
+
+
+
+
+# Coding exercise solution to count the characters in a word
+
          
       
 
