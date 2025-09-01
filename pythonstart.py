@@ -2826,7 +2826,7 @@ my_dict = {
     "salary" : 5000,
     "city" : "London",
 }
-my_dict.pop("city")
+my_dict["address"] = my_dict.pop("city")
 print(my_dict)
          
       
