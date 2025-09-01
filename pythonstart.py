@@ -2927,11 +2927,13 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 # Handling missing keys in dictionary
 items = {
-    "computer" : 10,
+    "computer" 
     "printer" : 8,
     "mouse" : 15,
     "webcam" : 12,
     "router" : 10,
 }
-quatity = items.get("microphone")
+# quatity = items.get("microphone")
+# print(f"Number of microphones in the store: {quatity}")
+quatity = items.setdefault("computer", 11)
 print(f"Number of microphones in the store: {quatity}")
