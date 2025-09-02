@@ -3088,3 +3088,5 @@ def remove_empty_items(p_dict):
     for key, value in p_dict.item():
         if value is None:
             p_dict.pop(key)
+    return p_dict
+print(remove_empty_items(custom_dict))
