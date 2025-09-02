@@ -2993,3 +2993,9 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # coding exercise length of dictionary values
+names_dict = {
+    1 : "Elshad",
+    2 : "Renad",
+    3 : "Johanna",
+    4 : "Appmillers"
+}
