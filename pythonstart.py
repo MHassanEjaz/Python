@@ -3056,11 +3056,19 @@ custom_dict = {
     5: "five",
     6: "six"
 }
-values = custom_dict.values()
-print(values)
+# values = custom_dict.values()
+# print(values)
 
 # custom_dict[8] = "eight"
 # print(values)
 
-print("five" in values)
-print("ten" in values)
+# print("five" in values)
+# print("ten" in values)
+
+values = list(custom_dict.values())
+keys = list(custom_dict.keys())
+if "five" in values:
+    index = values.index("five")
+    key = keys[index]
+    print(f"{custom_dict[key]} is found with the key {key}")
+    
