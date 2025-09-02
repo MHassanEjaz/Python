@@ -3001,4 +3001,6 @@ names_dict = {
 }
 def value_length(p_dict):
     output_dict = {}
-    
+    for key, value in p_dict.items():
+        output_dict[key] = {}
+        output_dict[key][value] = len(value) 
