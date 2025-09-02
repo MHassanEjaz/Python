@@ -3095,3 +3095,12 @@ lists are mutable means to be changed'''
 
 
 # Reference to dictionary copy() method
+person = {
+    "name": "Elshad",
+    "age": 28,
+    "city": "London"
+}
+newperson = person
+newperson["city"] = "berlin"
+print(person["city"])
+print(newperson["city"])
