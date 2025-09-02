@@ -3129,4 +3129,6 @@ def merge_dict(p_dict1, p_dict2):
     dict3.update(p_dict2)
     return dict3
 print(merge_dict(dict1, dict2))
+print(dict1)
+print(dict2)
     
