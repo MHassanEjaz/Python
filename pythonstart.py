@@ -3058,3 +3058,9 @@ custom_dict = {
 }
 values = custom_dict.values()
 print(values)
+
+# custom_dict[8] = "eight"
+# print(values)
+
+print("five" in values)
+print("ten" in values)
