@@ -3103,8 +3103,17 @@ person = {
     "city": citylist,
     "Language": languagelist,
 }
+
+person2 = {
+    "name": namelist,
+    "city": citylist,
+    "Language": languagelist,
+}
+
 newperson = person.copy()
 # person["city"] = "Berlin"
-newperson["city"].append("Madrid")
+person["city"].append("Appended using person dict")
+newperson["city"].append("Appended using new person dict")
+citylist.append("Appended by itself")
 print(person["city"])
 print(newperson["city"])
