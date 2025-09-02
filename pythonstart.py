@@ -3100,7 +3100,7 @@ person = {
     "age": 28,
     "city": "London"
 }
-newperson = person
-newperson["city"] = "berlin"
+newperson = person.copy()
+person["city"] = "Berlin"
 print(person["city"])
 print(newperson["city"])
