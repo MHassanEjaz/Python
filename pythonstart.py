@@ -2993,14 +2993,40 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # coding exercise length of dictionary values
-names_dict = {
-    1 : "Elshad",
-    2 : "Renad",
-    3 : "Johanna",
-    4 : "Appmillers"
+# names_dict = {
+#     1 : "Elshad",
+#     2 : "Renad",
+#     3 : "Johanna",
+#     4 : "Appmillers"
+# }
+# def value_length(p_dict):
+#     output_dict = {}
+#     for key, value in p_dict.items():
+#         output_dict[key] = {}
+#         output_dict[key][value] = len(value)
+#     return output_dict
+# print(value_length(names_dict)) 
+
+
+
+
+# Dictionary update method
+custom_dict = {
+    0: "zero",
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six"
 }
-def value_length(p_dict):
-    output_dict = {}
-    for key, value in p_dict.items():
-        output_dict[key] = {}
-        output_dict[key][value] = len(value) 
+
+custom_dict2 = {
+    8: "eight",
+    9: "nine",
+    1: "one",
+    2: "two"
+}
+custom_dict.update(custom_dict2)
+for key, value in custom_dict.items():
+    print(key, value)
