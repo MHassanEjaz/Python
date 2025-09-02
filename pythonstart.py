@@ -3095,12 +3095,16 @@ lists are mutable means to be changed'''
 
 
 # Reference to dictionary copy() method
+namelist = ["Edy", "John", "Ewan"]
+citylist = ["London", "Berlin", "Paris"]
+languagelist = ["English", "German", "French"]
 person = {
-    "name": "Elshad",
-    "age": 28,
-    "city": "London"
+    "name": namelist,
+    "city": citylist,
+    "Language": languagelist,
 }
 newperson = person.copy()
-person["city"] = "Berlin"
+# person["city"] = "Berlin"
+newperson["city"].append("Madrid")
 print(person["city"])
 print(newperson["city"])
