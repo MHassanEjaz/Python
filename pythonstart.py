@@ -2964,7 +2964,7 @@ def group_types(p_list):
     output_dict = dict.fromkeys(p_list)
     for key in output_dict:
         if isinstance(key, int):
-            output_dict[key] = "Inteher"
+            output_dict[key] = "Integer"
         else:
             output_dict[key] = "String"
     return output_dict
