@@ -2956,3 +2956,6 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 # keys = custom_dict.keys()
 # print(keys)
+
+
+# Coding exercise solution to group value type
