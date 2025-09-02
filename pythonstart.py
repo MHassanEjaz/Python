@@ -3072,3 +3072,6 @@ if "five" in values:
     key = keys[index]
     print(f"{custom_dict[key]} is found with the key {key}")
     
+for key, value in custom_dict.items():
+    if value == "five":
+        print(f"{custom_dict[key]} is found with the key {key}")
