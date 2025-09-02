@@ -2973,19 +2973,23 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # Dictionary item() method
-custom_dict = {
-    0: "zero",
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six",
-}
-for item in custom_dict:
-    print(item, custom_dict)
+# custom_dict = {
+#     0: "zero",
+#     1: "one",
+#     2: "two",
+#     3: "three",
+#     4: "four",
+#     5: "five",
+#     6: "six",
+# }
+# for item in custom_dict:
+#     print(item, custom_dict)
     
-print()
+# print()
 
-for key, value in custom_dict.items():
-    print(key, value)
+# for key, value in custom_dict.items():
+#     print(key, value)
+
+
+
+# coding exercise length of dictionary values
