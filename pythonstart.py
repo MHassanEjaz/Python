@@ -3135,20 +3135,54 @@ lists are mutable means to be changed'''
     
     
 # Deep Copy
-import copy
-namelist = ["Edy", "John", "Ewan"]
-citylist = ["London", "Berlin", "Paris"]
-languagelist = ["English", "German", "French"]
-person = {
-    "name": namelist,
-    "city": citylist,
-    "Language": languagelist,
-}
+# import copy
+# namelist = ["Edy", "John", "Ewan"]
+# citylist = ["London", "Berlin", "Paris"]
+# languagelist = ["English", "German", "French"]
+# person = {
+#     "name": namelist,
+#     "city": citylist,
+#     "Language": languagelist,
+# }
 
-# newperson = person.copy()
-# deep copy
-newperson = copy.deepcopy(person)
-newperson["city"].append("Madrid")
-print(newperson["city"])
-print(person["city"])
-print(id(newperson["city"]), newperson["city"])
+# # newperson = person.copy()
+# # deep copy
+# newperson = copy.deepcopy(person)
+# newperson["city"].append("Madrid")
+# print(newperson["city"])
+# print(person["city"])
+# print(id(newperson["city"]), newperson["city"])
+
+
+
+
+# coding exercise custom deep copy for list values
+# original_dict = {
+#     "names" : ["Edy", "John", "Ewan"],
+#     "numbers" : [1,2,3,4,5]
+# }
+# def deep_copy(p_dict):
+#     new_dict = {}
+#     for key, value in p_dict.items():
+#         new_value = value.copy()
+#         new_dict[key] = new_value
+#     return new_dict
+
+# copied_dict = deep_copy(original_dict)
+# copied_dict["names"].append("Jack")
+# copied_dict["numbers"].append(6)
+# print(original_dict)
+# print(copied_dict)
+
+
+
+# Dictionary operations
+mydict = {
+    3:"three",
+    5:"five",
+    9:"nine",
+    2:"two",
+    1:"one",
+    4:"four",
+}
+print(len(mydict))
