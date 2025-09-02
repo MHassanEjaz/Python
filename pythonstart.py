@@ -3095,25 +3095,34 @@ lists are mutable means to be changed'''
 
 
 # Reference to dictionary copy() method
-namelist = ["Edy", "John", "Ewan"]
-citylist = ["London", "Berlin", "Paris"]
-languagelist = ["English", "German", "French"]
-person = {
-    "name": namelist,
-    "city": citylist,
-    "Language": languagelist,
-}
+# namelist = ["Edy", "John", "Ewan"]
+# citylist = ["London", "Berlin", "Paris"]
+# languagelist = ["English", "German", "French"]
+# person = {
+#     "name": namelist,
+#     "city": citylist,
+#     "Language": languagelist,
+# }
 
-person2 = {
-    "name": namelist,
-    "city": citylist,
-    "Language": languagelist,
-}
+# person2 = {
+#     "name": namelist,
+#     "city": citylist,
+#     "Language": languagelist,
+# }
 
-newperson = person.copy()
-# person["city"] = "Berlin"
-person["city"].append("Appended using person dict")
-newperson["city"].append("Appended using new person dict")
-citylist.append("Appended by itself")
-print(person["city"])
-print(newperson["city"])
+# newperson = person.copy()
+# # person["city"] = "Berlin"
+# person["city"].append("Appended using person dict")
+# newperson["city"].append("Appended using new person dict")
+# citylist.append("Appended by itself")
+# print(person["city"])
+# print(newperson["city"])
+
+
+
+
+# coding exercise merge two dictionary
+dict1 = {"One":2, "Two":2, "Three":3}
+dict1 = {"Three":3, "Four":4, "Five":5}
+def merge_dict(dict1, dixt2):
+    
