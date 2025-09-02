@@ -2999,3 +2999,6 @@ names_dict = {
     3 : "Johanna",
     4 : "Appmillers"
 }
+def value_length(p_dict):
+    output_dict = {}
+    
