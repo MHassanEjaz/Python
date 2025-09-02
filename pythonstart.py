@@ -2982,5 +2982,10 @@ custom_dict = {
     5: "five",
     6: "six",
 }
+for item in custom_dict:
+    print(item, custom_dict)
+    
+print()
 
-
+for key, value in custom_dict.items():
+    print(key, value)
