@@ -3034,13 +3034,27 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # coding exercise concatenate three dictionaries
-dict1 = {1: "one", 2: "two"}
-dict2 = {3: "three", 4: "four"}
-dict3 = {5: "five", 6: "six"}
-def concatenate(d1, d2, d3):
-    new_dict = {}
-    for dic in [d1, d2, d3]:
-        new_dict.update(dic)
-        print(new_dict)
-    return new_dict
-concatenate(dict1, dict2, dict3)
+# dict1 = {1: "one", 2: "two"}
+# dict2 = {3: "three", 4: "four"}
+# dict3 = {5: "five", 6: "six"}
+# def concatenate(d1, d2, d3):
+#     new_dict = {}
+#     for dic in [d1, d2, d3]:
+#         new_dict.update(dic)
+#     return new_dict
+# print(concatenate(dict1, dict2, dict3))
+
+
+
+# Dictionary value method
+custom_dict = {
+    0: "zero",
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six"
+}
+values = custom_dict.values()
+print(values)
