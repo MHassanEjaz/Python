@@ -3037,3 +3037,10 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 dict1 = {1: "one", 2: "two"}
 dict2 = {3: "three", 4: "four"}
 dict3 = {5: "five", 6: "six"}
+def concatenate(d1, d2, d3):
+    new_dict = {}
+    for dic in [d1, d2, d3]:
+        new_dict.update(dic)
+        print(new_dict)
+    return new_dict
+concatenate(dict1, dict2, dict3)
