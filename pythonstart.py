@@ -3011,22 +3011,29 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # Dictionary update method
-custom_dict = {
-    0: "zero",
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six"
-}
+# custom_dict = {
+#     0: "zero",
+#     1: "one",
+#     2: "two",
+#     3: "three",
+#     4: "four",
+#     5: "five",
+#     6: "six"
+# }
 
-custom_dict2 = {
-    8: "eight",
-    9: "nine",
-    1: "one",
-    2: "two"
-}
-custom_dict.update(custom_dict2)
-for key, value in custom_dict.items():
-    print(key, value)
+# custom_dict2 = {
+#     8: "eight",
+#     9: "nine",
+#     1: "one",
+#     2: "two"
+# }
+# custom_dict.update(custom_dict2)
+# for key, value in custom_dict.items():
+#     print(key, value)
+
+
+
+# coding exercise concatenate three dictionaries
+dict1 = {1: "one", 2: "two"}
+dict2 = {3: "three", 4: "four"}
+dict3 = {5: "five", 6: "six"}
