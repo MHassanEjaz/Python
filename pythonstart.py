@@ -2889,15 +2889,15 @@ lists are mutable means to be changed'''
 
 
 # Coding exercis nested dictionaries
-programming_language = {
-    "Elshad" : { "Favorite_language" : ["Python", "Java", "C++"], "experience" : 10
-                },
-    "Renad" : {"Favorite_language" : ["Scratch", "Python"],
-               "experience" : 2
-    },
-    "Edy" : "Java",
-}
-mylist = [1,2,3,4,5,[1,2],[4,5]]
+# programming_language = {
+#     "Elshad" : { "Favorite_language" : ["Python", "Java", "C++"], "experience" : 10
+#                 },
+#     "Renad" : {"Favorite_language" : ["Scratch", "Python"],
+#                "experience" : 2
+#     },
+#     "Edy" : "Java",
+# }
+# mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 
@@ -3047,15 +3047,15 @@ mylist = [1,2,3,4,5,[1,2],[4,5]]
 
 
 # Dictionary value method
-custom_dict = {
-    0: "zero",
-    1: "one",
-    2: "two",
-    3: "three",
-    4: "four",
-    5: "five",
-    6: "six"
-}
+# custom_dict = {
+#     0: "zero",
+#     1: "one",
+#     2: "two",
+#     3: "three",
+#     4: "four",
+#     5: "five",
+#     6: "six"
+# }
 # values = custom_dict.values()
 # print(values)
 
@@ -3065,13 +3065,26 @@ custom_dict = {
 # print("five" in values)
 # print("ten" in values)
 
-values = list(custom_dict.values())
-keys = list(custom_dict.keys())
-if "five" in values:
-    index = values.index("five")
-    key = keys[index]
-    print(f"{custom_dict[key]} is found with the key {key}")
+# values = list(custom_dict.values())
+# keys = list(custom_dict.keys())
+# if "five" in values:
+#     index = values.index("five")
+#     key = keys[index]
+#     print(f"{custom_dict[key]} is found with the key {key}")
     
-for key, value in custom_dict.items():
-    if value == "five":
-        print(f"{custom_dict[key]} is found with the key {key}")
+# for key, value in custom_dict.items():
+#     if value == "five":
+#         print(f"{custom_dict[key]} is found with the key {key}")
+
+
+
+# coding exercise remove empty items
+custom_dict = {
+    "name": "Elshad",
+    "age": 28,
+    "city": None
+}
+def remove_empty_items(p_dict):
+    for key, value in p_dict.item():
+        if value is None:
+            p_dict.pop(key)
