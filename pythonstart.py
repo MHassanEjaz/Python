@@ -3220,3 +3220,13 @@ for key, value in available_parts.items():
     print(f"{key}: {value}")
 print("0: to finish")
 current_choice = input("> ")
+tottal_price = 0
+if current_choice in available_parts:
+    chosen_part = available_parts[current_choice]
+    if price_quantity[chosen_part]["quantity"] > 0:
+        # implement logic
+        print(f"Adding {chosen_part}")
+        price_quantity[chosen_part][]
+    else:
+        print(f"{chosen_part} is out of stock!.")
+        
