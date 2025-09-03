@@ -3240,15 +3240,35 @@ lists are mutable means to be changed'''
 
 
 # Project 28 Blind Auction Program
+from ascii_art import logo
+import os
 
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+print(logo)
+print("Welcome to my Python program!")
+
+def find_highest_amount(p_bid_record):
+    highest_bid = 0
+    highest_bidder = ""
+    for key, value in p_bid_record.items():
+        if value > highest_bid:
+            highest_bid = value
+            highest_bidder = key
+    print(f"\nThe winner is {highest_bidder} with a bid of ${highest_bid}")
 
 bids = {}
 bidding_finished = False
+
 while not bidding_finished:
     name = input("What is your name?: ")
-    bid_amount = input("What is your bid amount? $")
+    bid_amount = int(input("What is your bid amount? $"))  # convert to int
     bids[name] = bid_amount
-    should_continue = input("Are there any other bidders?(Y/N): ")
+    should_continue = input("Are there any other bidders? (Y/N): ").upper()
     if should_continue == "N":
         bidding_finished = True
+        find_highest_amount(bids)
+    elif should_continue == "Y":
+        clear()
     
