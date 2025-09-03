@@ -3215,3 +3215,7 @@ price_quantity = {
     "hdmi cable": {"price":20, "quantity": 7},
     "dvd drive": {"price":50, "quantity": 5},
 }
+print("Please add options from the list")
+for key, value in available_parts.items():
+    print(f"{key}: {value}")
+print("0: to finish")
