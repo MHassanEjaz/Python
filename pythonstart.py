@@ -3219,3 +3219,4 @@ print("Please add options from the list")
 for key, value in available_parts.items():
     print(f"{key}: {value}")
 print("0: to finish")
+current_choice = input("> ")
