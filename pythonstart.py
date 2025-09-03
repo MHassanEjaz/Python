@@ -3240,3 +3240,15 @@ lists are mutable means to be changed'''
 
 
 # Project 28 Blind Auction Program
+
+
+bids = {}
+bidding_finished = False
+while not bidding_finished:
+    name = input("What is your name?: ")
+    bid_amount = input("What is your bid amount? $")
+    bids[name] = bid_amount
+    should_continue = input("Are there any other bidders?(Y/N): ")
+    if should_continue == "N":
+        bidding_finished = True
+    
