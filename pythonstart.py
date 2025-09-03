@@ -3218,10 +3218,6 @@ price_quantity = {
 current_choice = None
 tottal_price = 0
 while current_choice != "0":
-    print("Please add options from the list")
-    for key, value in available_parts.items():
-        print(f"{key}: {value}")
-    print("0: to finish")
     current_choice = input("> ")
     if current_choice in available_parts:
         chosen_part = available_parts[current_choice]
@@ -3232,4 +3228,10 @@ while current_choice != "0":
             tottal_price += price_quantity[chosen_part]["price"]
         else:
             print(f"{chosen_part} is out of stock!.")
+    else:
+        print("Please add options from the list")
+        for key, value in available_parts.items():
+            print(f"{key}: {value}")
+        print("0: to finish")
+        
 print(f"Total Price: {tottal_price}")
