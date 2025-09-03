@@ -3226,7 +3226,8 @@ if current_choice in available_parts:
     if price_quantity[chosen_part]["quantity"] > 0:
         # implement logic
         print(f"Adding {chosen_part}")
-        price_quantity[chosen_part][]
+        price_quantity[chosen_part]["quantity"] -= 1
+        tottal_price += price_quantity[chosen_part]["price"]
     else:
         print(f"{chosen_part} is out of stock!.")
-        
+print(f"Total Price: {tottal_price}")
