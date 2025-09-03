@@ -3199,3 +3199,19 @@ lists are mutable means to be changed'''
 
 
 # Project 27 Calculate total price
+available_parts = {
+    "1":"computer",
+    "2":"monitor",
+    "3":"keyboard",
+    "4":"mouse",
+    "5":"hdmi cable",
+    "6":"dvd drive",
+}
+price_quantity = {
+    "computer": {"price":500, "quantity": 10},
+    "monitor": {"price":200, "quantity": 8},
+    "keyboard": {"price":500, "quantity": 5},
+    "mouse": {"price":10, "quantity": 0},
+    "hdmi cable": {"price":20, "quantity": 7},
+    "dvd drive": {"price":50, "quantity": 5},
+}
