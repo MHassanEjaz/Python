@@ -3177,12 +3177,25 @@ lists are mutable means to be changed'''
 
 
 # Dictionary operations
-mydict = {
-    3:"three",
-    5:"five",
-    9:"nine",
-    2:"two",
-    1:"one",
-    4:"four",
-}
-print(len(mydict))
+# mydict = {
+#     3:"three",
+#     5:"five",
+#     9:"nine",
+#     2:"two",
+#     1:"one",
+#     4:"four",
+# }
+
+# mydict1 = {
+#     1:"zero",
+#     False : "False"
+# }
+# print(len(mydict1))
+# print(all(mydict1))
+# print(any(mydict1))
+
+
+
+
+
+# 
