@@ -3215,19 +3215,21 @@ price_quantity = {
     "hdmi cable": {"price":20, "quantity": 7},
     "dvd drive": {"price":50, "quantity": 5},
 }
-print("Please add options from the list")
-for key, value in available_parts.items():
-    print(f"{key}: {value}")
-print("0: to finish")
-current_choice = input("> ")
+current_choice = None
 tottal_price = 0
-if current_choice in available_parts:
-    chosen_part = available_parts[current_choice]
-    if price_quantity[chosen_part]["quantity"] > 0:
-        # implement logic
-        print(f"Adding {chosen_part}")
-        price_quantity[chosen_part]["quantity"] -= 1
-        tottal_price += price_quantity[chosen_part]["price"]
-    else:
-        print(f"{chosen_part} is out of stock!.")
+while current_choice != "0":
+    print("Please add options from the list")
+    for key, value in available_parts.items():
+        print(f"{key}: {value}")
+    print("0: to finish")
+    current_choice = input("> ")
+    if current_choice in available_parts:
+        chosen_part = available_parts[current_choice]
+        if price_quantity[chosen_part]["quantity"] > 0:
+            # implement logic
+            print(f"Adding {chosen_part}")
+            price_quantity[chosen_part]["quantity"] -= 1
+            tottal_price += price_quantity[chosen_part]["price"]
+        else:
+            print(f"{chosen_part} is out of stock!.")
 print(f"Total Price: {tottal_price}")
