@@ -3294,7 +3294,8 @@ def check_answer(question_num, answer, attempts, player):
         print(f"Correct Answer! \n{player}'s score is {player_score[player] + 1} ")
         return True
     else:
-        print(f"Wrong Answer:( \n You have {attempts -1} attemptes left)")
+        print(f"Wrong Answer:( \n You have {attempts -1} attemptes left. !\nTry Again...) ")
+        return False
         
 quiz = {
     1 : {
