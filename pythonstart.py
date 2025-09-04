@@ -3337,3 +3337,7 @@ for question in quiz:
         answer = input("Enter Answer (To move to the next question, type 'skip): ")
         if answer == "skip":
             break
+        check = check_answer(question, answer, attempts, current_player)
+        if check:
+            player_score[current_player] += 1
+            break
