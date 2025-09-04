@@ -3341,3 +3341,5 @@ for question in quiz:
         if check:
             player_score[current_player] += 1
             break
+        else:
+            attempts -= 1
