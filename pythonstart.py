@@ -3288,7 +3288,10 @@ print(logo)
 print("Welcome to the Quiz App")
 print("There are total of 6 questions, you can skip a question anytime by typing 'skip....")
 
-
+def check_answer(question_num, answer, attempts, player):
+    correct_answer = quiz[question_num]["answer"]
+    if correct_answer.lower() == answer.lower():
+        
 quiz = {
     1 : {
         "question" : "A mapping from a set of keys to their corresponding values",
