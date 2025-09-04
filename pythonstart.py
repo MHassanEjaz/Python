@@ -3318,3 +3318,11 @@ quiz = {
 input("Press any key to get started...")
 players = input("Enter 2 players with Space: ")
 player_list = players.split(" ")
+player_score = dict.fromkeys(player_list, 0)
+current_player = player_list[0] # Starting with first player
+for question in quiz:
+    print("-----------------------------------")
+    print(f"It is {current_player}'s turn. ")
+    attempts = 2
+    while attempts > 0:
+        
