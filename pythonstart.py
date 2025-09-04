@@ -3286,6 +3286,8 @@ logo = """
 
 print(logo)
 print("Welcome to the Quiz App")
+print("There are total of 6 questions, you can skip a question anytime by typing 'skip....")
+
 
 quiz = {
     1 : {
