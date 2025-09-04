@@ -3326,3 +3326,6 @@ for question in quiz:
     attempts = 2
     while attempts > 0:
         print(quiz[question]["question"])
+        answer = input("Enter Answer (To move to the next question, type 'skip): ")
+        if answer == "skip":
+            break
