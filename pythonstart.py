@@ -3318,4 +3318,3 @@ quiz = {
 input("Press any key to get started...")
 players = input("Enter 2 players with Space: ")
 player_list = players.split(" ")
-print(players)
