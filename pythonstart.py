@@ -3276,7 +3276,16 @@ lists are mutable means to be changed'''
 
 # Project 29 Quiz App
 
+logo = """ 
+ ██████  ██    ██ ██ ███████      █████  ██████  ██████  
+██    ██ ██    ██ ██    ███      ██   ██ ██   ██ ██   ██ 
+██    ██ ██    ██ ██   ███       ███████ ██████  ██████  
+██ ▄▄ ██ ██    ██ ██  ███        ██   ██ ██      ██      
+ ██████   ██████  ██ ███████     ██   ██ ██      ██      
+    ▀▀                                                  """
 
+print(logo)
+print("Welcome to the Quiz App")
 
 quiz = {
     1 : {
