@@ -3325,4 +3325,4 @@ for question in quiz:
     print(f"It is {current_player}'s turn. ")
     attempts = 2
     while attempts > 0:
-        
+        print(quiz[question]["question"])
