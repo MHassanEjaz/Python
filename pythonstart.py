@@ -3390,3 +3390,6 @@ lists are mutable means to be changed'''
 
 club = ("FC Barcelona", "Spain", 1899)
 print(club)
+print(club[0])
+print(club[1])
+print(club[2])
