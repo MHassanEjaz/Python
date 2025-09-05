@@ -3403,3 +3403,9 @@ lists are mutable means to be changed'''
 
 
 
+a=b=c=d=20
+a=10
+b=10
+c=10
+d=10
+print(c)
