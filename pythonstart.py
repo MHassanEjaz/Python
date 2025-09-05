@@ -3375,3 +3375,8 @@ lists are mutable means to be changed'''
 
 
 
+
+# Tuple in Python
+'''tuple is a data structure with round brackets like (1,2,3)'''
+'''list is a data structure with square brackets like [1,2,3]'''
+'''dictionary is a data structure with curly brackets like {1,2,3}'''
