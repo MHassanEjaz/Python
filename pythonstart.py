@@ -3275,71 +3275,103 @@ lists are mutable means to be changed'''
 
 
 # Project 29 Quiz App
+# import os
 
-logo = """ 
- ██████  ██    ██ ██ ███████      █████  ██████  ██████  
-██    ██ ██    ██ ██    ███      ██   ██ ██   ██ ██   ██ 
-██    ██ ██    ██ ██   ███       ███████ ██████  ██████  
-██ ▄▄ ██ ██    ██ ██  ███        ██   ██ ██      ██      
- ██████   ██████  ██ ███████     ██   ██ ██      ██      
-    ▀▀                                                  """
+# logo = """ 
+#  ██████  ██    ██ ██ ███████      █████  ██████  ██████  
+# ██    ██ ██    ██ ██    ███      ██   ██ ██   ██ ██   ██ 
+# ██    ██ ██    ██ ██   ███       ███████ ██████  ██████  
+# ██ ▄▄ ██ ██    ██ ██  ███        ██   ██ ██      ██      
+#  ██████   ██████  ██ ███████     ██   ██ ██      ██      
+#     ▀▀                                                  """
 
-print(logo)
-print("Welcome to the Quiz App")
-print("There are total of 6 questions, you can skip a question anytime by typing 'skip....")
-
-def check_answer(question_num, answer, attempts, player):
-    correct_answer = quiz[question_num]["answer"]
-    if correct_answer.lower() == answer.lower():
-        print(f"Correct Answer! \n{player}'s score is {player_score[player] + 1} ")
-        return True
-    else:
-        print(f"Wrong Answer:( \n You have {attempts -1} attemptes left. !\nTry Again...) ")
-        return False
+# print(logo)
+# print("Welcome to the Quiz App")
+# print("There are total of 6 questions, you can skip a question anytime by typing 'skip....")
         
-quiz = {
-    1 : {
-        "question" : "A mapping from a set of keys to their corresponding values",
-        "answer" : "Dictionary"
-    },
-    2 : {
-        "question" : "Another name for a key-value pair",
-        "answer" : "Item"
-    },
-    3 : {
-        "question" : "An object that appears in a dictionary as the first part of a key-value pair",
-        "answer" : "Key"
-    },
-    4 : {
-        "question" : "An object that appears in a dictionary as the second part of a key-value pair",
-        "answer" : "Value"
-    },
-    5 : {
-        "question" : "A loop “inside” of another loop.",
-        "answer" : "Nested Loop"
-    },
-    6 : {
-        "question" : "A dictionary that is an element of another dictionary",
-        "answer" : "Nested Dictionary"
-    }
-}
-input("Press any key to get started...")
-players = input("Enter 2 players with Space: ")
-player_list = players.split(" ")
-player_score = dict.fromkeys(player_list, 0)
-current_player = player_list[0] # Starting with first player
-for question in quiz:
-    print("-----------------------------------")
-    print(f"It is {current_player}'s turn. ")
-    attempts = 2
-    while attempts > 0:
-        print(quiz[question]["question"])
-        answer = input("Enter Answer (To move to the next question, type 'skip): ")
-        if answer == "skip":
-            break
-        check = check_answer(question, answer, attempts, current_player)
-        if check:
-            player_score[current_player] += 1
-            break
-        else:
-            attempts -= 1
+# import os
+
+# # Function to clear screen
+# def clear():
+#     os.system("cls" if os.name == "nt" else "clear")
+
+# logo = "===== QUIZ APP ====="
+
+# print("Welcome to the Quiz App")
+# print("There are a total of 6 questions, you can skip a question anytime by typing 'skip'")
+
+# quiz = {
+#     1: {"question": "A mapping from a set of keys to their corresponding values", "answer": "Dictionary"},
+#     2: {"question": "Another name for a key-value pair", "answer": "Item"},
+#     3: {"question": "An object that appears in a dictionary as the first part of a key-value pair", "answer": "Key"},
+#     4: {"question": "An object that appears in a dictionary as the second part of a key-value pair", "answer": "Value"},
+#     5: {"question": "A loop “inside” of another loop.", "answer": "Nested Loop"},
+#     6: {"question": "A dictionary that is an element of another dictionary", "answer": "Nested Dictionary"}
+# }
+
+# def check_ans(question, ans, attempts, player):
+#     clear()
+#     if quiz[question]['answer'].lower() == ans.lower():
+#         print(f"✅ Correct Answer! \n{player}'s score is {player_score[player] + 1}!")
+#         return True
+#     else:
+#         print(f"❌ Wrong Answer :( \nYou have {attempts - 1} attempts left. Try again...")
+#         return False
+
+# def print_dictionary():
+#     for q_id, qa in quiz.items():
+#         print(f"Q{q_id}: {qa['question']} -> {qa['answer']}")
+
+# def intro_message():
+#     print(logo)
+#     print("There are a total of 6 questions, you can skip a question anytime by typing 'skip'")
+#     input("Press Enter to get started...")
+#     return True
+
+# def switch_users(idx):
+#     return 1 - idx   # flip between 0 and 1
+
+# def print_winner(p1, p2):
+#     if player_score[p1] > player_score[p2]:
+#         print(f"🎉 {p1} WON! Final score: {player_score[p1]}")
+#     elif player_score[p1] < player_score[p2]:
+#         print(f"🎉 {p2} WON! Final score: {player_score[p2]}")
+#     else:
+#         print("🤝 It's a DRAW!")
+
+# # Main Game
+# intro_message()
+# players = input("Enter 2 Players (separated by space): ").split()
+# if len(players) < 2:
+#     print("Need 2 players to play! Exiting...")
+#     exit()
+
+# player_score = dict.fromkeys(players, 0)
+# current_index = 0
+
+# for q in quiz:
+#     print("------------------------------")
+#     current_player = players[current_index]
+#     print(f"It is {current_player}'s turn.")
+#     attempts = 2
+#     while attempts > 0:
+#         print(quiz[q]['question'])
+#         answer = input("Enter Answer (or type 'skip' to move on): ")
+#         if answer.lower() == "skip":
+#             break
+#         if check_ans(q, answer, attempts, current_player):
+#             player_score[current_player] += 1
+#             break
+#         attempts -= 1
+#     current_index = switch_users(current_index)
+
+# print_winner(players[0], players[1])
+
+# correct_answer = input("Do you want to see the correct answers? (Y/N): ")
+# if correct_answer.lower() == "y":
+#     print_dictionary()
+
+# print("🎮 Thanks for playing!")
+
+
+
