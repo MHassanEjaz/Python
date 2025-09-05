@@ -3380,5 +3380,5 @@ lists are mutable means to be changed'''
 '''tuple is a data structure with round brackets like (1,2,3)'''
 '''list is a data structure with square brackets like [1,2,3]'''
 '''dictionary is a data structure with curly brackets like {1,2,3}'''
-my_tuple = 1,2,3,4
+my_tuple = (1,2,3,4)
 print(my_tuple)
