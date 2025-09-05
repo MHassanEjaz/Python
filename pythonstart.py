@@ -3388,13 +3388,18 @@ lists are mutable means to be changed'''
 # print(my_tuple)
 
 
-club = ("FC Barcelona", "Spain", 1899)
-# print(club)
-# print(club[0])
-# print(club[1])
-# print(club[2])
-# club[0] = "Real Madrid" # error because tuples are immutable and are less memory
-club2 = list(club)
-print(club2)
-club2[0] = "Real Madrid"
-print(club2)
+# club = ("FC Barcelona", "Spain", 1899)
+# # print(club)
+# # print(club[0])
+# # print(club[1])
+# # print(club[2])
+# # club[0] = "Real Madrid" # error because tuples are immutable and are less memory
+# club2 = list(club)
+# print(club2)
+# club2[0] = "Real Madrid"
+# club2[2] = 1999
+# print(club2)
+
+
+
+
