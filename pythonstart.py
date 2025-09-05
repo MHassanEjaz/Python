@@ -3383,3 +3383,4 @@ lists are mutable means to be changed'''
 my_tuple = (1,2,3,4)
 print(my_tuple) # same result
 print((1,2,3,4)) # same result
+print(type(my_tuple))
