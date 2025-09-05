@@ -3433,4 +3433,6 @@ lists are mutable means to be changed'''
 
 
 # Traverse tuple - Enumerate()
-
+my_tuple = ("one", "two", "three")
+for value in my_tuple:
+    print(value)
