@@ -3409,15 +3409,21 @@ lists are mutable means to be changed'''
 # c=10
 # d=10
 # x,y,z = 10,20,30
-print("Unpacking tuple")
-my_tuple = {10,20,30}
-x,y,z = my_tuple
-print(my_tuple)
-print(x)
-print(y)
-print(z)
+# print("Unpacking tuple")
+# my_tuple = {10,20,30}
+# x,y,z = my_tuple
+# print(my_tuple)
+# print(x)
+# print(y)
+# print(z)
 
-print("Unpacking lis")
-my_list = (40,50,60)
-a,b,c = my_list
-print(my_list)
+# print("Unpacking lis")
+# my_list = (40,50,60)
+# a,b,c = my_list
+# print(my_list)
+
+
+
+# coding exercise solution of sum of tuple elements using UNPACK
+my_tuple = (10,40,80,90)
+sum = ()
