@@ -3434,7 +3434,7 @@ lists are mutable means to be changed'''
 
 # Traverse tuple - Enumerate()
 my_tuple = ("one", "two", "three")
-index = 0
-for value in my_tuple:
+my_list = [1,2,3,4]
+for index, value in enumerate(my_tuple):
     print(index, value)
-    index += 1
+    
