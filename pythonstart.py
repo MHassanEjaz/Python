@@ -3409,9 +3409,15 @@ lists are mutable means to be changed'''
 # c=10
 # d=10
 # x,y,z = 10,20,30
-my_tuple = {10,20,30,40}
-x,y,z,w = my_tuple
+print("Unpacking tuple")
+my_tuple = {10,20,30}
+x,y,z = my_tuple
+print(my_tuple)
 print(x)
 print(y)
 print(z)
-print(w)
+
+print("Unpacking lis")
+my_list = (40,50,60)
+a,b,c = my_list
+print(my_list)
