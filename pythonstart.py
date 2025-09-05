@@ -3403,9 +3403,15 @@ lists are mutable means to be changed'''
 
 
 
-a=b=c=d=20
-a=10
-b=10
-c=10
-d=10
-print(c)
+# a=b=c=d=20
+# a=10
+# b=10
+# c=10
+# d=10
+# x,y,z = 10,20,30
+my_tuple = {10,20,30,40}
+x,y,z,w = my_tuple
+print(x)
+print(y)
+print(z)
+print(w)
