@@ -3426,4 +3426,4 @@ lists are mutable means to be changed'''
 
 # coding exercise solution of sum of tuple elements using UNPACK
 my_tuple = (10,40,80,90)
-sum = ()
+a,b,c,d = my_tuple
