@@ -3441,13 +3441,13 @@ lists are mutable means to be changed'''
     
 
 # coding exercise even index with enumerate
-my_tuple = ("a", "b", "c", "d", "e", "f", "g")
-def even_index_items(p_tuple):
-    result_list = []
-    for index, value in enumerate(p_tuple):
-        if index % 2 == 0:
-            result_list.append(value)
-    result_list = tuple(result_list)
-    return result_list
-result_tuple = even_index_items(my_tuple)
-print(result_tuple)
+# my_tuple = ("a", "b", "c", "d", "e", "f", "g")
+# def even_index_items(p_tuple):
+#     result_list = []
+#     for index, value in enumerate(p_tuple):
+#         if index % 2 == 0:
+#             result_list.append(value)
+#     result_list = tuple(result_list)
+#     return result_list
+# result_tuple = even_index_items(my_tuple)
+# print(result_tuple)
