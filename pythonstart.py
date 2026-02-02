@@ -3432,22 +3432,22 @@ lists are mutable means to be changed'''
 
 
 
-# Traverse tuple - Enumerate()
-# my_tuple = ("one", "two", "three")
-# my_list = [1,2,3,4]
-# for index, value in enumerate(my_tuple):
-#     print(index, value)
+Traverse tuple - Enumerate()
+my_tuple = ("one", "two", "three")
+my_list = [1,2,3,4]
+for index, value in enumerate(my_tuple):
+    print(index, value)
     
     
 
-# coding exercise even index with enumerate
-# my_tuple = ("a", "b", "c", "d", "e", "f", "g")
-# def even_index_items(p_tuple):
-#     result_list = []
-#     for index, value in enumerate(p_tuple):
-#         if index % 2 == 0:
-#             result_list.append(value)
-#     result_list = tuple(result_list)
-#     return result_list
-# result_tuple = even_index_items(my_tuple)
-# print(result_tuple)
+coding exercise even index with enumerate
+my_tuple = ("a", "b", "c", "d", "e", "f", "g")
+def even_index_items(p_tuple):
+    result_list = []
+    for index, value in enumerate(p_tuple):
+        if index % 2 == 0:
+            result_list.append(value)
+    result_list = tuple(result_list)
+    return result_list
+result_tuple = even_index_items(my_tuple)
+print(result_tuple)
