@@ -3380,9 +3380,20 @@ lists are mutable means to be changed'''
 # print(cust_info)
 
 # nested list
-list1 =['india', 'usa', 5,6, ['russia', 'china']]
-len(list1)
-print(len(list1))
+# list1 =['india', 'usa', 5,6, ['russia', 'china']]
+# len(list1)
+# print(len(list1))
+
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+list3 = list1+list2
+# print(0 in list1)
+# print(list3)
+# list1.pop(1)
+# list1.extend([10,11])
+# list1.append([20,30])
+# list2.sort()
+# print(list2)
 
 # Tuple in Python
 '''tuple is a data structure with round brackets like (1,2,3)'''
