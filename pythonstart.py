@@ -3481,6 +3481,8 @@ lists are mutable means to be changed'''
 # print(t1)
 # print(type(t1))
 # print(type(t2))
+t = ('mumbai', 10, 'python', 100)
+print(t[2:])
 
 
 # ----------------------------------------------------------
