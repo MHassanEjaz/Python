@@ -3483,6 +3483,8 @@ lists are mutable means to be changed'''
 # print(type(t2))
 t = ('mumbai', 10, 'python', 100)
 print(t[2:])
+print(t[0:3])
+print(t[-2:-2])
 
 
 # ----------------------------------------------------------
