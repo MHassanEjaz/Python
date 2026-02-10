@@ -3488,8 +3488,14 @@ lists are mutable means to be changed'''
 # print(t[1:1])
 
 
-list1 = ('Hello!', "Welcome", 5,10,'math')
-list1[2] = 'computer'
-print(list1)
+# list1 = ('Hello!', "Welcome", 5,10,'math')
+# list1[2] = 'computer'
+# print(list1)
+
+t1 = ("Hello", "welcome", 5,10, "world", "of", "analytics")
+print(t1[0:2])
+print(t1[-3:])
+t3 = t1[0:2] + ("to", "the") + t1[-3:]
+print(t3)
 
 # ----------------------------------------------------------
