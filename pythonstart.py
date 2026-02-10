@@ -3475,8 +3475,12 @@ lists are mutable means to be changed'''
 # t1 = (1,2,3,'hello', 'tuple')
 # print(len(t1))
 # print(type(t1))
-t2 = (1,2,3,(4,5))
-print(t2)
+# t2 = (1,2,3,(4,5))
+# t1 = 1,2,3,4
+# print(t2)
+# print(t1)
+# print(type(t1))
+# print(type(t2))
 
 
 # ----------------------------------------------------------
