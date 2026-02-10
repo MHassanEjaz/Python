@@ -3384,9 +3384,9 @@ lists are mutable means to be changed'''
 # len(list1)
 # print(len(list1))
 
-list1 = [1,2,3,4]
-list2 = [5,6,7,8]
-list3 = list1+list2
+# list1 = [1,2,3,4]
+# list2 = [5,6,7,8]
+# list3 = list1+list2
 # print(0 in list1)
 # print(list3)
 # list1.pop(1)
