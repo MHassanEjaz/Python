@@ -3503,11 +3503,4 @@ lists are mutable means to be changed'''
 # print(t[4:-2])
 
 # ----------------------------------------------------------
-hdhbchbshhsbdhs
-
-jhjdhx bhjsdbhcjbdsjhbc
-ahbhjabhx
-jnjnjnjsanjxn
-jsdcdnjkn kc,smznKCJnszm ksjncjknsdjkcnksmcnz
-sjdncjkb sakjncnsad jnshbdjkcnasdjkcn nsdm mC knmxdsmcms
-skhcbhjsbdhjbsjkcbsdjkbcsdjkabncjkasheodflkjaskcnsajkncjskabkancjnknasdajkncjkbsdvbsadknkBcjdhbvjh
+khabhcbjhsdabcjhsdbcjhnsbdcjnbsdjnmc
