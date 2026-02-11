@@ -3481,25 +3481,25 @@ lists are mutable means to be changed'''
 # print(t1)
 # print(type(t1))
 # print(type(t2))
-# # t = ('mumbai', 10, 'python', 100)
-# # print(t[2:])
-# # print(t[0:3])
-# # print(t[-2:-2])
-# # print(t[1:1])
+# t = ('mumbai', 10, 'python', 100)
+# print(t[2:])
+# print(t[0:3])
+# print(t[-2:-2])
+# print(t[1:1])
 
 
-# # list1 = ('Hello!', "Welcome", 5,10,'math')
-# # list1[2] = 'computer'
-# # print(list1)
+# list1 = ('Hello!', "Welcome", 5,10,'math')
+# list1[2] = 'computer'
+# print(list1)
 
-# # t1 = ("Hello", "welcome", 5,10, "world", "of", "analytics")
-# # print(t1[0:2])
-# # print(t1[-3:])
-# # t3 = t1[0:2] + ("to", "the") + t1[-3:]
-# # print(t3)
+# t1 = ("Hello", "welcome", 5,10, "world", "of", "analytics")
+# print(t1[0:2])
+# print(t1[-3:])
+# t3 = t1[0:2] + ("to", "the") + t1[-3:]
+# print(t3)
 
-# t=(1,5,"hello", "world", ("java", "python"))
-# print(t[4:0])
-# print(t[4:-2])
+t=(1,5,"hello", "world", ("java", "python"))
+print(t[4:0])
+print(t[4:-2])
 
-# ----------------------------------------------------------
+----------------------------------------------------------
