@@ -3531,4 +3531,5 @@ print(d1["India"])
 d1["Hong Kong"]= "Yen"
 print(d1)
 del d1["Hong Kong"]
+print(d1)
 
