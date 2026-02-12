@@ -1,2 +1,4 @@
-print(a | b)
-# print(a.union(b))
+t(a) & set(b)
+# print(set1)
+# print(sorted(a))
+# print(a.inter
