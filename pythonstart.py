@@ -3538,4 +3538,8 @@ lists are mutable means to be changed'''
 # print(employee_data[101][2])
 
 input_dict = {'Name': 'Monty', 'Profession': 'Singer'}
-input_dict["Age"]
+# input_dict["Age"]
+if "Label" in input_dict.keys():
+    print(input_dict["label"])
+else:
+    print("NA")
