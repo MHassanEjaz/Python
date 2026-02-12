@@ -3534,5 +3534,8 @@ lists are mutable means to be changed'''
 # print(d1)
 # print(d1.values())
 # print(d1.keys())
-employee_data = {101:['John', 24, 'Content Creater'], 102:['Alex', 59, "Software Engineer"]}
-print(employee_data[101][2])
+# employee_data = {101:['John', 24, 'Content Creater'], 102:['Alex', 59, "Software Engineer"]}
+# print(employee_data[101][2])
+
+input_dict = {'Name': 'Monty', 'Profession': 'Singer'}
+input_dict["Age"]
