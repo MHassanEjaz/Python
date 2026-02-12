@@ -3537,9 +3537,12 @@ lists are mutable means to be changed'''
 # employee_data = {101:['John', 24, 'Content Creater'], 102:['Alex', 59, "Software Engineer"]}
 # print(employee_data[101][2])
 
-input_dict = {'Name': 'Monty', 'Profession': 'Singer'}
-# input_dict["Age"]
-if "Label" in input_dict.keys():
-    print(input_dict["label"])
-else:
-    print("NA")
+# input_dict = {'Name': 'Monty', 'Profession': 'Singer'}
+# # input_dict["Age"]
+# if "Label" in input_dict.keys():
+#     print(input_dict["label"])
+# else:
+#     print("NA")
+
+d1 = {'Jack Dorsey': 'Twitter', 'Tim Cook': 'Apple', 'Jeff Bezos': 'Amazon'}
+print(sorted(d1.values()))
