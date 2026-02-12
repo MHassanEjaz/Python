@@ -3521,6 +3521,13 @@ lists are mutable means to be changed'''
 
 
 # Dictionary in python
-dictinoary = {"key": "value"}
+# dictinoary = {"key": "value"}
+# d1 = {"name": "John", "age": 18}
+# print(type(d1))
+# print(d1)
 
+d1 = {"India": "inr", "USA": "usd", "Hong Kong": "hkd"}
+print(d1["India"])
+d1["Hong Kong"]= "Yen"
+print(d1)
 
