@@ -3506,4 +3506,6 @@ lists are mutable means to be changed'''
 # sets in python
 list1 = [1,2,3,4,5]
 set1 = set(list1)
-print(type(set1))
+# print(type(set1))
+set1.add('python')
+print(set1)
