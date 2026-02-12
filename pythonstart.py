@@ -3520,3 +3520,7 @@ lists are mutable means to be changed'''
 # print(a.intersection(b))
 
 
+# Dictionary in python
+dictinoary = {"key": "value"}
+
+
