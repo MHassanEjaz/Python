@@ -3517,3 +3517,5 @@ b={5,6,7,8}
 set1 = set(a) & set(b)
 print(set1)
 print(sorted(a))
+print(a.intersection(b))
+
