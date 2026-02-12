@@ -3546,3 +3546,5 @@ lists are mutable means to be changed'''
 
 d1 = {'Jack Dorsey': 'Twitter', 'Tim Cook': 'Apple', 'Jeff Bezos': 'Amazon'}
 print(sorted(d1.values()))
+print(d1)
+
