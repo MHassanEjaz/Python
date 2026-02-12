@@ -3503,5 +3503,7 @@ lists are mutable means to be changed'''
 # print(t[4:-2])
 
 # ----------------------------------------------------------
-khabhcbjhsdabcjhsdbcjhnsbdcjnbsdjnmca
-cjnjkbcsbdjhcbhsdbcjhsdbcjhsabcjhbcjhacbjhcbsjhcbjh
+# sets in python
+list1 = [1,2,3,4,5]
+set1 = set(list1)
+print(type(set1))
