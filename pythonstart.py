@@ -3527,9 +3527,11 @@ lists are mutable means to be changed'''
 # print(d1)
 
 d1 = {"India": "inr", "USA": "usd", "Hong Kong": "hkd", "Japan": "Yen"}
-print(d1["India"])
-d1["Hong Kong"]= "Yen"
-print(d1)
-del d1["Hong Kong"]
-print(d1)
+# print(d1["India"])
+# d1["Hong Kong"]= "Yen"
+# print(d1)
+# del d1["Hong Kong"]
+# print(d1)
+print(d1.values())
+print(d1.keys())
 
