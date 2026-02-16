@@ -3590,5 +3590,5 @@ std_data = {
     3: ["Ravi", 50]
 }
 
-for i in std_data:
-    print(i.values)
+for i in std_data.items():
+    print(i)
