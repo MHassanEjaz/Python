@@ -3575,6 +3575,11 @@ lists are mutable means to be changed'''
 # else:
 #     print("you dont have.")
 
-list1 = [1,2,3,4]
-for i in list1:
+# list1 = [1,2,3,4]
+# for i in list1:
+#     print(i)
+
+
+str1 = "python"
+for i in str1:
     print(i)
