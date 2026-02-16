@@ -3552,8 +3552,16 @@ lists are mutable means to be changed'''
 
 
 # Loops and Iterations
-x = int(input("Enter Number"))
-if x%2==0:
-    print("even")
+# x = int(input("Enter Number"))
+# if x%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+
+age = int(input("Enter your age: "))
+if age > 18:
+    print("you are eligible to drive")
 else:
-    print("odd")
+    print("you are not eligible to drive")
+    
