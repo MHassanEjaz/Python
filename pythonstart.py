@@ -3624,3 +3624,12 @@ lists are mutable means to be changed'''
 #         fact *= i
 #     return fact
 # print(factorial(5))
+
+
+# sum of natural numbers
+def sum(n):
+    num=0
+    for i in range(1,n+1):
+        num+=i
+    return num
+print(sum(5))
