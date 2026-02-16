@@ -3567,10 +3567,14 @@ lists are mutable means to be changed'''
     
 
 
-shopiing_cart = int(input("Input your billing amount: "))
-if shopiing_cart >= 50000:
-    print("Yhave 50000..")
-elif shopiing_cart >= 25000:
-    print("you have 25$")
-else:
-    print("you dont have.")
+# shopiing_cart = int(input("Input your billing amount: "))
+# if shopiing_cart >= 50000:
+#     print("Yhave 50000..")
+# elif shopiing_cart >= 25000:
+#     print("you have 25$")
+# else:
+#     print("you dont have.")
+
+list1 = [1,2,3,4]
+for i in list1:
+    print(i)
