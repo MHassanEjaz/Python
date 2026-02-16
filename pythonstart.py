@@ -3580,6 +3580,15 @@ lists are mutable means to be changed'''
 #     print(i)
 
 
-str1 = "python"
-for i in str1:
-    print(i)
+# str1 = "python"
+# for i in str1:
+#     print(i)
+
+std_data = {
+    1: ["Sam", 25],
+    2: ["Sharma", 30],
+    3: ["Ravi", 50]
+}
+
+for i in std_data:
+    print(i.values)
