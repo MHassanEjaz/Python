@@ -3594,11 +3594,17 @@ lists are mutable means to be changed'''
 #     print(i)
 
 
-std_data = {
-    1: ["Sam", 25],
-    2: ["Sharma", 30],
-    3: ["Ravi", 50]
-}
+# std_data = {
+#     1: ["Sam", 25],
+#     2: ["Sharma", 30],
+#     3: ["Ravi", 50]
+# }
 
-for i,j in std_data.items():
-    print(j)
+# for i,j in std_data.items():
+#     print(j)
+
+list1 = ["BMW", "BENZ", "MG"]
+list2 = []
+for i in list1:
+    list2.append(list1)
+print(list2)
