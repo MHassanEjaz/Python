@@ -3559,9 +3559,18 @@ lists are mutable means to be changed'''
 #     print("odd")
 
 
-age = int(input("Enter your age: "))
-if age > 18:
-    print("you are eligible to drive")
-else:
-    print("you are not eligible to drive")
+# age = int(input("Enter your age: "))
+# if age > 18:
+#     print("you are eligible to drive")
+# else:
+#     print("you are not eligible to drive")
     
+
+
+shopiing_cart = int(input("Input your billing amount: "))
+if shopiing_cart >= 50000:
+    print("Yhave 50000..")
+elif shopiing_cart >= 25000:
+    print("you have 25$")
+else:
+    print("you dont have.")
