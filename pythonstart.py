@@ -3544,8 +3544,16 @@ lists are mutable means to be changed'''
 # else:
 #     print("NA")
 
-d1 = {'Jack Dorsey': 'Twitter', 'Tim Cook': 'Apple', 'Jeff Bezos': 'Amazon'}
-print(sorted(d1.values()))
-print(d1)
-print(sorted(d1.keys()))
+# d1 = {'Jack Dorsey': 'Twitter', 'Tim Cook': 'Apple', 'Jeff Bezos': 'Amazon'}
+# print(sorted(d1.values()))
+# print(d1)
+# print(sorted(d1.keys()))
 
+
+
+# Loops and Iterations
+x = int(input("Enter Number"))
+if x%2==0:
+    print("even")
+else:
+    print("odd")
