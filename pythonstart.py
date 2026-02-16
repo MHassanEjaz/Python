@@ -3617,4 +3617,7 @@ lists are mutable means to be changed'''
 
 
 #  Functions
-
+def factorial(n):
+    fact = 1
+    for i in range(1,4):
+        print(i)
