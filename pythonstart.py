@@ -3584,11 +3584,21 @@ lists are mutable means to be changed'''
 # for i in str1:
 #     print(i)
 
+# std_data = {
+#     1: ["Sam", 25],
+#     2: ["Sharma", 30],
+#     3: ["Ravi", 50]
+# }
+
+# for i in std_data.items():
+#     print(i)
+
+
 std_data = {
     1: ["Sam", 25],
     2: ["Sharma", 30],
     3: ["Ravi", 50]
 }
 
-for i in std_data.items():
-    print(i)
+for i,j in std_data.items():
+    print(j)
