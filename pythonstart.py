@@ -3603,8 +3603,12 @@ lists are mutable means to be changed'''
 # for i,j in std_data.items():
 #     print(j)
 
+# list1 = ["BMW", "BENZ", "MG"]
+# list2 = []
+# for i in list1:
+#     list2.append(list1)
+# print(list2)
+
 list1 = ["BMW", "BENZ", "MG"]
-list2 = []
-for i in list1:
-    list2.append(list1)
-print(list2)
+d = {i: len(i) for i in list1}
+print(d)
