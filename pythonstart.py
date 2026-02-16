@@ -3609,6 +3609,12 @@ lists are mutable means to be changed'''
 #     list2.append(list1)
 # print(list2)
 
-list1 = ["BMW", "BENZ", "MG"]
-d = {i: len(i) for i in list1}
-print(d)
+# list1 = ["BMW", "BENZ", "MG"]
+# d = {i: len(i) for i in list1}
+# print(d)
+
+
+
+
+#  Funstions
+
