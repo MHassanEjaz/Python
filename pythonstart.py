@@ -3780,5 +3780,8 @@ lists are mutable means to be changed'''
 # c.set_color("red")
 # print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
 
-
+# numpy
 import numpy as np
+
+a = np.array([[1,2,3]])
+print(a)
