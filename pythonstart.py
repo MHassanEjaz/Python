@@ -3708,3 +3708,8 @@ lists are mutable means to be changed'''
 
 
 # OOP in python
+class rectangle:
+    def __init__(self):
+        self.length = 10
+        self.breadth = 5
+        
