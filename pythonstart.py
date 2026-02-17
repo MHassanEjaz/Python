@@ -3627,9 +3627,84 @@ lists are mutable means to be changed'''
 
 
 # sum of natural numbers
-def sum(n):
-    num=0
-    for i in range(1,n+1):
-        num+=i
-    return num
-print(sum(5))
+# def sum(n):
+#     num=0
+#     for i in range(1,n+1):
+#         num+=i
+#     return num
+# print(sum(5))
+
+# Lambda
+# lambda argument: expressions
+# x=lambda a: a+10
+# print(x(25))
+
+# x=lambda a: "even" if a % 2 == 0 else "Odd"
+# print(x(11))
+
+
+# x=lambda a,b: a*b
+# print(x(2,3))
+
+
+# import math
+# def area(r):
+#     return math.pi*(r**2)
+# radii = [1,2,3,4,5]
+# areas = []
+# for r in radii:
+#     a = area(r)
+#     areas.append(a)
+# print(area(2))
+
+
+# map function
+# map(area, radii)
+
+# temps = [("Mumbai", 35), ("Berlin", 12), ("Tokyo", 20)]
+# type(temps)
+# len(temps)
+# cel_to_f = lambda data: (data[0], (9/5)*data[1]+32)
+# print(list(map(cel_to_f, temps)))
+
+
+# filter function
+# import statistics
+# data = [1,2,3,4,5,6,7,8,9]
+# avg = statistics.mean(data)
+# print(avg)
+
+# list(filter(lambda x: x> avg, data))
+
+
+# name = ["Sam", "Ravi", 0, 0.0, "Alex"]
+# print(filter(None, name))
+
+
+# reduce function
+# import math
+# data = [1,2,3,4,5,6]
+# multiplier = lambda x,y: x*y
+# reduce(multiplier, data)
+
+
+
+# file handling
+# file = open('one.txt', 'r')
+# print(file.read())
+
+
+# file = open('one.txt', 'w')
+# file.write("This is some lines")
+# file.close()
+
+# file = open('test.txt', 'r')
+# print(file.read())
+
+
+# file = open('one.txt', 'a')
+# file.write("This is some lines")
+# file.close()
+
+
+# OOP in python
