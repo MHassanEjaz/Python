@@ -3781,3 +3781,4 @@ lists are mutable means to be changed'''
 # print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
 
 
+import numpy as np
