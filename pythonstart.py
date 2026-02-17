@@ -3722,6 +3722,7 @@ class rectangle:
     def __init__(self, length, breadth):
         self.length = length
         self.breadth = breadth
-rect = rectangle()
+rect = rectangle(5,10)
+print(rect.breadth)
 
         
