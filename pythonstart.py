@@ -3796,5 +3796,11 @@ import numpy as np
 
 
 
-a = np.array([[1,2,3,4,5,6], [7,8,9,10,11,12]])
-print(a[0,3])  
+# a = np.array([[1,2,3,4,5,6], [7,8,9,10,11,12]])
+# print(a[0,3])  
+
+# print(np.zeros((3,3)))
+
+
+print(np.zeros((2, 2), dtype=int))  # [[0 0] [0 0]]
+print(np.zeros((2, 2), dtype=bool))  
