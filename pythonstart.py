@@ -3804,3 +3804,4 @@ import numpy as np
 
 print(np.zeros((2, 2), dtype=int))  # [[0 0] [0 0]]
 print(np.zeros((2, 2), dtype=bool))  
+print(np.random.randint(1, 10, size=(2, 3)))
