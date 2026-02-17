@@ -3759,23 +3759,25 @@ lists are mutable means to be changed'''
 # print(emp.fun1())
 
 
-class shape:
-    def set_color(self, color):
-        self.color = color
+# class shape:
+#     def set_color(self, color):
+#         self.color = color
         
-    def calarea(self):
-        pass
-    def colortheshape(self):
-        color_price = {"red", 10, "blue", 15}
-        return self.calarea() * color_price[self.color]
+#     def calarea(self):
+#         pass
+#     def colortheshape(self):
+#         color_price = {"red", 10, "blue", 15}
+#         return self.calarea() * color_price[self.color]
     
-class circle(shape):
-    pi = 3.14
-    def __init__(self, radius):
-        self.radius = radius
+# class circle(shape):
+#     pi = 3.14
+#     def __init__(self, radius):
+#         self.radius = radius
         
-    def calculatearea(self):
-        return circle.pi * self.radius
-c = circle()
-c.set_color("red")
-print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
+#     def calculatearea(self):
+#         return circle.pi * self.radius
+# c = circle()
+# c.set_color("red")
+# print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
+
+
