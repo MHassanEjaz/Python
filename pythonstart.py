@@ -3769,13 +3769,13 @@ class shape:
         color_price = {"red", 10, "blue", 15}
         return self.calarea() * color_price[self.color]
     
-class circle(shape):
-    pi = 3.14
-    def __init__(self, radius):
-        self.radius = radius
+# class circle(shape):
+#     pi = 3.14
+#     def __init__(self, radius):
+#         self.radius = radius
         
-    def calculatearea(self):
-        return circle.pi * self.radius
-c = circle()
-c.set_color("red")
-print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
+#     def calculatearea(self):
+#         return circle.pi * self.radius
+# c = circle()
+# c.set_color("red")
+# print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
