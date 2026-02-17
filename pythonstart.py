@@ -3708,11 +3708,20 @@ lists are mutable means to be changed'''
 
 
 # OOP in python
+# class rectangle:
+#     def __init__(self):
+#         self.length = 10
+#         self.breadth = 5
+# rect = rectangle()
+# print(rect.length)
+# print(rect.breadth)
+
+
+# parameterized constructor
 class rectangle:
-    def __init__(self):
-        self.length = 10
-        self.breadth = 5
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
 rect = rectangle()
-print(rect.length)
-print(rect.breadth)
+
         
