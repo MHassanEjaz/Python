@@ -3717,12 +3717,41 @@ lists are mutable means to be changed'''
 # print(rect.breadth)
 
 
-# parameterized constructor
-class rectangle:
-    def __init__(self, length, breadth):
-        self.length = length
-        self.breadth = breadth
-rect = rectangle(5,10)
-print(rect.breadth)
+# # parameterized constructor
+# class rectangle:
+#     def __init__(self, length, breadth):
+#         self.length = length
+#         self.breadth = breadth
+# rect = rectangle(5,10)
+# print(rect.breadth)
 
+
+
+# class and instance variable
+# class rectangle:
+    # pi = 3.14
+#     def __init__(self, length, breadth):
+#         self.length = length
+#         self.breadth = breadth
+# rect = rectangle(5,10)
+# print(rect.breadth)
+
+
+# add method/function
+# class rectangle:
+#     def __init__(self, length, breadth):
+#         self.length = length
+#         self.breadth = breadth
+#     def calculate(a, b):
+#      return a+ b
+# rect = rectangle(5,10)
+# print(rect.breadth)
         
+        
+# Inheritance and overriding
+class employee:
+    def fun1(self):
+        print("helo from employee")
+
+class department(employee):
+    pass
