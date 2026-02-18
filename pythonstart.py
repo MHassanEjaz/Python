@@ -3780,8 +3780,29 @@ lists are mutable means to be changed'''
 # c.set_color("red")
 # print("circle with radius= ", c.radius, "when colored ", c.color, "cost $", c.colortheshape)
 
+
+
+# class Shape :
+#     def set_color(self, color):
+#         self.color = color
+        
+#     def calculate_area(self):
+#         pass
+        
+#     def color_the_shape(self):
+#         color_price = {"red" : 10, "blue" : 15, "green" : 5}
+#         return self.calculate_area() * color_price[self.color]
+    
+    # override
+# class Circle(Shape) :
+#     pi = 3.14
+#     def __init__(self, radius):
+#         self.radius = radius
+        
+#     def calculate_area(self):
+#         return Circle.pi * self.radius
 # numpy
-import numpy as np
+# import numpy as np
 
 # a = np.array([[1,2,3]])
 # print(a)
@@ -3802,6 +3823,157 @@ import numpy as np
 # print(np.zeros((3,3)))
 
 
-print(np.zeros((2, 2), dtype=int))  # [[0 0] [0 0]]
-print(np.zeros((2, 2), dtype=bool))  
-print(np.random.randint(1, 10, size=(2, 3)))
+# print(np.zeros((2, 2), dtype=int))  # [[0 0] [0 0]]
+# print(np.zeros((2, 2), dtype=bool))  
+# print(np.random.randint(1, 10, size=(2, 3)))
+
+# Extract all the first 3 rows of the last 5 columns in a given numpy 2D array ‘a’?
+# a= np.array([[1,2,3,4,5,6],
+#              [10,20,30,40,50,60],
+#              [12,12,12,12,12,12],
+#              [11,21,31,41,51,61],
+#              [13,24,34,44,54,64]])
+
+# a[ :3 , -5: ]
+
+# Given a positive number 'n' greater than 2, create a NumPy array of size (nxn) with all zeros and ones such that the ones make a shape of "+"
+
+# Examples:
+
+# Input 1:
+
+# 3
+
+# Output 1:
+
+# [[0 1 0]
+
+# [1 1 1]
+
+# [0 1 0]]
+
+# z = np.zeros((n,n), dtype='int')
+# print(z)
+# z[n//2,:] = 1
+# z[:,n//2] = 1
+
+# # Print the final value of z
+# print(z)
+
+
+
+import pandas as pd
+import numpy as np
+df = pd.read_csv('Churn_Modelling.csv')
+# print(df)
+# print(df.head())
+# print(df.tail())
+# print(df.info())
+# print(df.describe())
+# print(df.columns)
+# transpose
+# print(df.T)
+# print(df.sort_values('Age'))
+
+# print(df.Balance)
+# df['New Balance'] = df['Balance'] + 1000
+# print(df.head(5))
+
+
+# df['Random Column'] = 'Good Day'
+# print(df.head(5))
+
+# print(df[10:12])
+
+# print(df[20:25])
+
+# new_df = df[df.Age > 50]
+# print(new_df)
+
+
+
+new_df_Age_greater_50 = df[df.Age > 50]
+# print(new_df_Age_greater_50.head(5))
+
+
+# print(df['Age'].fillna(10))
+
+# print(df.pop('Random Column'))
+
+# new_df_Age_greater_50_1 = new_df_Age_greater_50.drop('RowNumber', axis=1)
+# print(new_df_Age_greater_50.head(5))
+
+
+# print(df['Balance'].apply(np.sqrt))
+
+# df['SqRoot_Balance'] = df['Balance'].apply(np.sqrt)
+# print(df['Balance'])
+
+# print(df['Age'].dropna())
+
+
+# df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'], 
+#                     'B': ['B0', 'B1', 'B2', 'B3'], 
+#                     'C': ['C0', 'C1', 'C2', 'C3'], 
+#                     'D': ['D0', 'D1', 'D2', 'D3']}, 
+#                   index=[0,1,2,3])
+
+# df2 = pd.DataFrame({'A': ['A4', 'A5', 'A6', 'A7'], 
+#                     'B': ['B4', 'B5', 'B6', 'B7'], 
+#                     'C': ['C4', 'C5', 'C6', 'C7'], 
+#                     'D': ['D4', 'D5', 'D6', 'D7']}, 
+#                   index=[4,5,6,7])
+
+# result = pd.concat([df1, df2])
+# print(result)
+
+
+# df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'], 
+#                     'B': ['B0', 'B1', 'B2', 'B3'], 
+#                     'C': ['C0', 'C1', 'C2', 'C3'], 
+#                     'D': ['D0', 'D1', 'D2', 'D3']}, )
+
+
+# df2 = pd.DataFrame({'E': ['A4', 'A5', 'A6', 'A7'], 
+#                     'F': ['B4', 'B5', 'B6', 'B7'], 
+#                     'C': ['C0', 'C3', 'C6', 'C7'], 
+#                     'G': ['D4', 'D5', 'D6', 'D7']}, )
+
+
+# merge_df1 = pd.merge(df1, df2, on='C', how='left')
+# merge_df2 = pd.merge(df1, df2, on='C', how='right')
+# merge_df3 = pd.merge(df1, df2, on='C', how='outer')
+# merge_df4 = pd.merge(df1, df2, on='C', how='inner')
+# print(merge_df1)
+# print(merge_df2)
+# print(merge_df3)
+# print(merge_df4)
+
+
+
+# s = pd.Series(list("abcdef"), index=[49, 48, 47, 0, 1, 2]) 
+# s.loc[0]
+# s.iloc[0] 
+# print(s)
+
+
+
+
+# import pandas as pd
+# import numpy as np
+# import matplotlib.pyplot as plt
+
+# Data = {'Year': [1920,1930,1940,1950,1960,1970,1980,1990,2000, 2010, 2020],
+#        'Exchange Rate': [65, 69, 71, 64, 62, 59, 72, 71, 75, 78, 81]}
+
+# # Create the DataFrame (uncomment this line)
+# df = pd.DataFrame(Data, columns = ['Year', 'Exchange Rate'])
+
+# # Create the plot
+# df.plot(x='Year', y='Exchange Rate', kind='bar')
+
+# # Show the plot (correct way to display)
+# plt.show()
+
+# # If you want to see the DataFrame, print it
+# print(df)
