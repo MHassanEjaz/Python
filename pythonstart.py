@@ -19,11 +19,11 @@ print(a!=b)
 print(a<b)
 print(a>b)
 print(a<=b)
-print(a>=b)
+# print(a>=b)
 
-num = 10
-num += 10
-print("Num: ", num)
+# num = 10
+# num += 10
+# print("Num: ", num)
 
 # a=4
 # b=5
