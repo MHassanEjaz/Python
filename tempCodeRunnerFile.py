@@ -19,8 +19,3 @@ print(a!=b)
 print(a<b)
 print(a>b)
 print(a<=b)
-print(a>=b)
-
-num = 10
-num += 10
-print("Num: ", num)
