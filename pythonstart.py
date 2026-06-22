@@ -1,25 +1,25 @@
-# print("Hello this is our first python program")
-# name = "Harry"
-# Age = 34
-# Price = 89.0
+print("Hello this is our first python program")
+name = "Harry"
+Age = 34
+Price = 89.0
 
-# Arithmetic, Relational, Assignment or Logical operator
-# a =10
-# b=4
-# sum = a + b
-# diff = a - b
-# div = a / b
-# mul = a * b
-# print(sum)
-# print(diff)
-# print(div)
-# print(mul)
-# print(a==b)
-# print(a!=b)
-# print(a<b)
-# print(a>b)
-# print(a<=b)
-# print(a>=b)
+Arithmetic, Relational, Assignment or Logical operator
+a =10
+b=4
+sum = a + b
+diff = a - b
+div = a / b
+mul = a * b
+print(sum)
+print(diff)
+print(div)
+print(mul)
+print(a==b)
+print(a!=b)
+print(a<b)
+print(a>b)
+print(a<=b)
+print(a>=b)
 
 # num = 10
 # num += 10
@@ -3977,3 +3977,45 @@ new_df_Age_greater_50 = df[df.Age > 50]
 
 # # If you want to see the DataFrame, print it
 # print(df)
+
+
+df.duplicated().sum()
+df.drop_duplicates(inplace=True)
+df.isnull().sum()
+
+
+for col in df.columns:
+    if df[col].dtype == 'object':
+        df[col]=df[col].fillna(df[col.mode()[0]])
+    else:
+         df[col]=df[col].fillna(df[col.median()])
+         
+df['heart disease'] = LabelEncoder.fit_transform(df['heart disease'])
+scaler = StandardScalar()
+df[cols_to_scale]=scaler.fit_transform(df['heart disease'])
+
+corr_matrix=df.corr()
+plt.figure(figsize=(20,12))
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=2f)
+plt.title('correlation graph')
+plt.xticks(rotation=30,ha='right')
+plt.show()
+
+df.drop[column=['age'], inplace=True]
+sns.boxplot(x=df['cholertrol'])
+
+q1=df['cholertrol'].quantile(0.25)
+q3=df['cholertrol'].quantile(0.75)
+iqr=q3-q1
+lower_bound = q1-1.5*iqr
+upper_bound = q3-1.5*iqr
+df=df[(df['Cholesterol']>=lower_bound)
+&(df['Cholesterol']<=upper_bound)]
+
+x_train, y_train, x_test, y_test = trian_test_spit(x,y, test_size=0.20, random_state=42)
+model = KNeighborsRegressor(n=5)
+model.fit(x_train, y_train)
+y_pred = model.predict(x_test)
+
+accuracy = accuracy_soce(y_pred, y_train)
+
